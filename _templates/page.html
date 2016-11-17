@@ -1,0 +1,18 @@
+{% extends "!page.html" %}
+
+{% block body %}
+  <style>
+    .ofervivienda {
+      margin: auto;
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    }
+  </style>
+
+  <div class="ofervivienda">
+    <a href="https://www.ofervivienda.com/">
+      <img src="_static/logo.png">
+    </a>
+  </div>
+
+    {{ super() }}
+{% endblock %}

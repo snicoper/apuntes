@@ -1,0 +1,34 @@
+# File types #
+##############
+*.pyc
+*.swo
+*.swp
+*.swn
+
+# Directories #
+###############
+__pycache__/
+.idea/
+.sass-cache/
+logs/
+build/
+_build/
+static/libs/
+node_modules/
+bower_components/
+
+# Specific files #
+##################
+.coverage
+*.db
+db.sqlite3
+npm-debug.log
+
+# OS generated files #
+######################
+.directory
+.DS_Store?
+thumbs.db
+Icon?
+Thumbs.db
+*~
