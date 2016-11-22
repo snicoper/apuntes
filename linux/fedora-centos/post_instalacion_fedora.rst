@@ -4,7 +4,7 @@
 Post instalacion Fedora
 #######################
 
-**Fedora 24 Workstation**
+**Fedora 25 Workstation**
 
 Gnome Settings
 **************
