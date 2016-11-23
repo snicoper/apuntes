@@ -22,6 +22,4 @@ Contents:
     :maxdepth: 2
 
     pycharm/index
-    sublime_text/index
     vim/index
-    vscode/index
