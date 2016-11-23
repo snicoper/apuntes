@@ -5,9 +5,9 @@ Postfix
 #######
 
 .. note::
-    Probado en Fedora 24, Centos 7
+    Probado en Fedora 25, Centos 7
 
-    Las lineas entre parentesis '(x)', son las de Centos.
+    Las lineas entre paréntesis '(x)', son las de Centos.
 
 -------------------
 

@@ -21,7 +21,6 @@ Contents:
 .. toctree::
     :maxdepth: 2
 
-    atom/index
     pycharm/index
     sublime_text/index
     vim/index
