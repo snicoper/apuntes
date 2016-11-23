@@ -177,7 +177,6 @@ Programas básicos
         wget \
         yumex-dnf
 
-
 Para pwgen ``pwgen -sy 16``
 
 Opcionales

@@ -56,7 +56,7 @@ Comandos
 Python 3.4 en Centos 7
 ######################
 
-... code-block:: bash
+.. code-block:: bash
 
     yum install python34 python34-setuptools python34-devel redhat-rpm-config
 
