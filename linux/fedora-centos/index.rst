@@ -16,7 +16,7 @@ Contents:
    configurar_ssh
    copr
    crear_ssl
-   eliminar_kernels_antiguos
+   dnf_exclude_package
    escanear_redes_conectadas_en_lan
    firewall
    fuente_ubuntu
