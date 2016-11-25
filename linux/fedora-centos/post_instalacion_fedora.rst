@@ -67,8 +67,6 @@ Terminix
 
     dnf install -y terminix terminix-nautilus
 
-``profile -> color`` **->** ``Material``
-
 Global Dark Theme
 *****************
 
