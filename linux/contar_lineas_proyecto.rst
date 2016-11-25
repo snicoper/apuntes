@@ -28,9 +28,11 @@ todo lo que uno no ha hecho).
 .. code-block:: bash
 
     #!/usr/bin/env bash
+
     git clone --depth 1 "$1" temp-linecount-repo &&
     printf "('temp-linecount-repo' will be deleted automatically)\n\n\n" &&
     cloc temp-linecount-repo &&
+
     rm -rf temp-linecount-repo
 
 .. code-block:: bash
@@ -42,4 +44,4 @@ Ejemplo:
 
 .. code-block:: bash
 
-    cloc-git git@gitlab.com:snicoper/oferventa.git
+    cloc-git git@gitlab.com:snicoper/proyecto.git

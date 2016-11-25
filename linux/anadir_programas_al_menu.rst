@@ -5,7 +5,7 @@ Añadir programas al menu
 ########################
 
 .. note::
-    Todos los pongo en ``opt``
+    Todos los pongo en ``/opt``
 
     Prácticamente todos son iguales, solo cambian las rutas, pero las pongo separadas
     para ir mas rápido si algún día tengo que instalar alguno.

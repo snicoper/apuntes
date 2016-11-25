@@ -38,11 +38,9 @@ Contents:
    comandos_utiles
    contar_lineas_proyecto
    crear_grupos_anadir_usuarios_a_grupo
-   diferencias_entre_adduser_useradd
    dropbox
    formatear_discos_con_mkfs
    generar_clave_para_ssh
-   icons_numix
    instalacion_discord
    instalacion_memcached
    instalacion_mongodb

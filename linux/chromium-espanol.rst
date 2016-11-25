@@ -4,9 +4,6 @@
 Chromium español linux
 ######################
 
-Forma rapida
-************
-
 .. code-block:: bash
 
     vim /usr/bin/chromium-browser

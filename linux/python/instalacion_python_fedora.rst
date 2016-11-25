@@ -58,6 +58,8 @@ Python 3.4 en Centos 7
 
 .. code-block:: bash
 
+    yum install epel-release
+
     yum install python34 python34-setuptools python34-devel redhat-rpm-config
 
     curl https://bootstrap.pypa.io/get-pip.py | python3.4

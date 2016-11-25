@@ -8,4 +8,4 @@ Crear varios documentos con ``touch`` en un directorio diferente al actual.
 
 .. code-block:: bash
 
-    touch other/folder/{file1.txt,file2.txt}
+    touch other/folder/{file1,file2}.txt

@@ -4,8 +4,8 @@
 Post instalacion Ubuntu Server
 ##############################
 
-Crear usuario y añadir a wheel
-*******************************
+Crear usuario
+*************
 
 .. code-block:: bash
 

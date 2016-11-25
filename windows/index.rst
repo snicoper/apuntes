@@ -4,9 +4,7 @@
 Windows
 #######
 
-**Contents**
-
-------
+No tengo Windows y esto puede estar desactualizado.
 
 .. toctree::
    :maxdepth: 1
