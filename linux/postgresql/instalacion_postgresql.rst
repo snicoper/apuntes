@@ -16,7 +16,7 @@ Instalación
 
 .. code-block:: bash
 
-    dnf install -y postgresql postgresql-server postgresql-devel
+    dnf install -y postgresql postgresql-server postgresql-devel postgresql-contrib
 
     # Opcional
     dnf install -y pgadmin3
