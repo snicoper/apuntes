@@ -7,20 +7,13 @@
       margin-bottom: 20px;
       box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
     }
-    .center {
-      text-align: center;
-    }
   </style>
 
   <div class="ofervivienda">
     <a href="https://www.ofervivienda.com/">
       <img src="{{ pathto('_static/logo.png', 1) }}">
     </a>
-  </div>
-
-  {{ super() }}
-
-  <div class="center">
+    
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!-- main Apuntes -->
     <ins class="adsbygoogle"
@@ -32,4 +25,6 @@
       (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
   </div>
+
+  {{ super() }}
 {% endblock %}
