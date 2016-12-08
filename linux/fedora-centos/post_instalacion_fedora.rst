@@ -149,6 +149,7 @@ Programas básicos
 .. code-block:: bash
 
     dnf -y install \
+        adobe-source-code-pro-fonts \
         # chromium \
         chromium-53.0.2785.116-1.fc25.x86_64 \
         cloc \
@@ -177,6 +178,7 @@ Programas básicos
         p7zip-plugins \
         pwgen \
         transmission \
+        unrar \
         vim \
         wget \
         yumex-dnf
