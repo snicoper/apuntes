@@ -151,7 +151,7 @@ Programas básicos
     dnf -y install \
         adobe-source-code-pro-fonts \
         # chromium \
-        chromium-53.0.2785.116-1.fc25.x86_64 \
+        # chromium-53.0.2785.116-1.fc25.x86_64 \
         cloc \
         cpp \
         ctags \
