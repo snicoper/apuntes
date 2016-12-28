@@ -141,11 +141,6 @@ Flash Player
 Programas básicos
 *****************
 
-.. note::
-
-    ``chromium 54.0.2840.90-3.fc25`` no me traduce las paginas, de momento instalo 53 y añado en
-    ``/etc/dnf/dnf.conf`` ``exclude=chromium*`` después de instalarlo.
-
 .. code-block:: bash
 
     dnf -y install \
@@ -182,9 +177,6 @@ Programas básicos
         yumex-dnf
 
 Para pwgen ``pwgen -sy 16``
-
-# chromium \
-# chromium-53.0.2785.116-1.fc25.x86_64 \
 
 Opcionales
 **********
