@@ -48,11 +48,6 @@ Gnome Settings
     # Otros
     gsettings set org.gnome.settings-daemon.plugins.xsettings overrides "{'Gtk/ButtonImages': <1>, 'Gtk/MenuImages': <1>}"
 
-Paper Theme
-***********
-
-Ver ``dotfiles``
-
 Terminix
 ********
 
@@ -71,8 +66,6 @@ Global Dark Theme
     [Settings]
     gtk-application-prefer-dark-theme=1
     EOF
-
-Reloguear
 
 Eliminar algunos
 ****************
@@ -176,7 +169,7 @@ Para pwgen ``pwgen -sy 16``
 Atom
 ****
 
-https://copr.fedorainfracloud.org/coprs/mosquito/atom/
+* https://copr.fedorainfracloud.org/coprs/mosquito/atom/
 
 .. code-block:: bash
 
@@ -239,7 +232,7 @@ Idiomas
     LC_TELEPHONE=es_ES.UTF-8
     LC_IDENTIFICATION=es_ES.UTF-8
 
-Post post instalacion
+Post post instalación
 *********************
 
 * :ref:`reference-linux-python-instalacion_python_fedora`
