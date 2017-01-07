@@ -11,10 +11,6 @@ Gnome Settings
 
 .. code-block:: bash
 
-    # Wallpaper, requiere tener el wallpaper en el directorio que indica.
-    # gsettings set org.gnome.desktop.background picture-uri '/home/snicoper/Pictures/Wallpapers/f25/default/standard/f25.png'
-    gsettings set org.gnome.desktop.background picture-uri '/home/snicoper/Pictures/Wallpapers/Xplo_by_Hugo_Cliff.png'
-
     # General
     gsettings set org.gnome.desktop.interface clock-show-date true
     gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita'
@@ -43,14 +39,13 @@ Gnome Settings
     gsettings set org.gnome.nautilus.icon-view default-zoom-level 'standard'
     gsettings set org.gnome.nautilus.list-view use-tree-view true
     gsettings set org.gnome.nautilus.preferences default-folder-viewer 'icon-view'
-    gsettings set org.gnome.nautilus.preferences sort-directories-first true
-    gsettings set org.gnome.nautilus.window-state geometry '890x413+42+299'
 
     # Fuentes
     gsettings set org.gnome.desktop.interface monospace-font-name 'Dejavu Sans Mono 11'
     gsettings set org.gnome.settings-daemon.plugins.xsettings antialiasing 'rgba'
     gsettings set org.gnome.settings-daemon.plugins.xsettings hinting 'slight'
 
+    # Otros
     gsettings set org.gnome.settings-daemon.plugins.xsettings overrides "{'Gtk/ButtonImages': <1>, 'Gtk/MenuImages': <1>}"
 
 Paper Theme
@@ -177,6 +172,16 @@ Programas básicos
         yumex-dnf
 
 Para pwgen ``pwgen -sy 16``
+
+Atom
+****
+
+https://copr.fedorainfracloud.org/coprs/mosquito/atom/
+
+.. code-block:: bash
+
+    dnf copr enable mosquito/atom
+    dnf install atom
 
 Opcionales
 **********
