@@ -4,22 +4,6 @@
 Repositorios Copr
 #################
 
-Nodejs
-******
-
-* https://copr.fedoraproject.org/coprs/nibbler/nodejs/
-
-.. code-block:: bash
-
-    # Versión LTS
-    dnf copr -y enable nibbler/nodejs4
-
-    # Ultima versión
-    dnf copr -y enable nibbler/nodejs
-
-    dnf update -y
-    dnf install -y nodejs npm
-
 Neovim
 ******
 
@@ -41,3 +25,13 @@ terminix
     dnf copr enable heikoada/terminix
     dnf update -y
     dnf install -y terminix
+
+Atom
+****
+
+* https://copr.fedorainfracloud.org/coprs/mosquito/atom/
+
+.. code-block:: bash
+
+    dnf copr enable mosquito/atom
+    dnf install atom
