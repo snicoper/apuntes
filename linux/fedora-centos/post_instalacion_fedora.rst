@@ -166,16 +166,6 @@ Programas básicos
 
 Para pwgen ``pwgen -sy 16``
 
-Atom
-****
-
-* https://copr.fedorainfracloud.org/coprs/mosquito/atom/
-
-.. code-block:: bash
-
-    dnf copr enable mosquito/atom
-    dnf install atom
-
 Opcionales
 **********
 
@@ -186,7 +176,6 @@ Opcionales
     dnf -y install adobe-source-code-pro-fonts
     dnf -y install levien-inconsolata-fonts
     dnf -y install gnome-tweak-tool
-    dnf -y install unrar
     dnf -y install zsh
     dnf -y install breeze-icon-theme
     dnf -y install gedit-plugins
