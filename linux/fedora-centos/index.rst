@@ -21,6 +21,7 @@ Contents:
    firewall
    fuente_ubuntu
    nvidia_fedora
+   instalar_golang
    post_instalacion_centos
    post_instalacion_fedora
    postfix
