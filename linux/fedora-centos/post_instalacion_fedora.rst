@@ -158,7 +158,7 @@ Programas básicos
         p7zip \
         p7zip-plugins \
         pwgen \
-        transmission \
+        transmission-gtk \
         unrar \
         vim \
         wget \
