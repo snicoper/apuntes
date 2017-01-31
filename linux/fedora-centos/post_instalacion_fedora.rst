@@ -45,9 +45,6 @@ Gnome Settings
     gsettings set org.gnome.settings-daemon.plugins.xsettings antialiasing 'rgba'
     gsettings set org.gnome.settings-daemon.plugins.xsettings hinting 'slight'
 
-    # Otros
-    gsettings set org.gnome.settings-daemon.plugins.xsettings overrides "{'Gtk/ButtonImages': <1>, 'Gtk/MenuImages': <1>}"
-
 Terminix
 ********
 
@@ -122,9 +119,9 @@ Flash Player
 .. code-block:: bash
 
     ## Adobe Repository 64-bit x86_64 ##
-    rpm -ivh http://linuxdownload.adobe.com/adobe-release/adobe-release-x86_64-1.0-1.noarch.rpm
-    rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
-    dnf install -y flash-plugin
+    # rpm -ivh http://linuxdownload.adobe.com/adobe-release/adobe-release-x86_64-1.0-1.noarch.rpm
+    # rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
+    # dnf install -y flash-plugin
 
 Programas básicos
 *****************
@@ -145,6 +142,7 @@ Programas básicos
         gimp \
         git \
         gitg \
+        gnome-tweak-tool \
         gparted \
         gpick \
         htop \
@@ -173,9 +171,7 @@ Opcionales
 
     # Otros
     dnf -y install java-1.8.0-openjdk-devel
-    dnf -y install adobe-source-code-pro-fonts
     dnf -y install levien-inconsolata-fonts
-    dnf -y install gnome-tweak-tool
     dnf -y install zsh
     dnf -y install breeze-icon-theme
     dnf -y install gedit-plugins
