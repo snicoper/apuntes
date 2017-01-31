@@ -13,7 +13,7 @@ Gnome Settings
 
     # General
     gsettings set org.gnome.desktop.interface clock-show-date true
-    gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita'
+    gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
     gsettings set org.gnome.desktop.screensaver lock-enabled false
     gsettings set org.gnome.desktop.session idle-delay 900
     gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,close'
@@ -63,6 +63,8 @@ Global Dark Theme
     [Settings]
     gtk-application-prefer-dark-theme=1
     EOF
+
+Require reloguear.
 
 Eliminar algunos
 ****************
@@ -170,18 +172,18 @@ Opcionales
 .. code-block:: bash
 
     # Otros
-    dnf -y install java-1.8.0-openjdk-devel
-    dnf -y install levien-inconsolata-fonts
-    dnf -y install zsh
     dnf -y install breeze-icon-theme
     dnf -y install gedit-plugins
     dnf -y install gnome-builder
     dnf -y install gnome-calendar
     dnf -y install gnome-music
     dnf -y install gnome-photos
+    dnf -y install gnome-terminal-nautilus # Si no se instala terminix.
     dnf -y install gnome-todo
-    dnf -y install gnome-terminal-nautilus
     dnf -y install inkscape
+    dnf -y install java-1.8.0-openjdk-devel
+    dnf -y install levien-inconsolata-fonts
+    dnf -y install zsh
 
 Firewalld
 *********
