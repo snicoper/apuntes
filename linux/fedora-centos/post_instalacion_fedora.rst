@@ -59,7 +59,7 @@ Global Dark Theme
 
 .. code-block:: bash
 
-    vim ~/.profile
+    vi ~/.profile
 
     # Añadir
     export MOZ_ALLOW_GTK_DARK_THEME=true
