@@ -35,7 +35,7 @@ Gnome Settings
     gsettings set org.gnome.nautilus.desktop trash-icon-visible false
     gsettings set org.gnome.nautilus.desktop volumes-visible false
 
-    # Nautilus
+    # Files
     gsettings set org.gnome.nautilus.icon-view default-zoom-level 'standard'
     gsettings set org.gnome.nautilus.list-view use-tree-view true
     gsettings set org.gnome.nautilus.preferences default-folder-viewer 'icon-view'
