@@ -45,15 +45,6 @@ Gnome Settings
     gsettings set org.gnome.settings-daemon.plugins.xsettings antialiasing 'rgba'
     gsettings set org.gnome.settings-daemon.plugins.xsettings hinting 'slight'
 
-Terminix
-********
-
-.. code-block:: bash
-
-    dnf copr enable heikoada/terminix
-
-    dnf install -y terminix terminix-nautilus
-
 Global Dark Theme
 *****************
 
@@ -64,7 +55,25 @@ Global Dark Theme
     gtk-application-prefer-dark-theme=1
     EOF
 
+**Firefox**
+
+.. code-block:: bash
+
+    vim ~/.profile
+
+    # Añadir
+    export MOZ_ALLOW_GTK_DARK_THEME=true
+
 Require reloguear.
+
+Terminix
+********
+
+.. code-block:: bash
+
+    dnf copr enable heikoada/terminix
+
+    dnf install -y terminix terminix-nautilus
 
 Eliminar algunos
 ****************
