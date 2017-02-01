@@ -20,9 +20,10 @@ Contents:
    escanear_redes_conectadas_en_lan
    firewall
    fuente_ubuntu
-   nvidia_fedora
    instalar_golang
    post_instalacion_centos
+   post_instalacion_fedora_gnome
+   post_instalacion_fedora_kde
    post_instalacion_fedora
    postfix
    reglas_selinux

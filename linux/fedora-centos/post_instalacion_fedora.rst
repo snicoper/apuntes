@@ -1,89 +1,10 @@
 .. _reference-linux-fedora-centos-post_instalacion_fedora:
 
 #######################
-Post instalacion Fedora
+Post instalación Fedora
 #######################
 
-**Fedora 25 Workstation**
-
-Gnome Settings
-**************
-
-.. code-block:: bash
-
-    # General
-    gsettings set org.gnome.desktop.interface clock-show-date true
-    gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
-    gsettings set org.gnome.desktop.screensaver lock-enabled false
-    gsettings set org.gnome.desktop.session idle-delay 900
-    gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,close'
-
-    # Gedit
-    gsettings set org.gnome.gedit.preferences.editor auto-indent true
-    gsettings set org.gnome.gedit.preferences.editor bracket-matching true
-    gsettings set org.gnome.gedit.preferences.editor highlight-current-line true
-    gsettings set org.gnome.gedit.preferences.editor insert-spaces true
-    gsettings set org.gnome.gedit.preferences.editor scheme 'solarized-dark'
-    gsettings set org.gnome.gedit.preferences.editor tabs-size 4
-    gsettings set org.gnome.gedit.preferences.editor wrap-last-split-mode 'word'
-    gsettings set org.gnome.gedit.preferences.editor wrap-mode 'none'
-
-    # Desktop
-    gsettings set org.gnome.desktop.background show-desktop-icons true
-    gsettings set org.gnome.nautilus.desktop home-icon-visible true
-    gsettings set org.gnome.nautilus.desktop network-icon-visible false
-    gsettings set org.gnome.nautilus.desktop trash-icon-visible false
-    gsettings set org.gnome.nautilus.desktop volumes-visible false
-
-    # Files
-    gsettings set org.gnome.nautilus.icon-view default-zoom-level 'standard'
-    gsettings set org.gnome.nautilus.list-view use-tree-view true
-    gsettings set org.gnome.nautilus.preferences default-folder-viewer 'icon-view'
-
-    # Fuentes
-    gsettings set org.gnome.desktop.interface monospace-font-name 'Dejavu Sans Mono 11'
-    gsettings set org.gnome.settings-daemon.plugins.xsettings antialiasing 'rgba'
-    gsettings set org.gnome.settings-daemon.plugins.xsettings hinting 'slight'
-
-Global Dark Theme
-*****************
-
-.. code-block:: bash
-
-    cat >> ~/.config/gtk-3.0/settings.ini << EOF
-    [Settings]
-    gtk-application-prefer-dark-theme=1
-    EOF
-
-**Firefox**
-
-.. code-block:: bash
-
-    vi ~/.profile
-
-    # Añadir
-    export MOZ_ALLOW_GTK_DARK_THEME=true
-
-Require reloguear.
-
-Terminix
-********
-
-.. code-block:: bash
-
-    dnf copr enable heikoada/terminix
-
-    dnf install -y terminix terminix-nautilus
-
-Eliminar algunos
-****************
-
-.. code-block:: bash
-
-    dnf remove -y \
-        rhythmbox \
-        evolution \
-        shotwell
+**Fedora 25**
 
 Actualizar
 **********
@@ -124,16 +45,6 @@ Codecs
         gstreamer1-plugins-base \
         gstreamer1
 
-Flash Player
-************
-
-.. code-block:: bash
-
-    ## Adobe Repository 64-bit x86_64 ##
-    # rpm -ivh http://linuxdownload.adobe.com/adobe-release/adobe-release-x86_64-1.0-1.noarch.rpm
-    # rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
-    # dnf install -y flash-plugin
-
 Programas básicos
 *****************
 
@@ -145,21 +56,16 @@ Programas básicos
         cpp \
         ctags \
         ctags-etags \
-        dconf-editor \
-        dia \
         gcc \
         gcc-c++ \
-        geary \
         gimp \
         git \
         gitg \
-        gnome-tweak-tool \
-        gparted \
-        gpick \
         htop \
         hunspell-es \
         kernel-devel \
         kernel-headers \
+        krita \
         make \
         meld \
         mutt \
@@ -167,11 +73,10 @@ Programas básicos
         p7zip \
         p7zip-plugins \
         pwgen \
-        transmission-gtk \
+        umbrello \
         unrar \
         vim \
-        wget \
-        yumex-dnf
+        wget
 
 Para pwgen ``pwgen -sy 16``
 
@@ -193,19 +98,6 @@ Opcionales
     dnf -y install java-1.8.0-openjdk-devel
     dnf -y install levien-inconsolata-fonts
     dnf -y install zsh
-
-Firewalld
-*********
-
-Poner por defecto ``zone=public`` y añadir la red local a ``trusted``
-
-.. code-block:: bash
-
-    firewall-cmd --set-default-zone=public
-    firewall-cmd --zone=public --list-ports
-    firewall-cmd --permanent --zone=trusted --add-source=192.168.1.0/24
-    firewall-cmd --reload
-    firewall-cmd --zone=trusted --list-sources
 
 Idiomas
 *******
@@ -231,6 +123,8 @@ Idiomas
 Post post instalación
 *********************
 
+* :ref:`reference-linux-fedora-centos-post_instalacion_fedora_gnome`
+* :ref:`reference-linux-fedora-centos-post_instalacion_fedora_kde`
 * :ref:`reference-linux-python-instalacion_python_fedora`
 * :ref:`reference-linux-postgresql-instalacion_postgresql`
 * :ref:`reference-linux-postgresql-instalacion_postgis`

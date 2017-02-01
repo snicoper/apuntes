@@ -11,7 +11,7 @@ Opción 1
 
     vim ~/.vimrc
 
-.. code-block:: bash
+.. code-block:: vim
 
     set pastetoggle=<F2>
     set clipboard=unnamed
