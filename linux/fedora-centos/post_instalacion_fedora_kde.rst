@@ -17,7 +17,6 @@ Desinstalar
         amarok \
         kdegames-minimal \
         kget \
-        konquerokonquerorr \
         qupzilla \
         akregator \
         ktorrent \
