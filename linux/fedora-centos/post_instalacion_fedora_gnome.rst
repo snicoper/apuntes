@@ -57,15 +57,6 @@ Global Dark Theme
     gtk-application-prefer-dark-theme=1
     EOF
 
-**Firefox**
-
-.. code-block:: bash
-
-    vi ~/.profile
-
-    # Añadir
-    export MOZ_ALLOW_GTK_DARK_THEME=true
-
 Require reloguear.
 
 Terminix
