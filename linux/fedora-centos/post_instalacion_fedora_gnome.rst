@@ -83,8 +83,8 @@ Desinstalar
 .. code-block:: bash
 
     dnf remove -y \
-        rhythmbox \
         evolution \
+        rhythmbox \
         shotwell
 
 Programas básicos

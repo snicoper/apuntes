@@ -14,15 +14,15 @@ Desinstalar
 .. code-block:: bash
 
     dnf remove -y \
+        akregator \
         amarok \
+        kate \
         kdegames-minimal \
         kget \
-        qupzilla \
-        akregator \
-        ktorrent \
         knode \
         konqueror \
-        kate
+        ktorrent \
+        qupzilla
 
 Programas básicos
 *****************
