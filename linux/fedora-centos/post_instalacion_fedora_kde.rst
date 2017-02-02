@@ -32,3 +32,13 @@ Programas básicos
     dnf -y install \
         kwrite \
         transmission-qt
+
+Firewalld
+*********
+
+Añadir la red local a ``trusted``
+
+.. code-block:: bash
+
+    firewall-cmd --permanent --zone=trusted --add-source=192.168.1.0/24
+    firewall-cmd --reload

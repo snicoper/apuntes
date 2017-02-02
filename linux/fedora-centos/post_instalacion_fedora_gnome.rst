@@ -100,7 +100,5 @@ Poner por defecto ``zone=public`` y añadir la red local a ``trusted``
 .. code-block:: bash
 
     firewall-cmd --set-default-zone=public
-    firewall-cmd --zone=public --list-ports
     firewall-cmd --permanent --zone=trusted --add-source=192.168.1.0/24
     firewall-cmd --reload
-    firewall-cmd --zone=trusted --list-sources
