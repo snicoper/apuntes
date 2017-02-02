@@ -6,9 +6,6 @@ Compartir directorios en VirtualBox
 
 Todo esto esta pensado para tener como host a windows virtualizando linux.
 
-Con linux/linux, todo esto no es necesario.
-
-
 En windows, virtualbox (Host)
 *****************************
 
@@ -28,8 +25,8 @@ Linux, maquina virtualizada (Guest)
 
 **Requisitos**
 
-    Tener instalado virtualbox-guest-additions.
-    Tener uno o varios usuarios creados.
+* Tener instalado virtualbox-guest-additions.
+* Tener uno o varios usuarios creados.
 
 Añadir usuario/s al grupo ``vboxsf``
 
@@ -41,7 +38,7 @@ reiniciar
 
 Las carpetas se automontan en (ubuntu) ``/media/sf_Nombre_carpeta``
 
-Ahora si se quiere tener mas mano:
+Ahora si se quiere tener mas a mano:
 
 .. code-block:: bash
 

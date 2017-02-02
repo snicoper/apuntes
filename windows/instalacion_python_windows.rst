@@ -9,7 +9,8 @@ Variables de entorno
 
 .. code-block:: bash
 
-    C:\Python35\;C:\Python35\Scripts\;
+    C:\Python36\
+    C:\Python36\Scripts\
 
 Virtualenvwrapper
 *****************
@@ -18,9 +19,10 @@ Virtualenvwrapper
 
     pip install virtualenvwrapper-win
 
-Por defecto usara ~/Envs para los entornos virtuales, si se quiere cambiar el directorio, añadir la variable de entorno ``WORKON_HOME`` indicandole la nueva ruta.
+Por defecto usara ``~/Envs`` para los entornos virtuales, si se quiere cambiar el directorio,
+añadir la variable de entorno ``WORKON_HOME`` indicándole la nueva ruta.
 
-Añadir la variable de entorno ``WORKON_HOME`` con el valor ``%USERPROFILE%\virtualenvs``
+``WORKON_HOME`` con el valor ``%USERPROFILE%\virtualenvs``
 
 Pysopg2
 =======
