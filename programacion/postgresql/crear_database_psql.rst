@@ -12,4 +12,4 @@ Para crear una base de datos y poner como propietario a alguien:
 .. code-block:: sql
 
     sudo -u postgres psql postgres
-    CREATE DATABASE practicas WITH OWNER = snicoper;
+    CREATE DATABASE practicas WITH OWNER snicoper;

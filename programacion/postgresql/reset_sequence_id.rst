@@ -12,7 +12,6 @@ Se se han añadido y eliminado muchos campos y luego se quiere recuperar la secu
 
     SELECT setval('table_name_id_seq', (SELECT MAX(id) FROM table_name));
 
-
 Si se ha vaciado toda una tabla y se quiere resetear
 
 .. code-block:: sql

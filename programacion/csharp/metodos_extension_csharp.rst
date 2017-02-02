@@ -42,8 +42,7 @@ ha de ser ``static``.
                 return string.Empty;
             }
 
-            return string.Format("{0}{1}",
-                str[0].ToUpper(), str.SubString(1));
+            return string.Format("{0}{1}", str[0].ToUpper(), str.SubString(1));
         }
     }
 
