@@ -13,15 +13,15 @@ Actualizar
 
     dnf update -y
 
-RPMFusion
-*********
+RPM Fusion
+**********
 
 * http://rpmfusion.org/Configuration
 
 .. code-block:: bash
 
-    dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-25.noarch.rpm
-    dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-25.noarch.rpm
+    dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+    dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
     dnf update -y
 
 Codecs
@@ -85,8 +85,8 @@ Opcionales
 
 .. code-block:: bash
 
-    # Otros
     dnf -y install breeze-icon-theme
+    dnf -y install dia
     dnf -y install gedit-plugins
     dnf -y install gnome-builder
     dnf -y install gnome-calendar
