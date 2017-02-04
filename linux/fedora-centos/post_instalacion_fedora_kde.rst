@@ -30,8 +30,11 @@ Programas básicos
 .. code-block:: bash
 
     dnf -y install \
+        ffmpegthumbs \
         kwrite \
         transmission-qt
+
+``ffmpegthumbs`` Previews para los videos en Dolphin, se ha de activar igual que las imágenes.
 
 Firewalld
 *********
