@@ -31,10 +31,12 @@ Programas básicos
 
     dnf -y install \
         ffmpegthumbs \
+        gvfs \
         kwrite \
         transmission-qt
 
-``ffmpegthumbs`` Previews para los videos en Dolphin, se ha de activar igual que las imágenes.
+* ``ffmpegthumbs`` Previews para los videos en Dolphin, se ha de activar igual que las imágenes.
+* ``gvfs`` En Atom y VSCode, sin ``gvfs`` no moverá los archivos a la papelera cuando se quieran borrar.
 
 Firewalld
 *********
