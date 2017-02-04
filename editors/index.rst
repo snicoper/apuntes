@@ -12,3 +12,4 @@ Contents:
     atom/index
     pycharm/index
     vim/index
+    vscode/index
