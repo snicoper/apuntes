@@ -1,8 +1,8 @@
 .. _reference-editors-vscode-index:
 
-########
-Editores
-########
+######
+VSCode
+######
 
 Contents:
 
