@@ -1,7 +1,7 @@
 .. _reference-linux-fedora-centos-reinstall_grup_post_install_windows:
 
 ###########################################
-Reinstalar GRUB despues de instalar windows
+Reinstalar GRUB después de instalar windows
 ###########################################
 
 **Fuentes:**
@@ -19,7 +19,7 @@ Con la LIVE de Fedora
 
 .. code-block:: bash
 
-	sudo fdisk -l # Ver particion donde esta linux.
+	sudo fdisk -l # Ver partición donde esta linux.
 
 	sudo mount /dev/sda6 /mnt
 

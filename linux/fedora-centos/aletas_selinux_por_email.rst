@@ -14,7 +14,7 @@ Enviar alertas SELinux por email
 
     yum install setroubleshoot{-server,-plugins,-doc}
 
-El archivo de configuracion esta en: ``/etc/setroubleshoot/setroubleshoot.conf``,
+El archivo de configuración esta en: ``/etc/setroubleshoot/setroubleshoot.conf``,
 lo dejo todo por defecto.
 
 .. code-block:: bash

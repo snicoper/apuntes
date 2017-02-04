@@ -8,7 +8,7 @@ Post instalacion Ubuntu
 
 -----------------
 
-Si se usa calligra, eliminar libreoffice antes de actualizar.
+Si se usa **Calligra**, eliminar **LibreOffice** antes de actualizar.
 
 .. code-block:: bash
 
@@ -38,7 +38,7 @@ Cambiar editor.
 
     sudo update-alternatives --config editor
 
-Programas basicos.
+Programas básicos.
 
 .. code-block:: bash
 
@@ -168,7 +168,7 @@ gpick.
 
     sudo apt install gpick -y
 
-libreoffice.
+LibreOffice.
 
 .. code-block:: bash
 

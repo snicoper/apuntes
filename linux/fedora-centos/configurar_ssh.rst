@@ -51,7 +51,7 @@ Crear una clave rsa, desde el cliente/clientes
 .. code-block:: bash
 
     ssh-keygen -t rsa -b 4096
-    
+
     # Agregar clave SSH al agente ssh (evitar tener que poner el passphrase siempre)
     ssh-add
 
@@ -68,7 +68,7 @@ Subirla al servidor
 
     scp .ssh/id_rsa.pub usuario@SERVER_IP_ADDRESS:
 
-O tambien es posible insertarla con ``ssh-copy-id``
+O también es posible insertarla con ``ssh-copy-id``
 
 .. code-block:: bash
 

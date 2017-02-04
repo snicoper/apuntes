@@ -13,5 +13,5 @@ Fuentes:
 
 .. code-block:: bash
 
-    unzip ubuntu-font-family-0.80.zip
-    sudo mv ubuntu-font-family-0.80 /usr/share/fonts/ubuntu-font-family
+    unzip ubuntu-font-family-0.83.zip
+    sudo mv ubuntu-font-family-0.83 /usr/share/fonts/ubuntu-font-family

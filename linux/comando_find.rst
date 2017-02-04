@@ -14,7 +14,7 @@ Dar permisos 777 a todos los archivos recursivamente desde la posición actual.
 
     find ./ -name '*.php' -type f -exec chmod 777 {} \;
 
-Eliminar recursivamente carpetas con X nombre desde la posición actual.
+Eliminar recursivamente archivos con X nombre desde la posición actual.
 
 .. code-block:: bash
 

@@ -36,40 +36,8 @@ Descomprimir como usuario
     Name=Sublime Text 3
     Comment=Sublime Text Editor
     Exec=subl %U
-    Icon=/home/snicoper/.local/share/icons/Paper/48x48/apps/sublime-text.png
-    #Icon=/opt/sublime_text_3/Icon/48x48/sublime-text.png
-    Terminal=false
-    Type=Application
-    Categories=GNOME;Application;Development;
-    StartupNotify=true
-
-Visual Studio Code
-******************
-
-Descomprimir como usuario
-
-.. code-block:: bash
-
-    su
-    mv VSCode-linux-x64 /opt/vscode
-    chmod +x /opt/vscode/Code
-
-.. code-block:: bash
-
-    ln -s /opt/vscode/Code /usr/local/bin/vscode
-
-.. code-block:: bash
-
-    vim /usr/share/applications/vscode.desktop
-
-.. code-block:: bash
-
-    [Desktop Entry]
-    Encoding=UTF-8
-    Name=Visual Studio Code
-    Comment=Editor for C# and ASP.NET
-    Exec=vscode %U
-    Icon=/opt/vscode/resources/app/resources/linux/code.png
+    # Icon=/home/snicoper/.local/share/icons/Paper/48x48/apps/sublime-text.png
+    Icon=/opt/sublime_text_3/Icon/48x48/sublime-text.png
     Terminal=false
     Type=Application
     Categories=GNOME;Application;Development;

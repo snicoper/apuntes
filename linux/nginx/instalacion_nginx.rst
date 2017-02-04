@@ -48,7 +48,7 @@ Centos
 ******
 
 .. note::
-    Tambien estan en los repos de remi
+    También están en los repos de remi
     :ref:`reference-linux-fedora-centos-post_instalacion_centos`
 
 .. code-block:: bash
@@ -91,5 +91,5 @@ Si se crea un host en el home, se ha de dar permisos ``711`` al home del usuario
 .. code-block:: bash
 
     chmod 711 /home/snicoper
-    
+
 Ver :ref:`reference-linux-fedora-centos-reglas_selinux`

@@ -1,7 +1,7 @@
 .. _reference-linux-instalacion_discord:
 
 ###################
-Instalacion Discord
+Instalación Discord
 ###################
 
 De momento no hay una versión final, pero si quieres estar hablando con tus colegas, quizá te pueda servir.
@@ -15,7 +15,7 @@ Requisitos
 
     dnf install libXScrnSaver
 
-Instalacion
+Instalación
 ***********
 
 Descargar de `GitHub <https://github.com/crmarsh/discord-linux-bugs>`_ el ``.tar.gz`` y descomprimir, por ultimo ir al path donde este el descomprimido y como súper usuario:

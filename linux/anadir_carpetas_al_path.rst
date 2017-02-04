@@ -16,3 +16,6 @@ Añadir al final
 
     PATH="$PATH:/data/myscripts"
     export PATH
+
+    # También
+    export PATH="$PATH:/data/myscripts"

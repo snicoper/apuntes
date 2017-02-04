@@ -10,7 +10,7 @@ Cambiar el tamaño de una imagen en %
 
     convert imagen.png -resize 50% carpeta/imagen.png
 
-Cambiar el tañano de una imagen en pixeles
+Cambiar el tañano de una imagen en pixels
 
 .. code-block:: bash
 

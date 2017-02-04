@@ -1,7 +1,7 @@
 .. _reference-linux-apache-instalar_apache:
 
 #####################
-Instalacion de Apache
+Instalación de Apache
 #####################
 
 Fedora

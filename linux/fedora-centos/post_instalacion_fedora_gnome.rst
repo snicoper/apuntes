@@ -1,7 +1,7 @@
 .. _reference-linux-fedora-centos-post_instalacion_fedora_gnome:
 
 #############################
-Post instalacion Fedora Gnome
+Post instalación Fedora Gnome
 #############################
 
 **Fedora 25 Workstation**

@@ -45,7 +45,6 @@ Contents:
    instalacion_memcached
    instalacion_mongodb
    instalacion_nodejs
-   instalar_golang
    instalar_libsass_sassc
    instalar_mono_monodevelop
    montar_imagenes_bin_iso_etc
@@ -54,7 +53,6 @@ Contents:
    redimensionar_imagen
    saber_donde_esta_un_ejecutable
    saber_temperatura_pc
-   source_code_pro
    tip_crear_varios_archivos_con_touch
    tunel_ssh
    ver_permisos_octal_linux

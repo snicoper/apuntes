@@ -7,11 +7,10 @@ Instalación Ruby
 Instalación
 ***********
 
-Dependencias para Ruby, si se omiten, cuando se instale Ruby desde
-rvm, pedirá instalarlas.
+Dependencias para Ruby, si se omiten, cuando se instale Ruby desde rvm, pedirá instalarlas.
 
-Prerrequisitos
-**************
+Requisitos
+**********
 
 .. code-block:: bash
 

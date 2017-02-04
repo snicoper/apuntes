@@ -12,7 +12,7 @@ Fuentes
 * http://lani78.com/2012/07/22/setting-up-a-dns-for-the-local-network-on-the-ubuntu-12-04-precise-pangolin-server/
 * http://docs.fedoraproject.org/en-US/Fedora/20/html/Networking_Guide/index.html
 
-Instalacion
+Instalación
 ***********
 
 .. code-block:: bash
@@ -38,7 +38,7 @@ Configuración Red
         dns-search ns1.workspace.local
         dns-domain workspace.local
 
-Configuracion Bind
+Configuración Bind
 ******************
 
 .. code-block:: bash

@@ -80,7 +80,7 @@ Habiliar ufw (firewall)
 Actualizar
 **********
 
-Cambiar a servers francia.
+Cambiar a servers Francia.
 
 .. code-block:: bash
 
@@ -92,8 +92,8 @@ Actualizar
 
     sudo apt update && sudo apt dist-upgrade
 
-Pquetes basicos
-***************
+Paquetes básicos
+****************
 
 .. code-block:: bash
 

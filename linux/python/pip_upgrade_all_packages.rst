@@ -8,7 +8,7 @@ Actualizar todos los paquetes de Pip
 
     pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs pip install -U
 
-Tambien se puede crear un archivo ``pip-upgrade-all``
+También se puede crear un archivo ``pip-upgrade-all``
 
 .. code-block:: bash
 
@@ -42,16 +42,11 @@ Tambien se puede crear un archivo ``pip-upgrade-all``
       rm -f $path_backup
     fi
 
-Dar permisos de ejecución
+Dar permisos de ejecución y moverlo a ``/usr/bin/``
 
 .. code-block:: bash
 
     chmod +x pip-upgrade-all
-
-y moverlo a ``/usr/bin/``
-
-.. code-block:: bash
-
     sudo mv pip-upgrade-all /usr/bin/pip-upgrade-all
 
 Ahora desde cualquier entorno virtual.
