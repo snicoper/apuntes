@@ -14,7 +14,11 @@ Fedora
 
 .. code-block:: bash
 
-    yum install fuse-sshfs
+    dnf install fuse-sshfs
+
     vim /etc/fstab
-    snicoper@192.168.1.33:/home/snicoper /run/media/snicoper/srv1  fuse.sshfs noauto,x-systemd.automount,_netdev,users,idmap=user,IdentityFile=/home/user/.ssh/id_rsa,allow_other,reconnect 0 0
-    mount /run/media/snicoper/srv1
+
+    snicoper@192.168.1.33:/home/snicoper /run/media/snicoper/srv1 fuse.sshfs noauto,x-systemd.automount,_netdev,users,idmap=user,IdentityFile=/home/snicoper/.ssh/id_rsa,allow_other,reconnect 0 0
+
+    # Con puerto diferente a 22
+    snicoper@192.168.1.33:/home/snicoper /run/media/snicoper/srv1 fuse.sshfs noauto,x-systemd.automount,_netdev,users,idmap=user,port=22222,IdentityFile=/home/snicoper/.ssh/id_rsa,allow_other,reconnect 0 0
