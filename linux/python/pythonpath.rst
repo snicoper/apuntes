@@ -4,7 +4,7 @@
 PYTHONPATH
 ##########
 
-Editar vimrc
+Editar ``.vimrc`` o ``.profilerc``
 
 .. code-block:: bash
 
@@ -14,8 +14,4 @@ Añadir
 
 .. code-block:: bash
 
-    PYTHONPATH="/home/snicoper/.virtualenvs/default/lib/python3.4/site-packages/":"${PYTHONPATH}"
-    export PYTHONPATH
-
-Donde ``/home/snicoper/.virtualenvs/default/lib/python3.4/site-packages/`` sustituirlo
-por un directorio.
+    export PYTHONPATH=$PYTHONPATH:/home/dev/python-files
