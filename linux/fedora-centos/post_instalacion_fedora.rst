@@ -58,22 +58,16 @@ Programas básicos
         ctags-etags \
         gcc \
         gcc-c++ \
-        gimp \
         git \
-        gitg \
         htop \
         hunspell-es \
         kernel-devel \
         kernel-headers \
-        krita \
         make \
-        meld \
         mutt \
-        nmap \
         p7zip \
         p7zip-plugins \
         pwgen \
-        umbrello \
         unrar \
         vim \
         wget
@@ -88,6 +82,8 @@ Opcionales
     dnf -y install breeze-icon-theme
     dnf -y install dia
     dnf -y install gedit-plugins
+    dnf -y install gimp
+    dnf -y install gitg
     dnf -y install gnome-builder
     dnf -y install gnome-calendar
     dnf -y install gnome-music
@@ -96,7 +92,10 @@ Opcionales
     dnf -y install gnome-todo
     dnf -y install inkscape
     dnf -y install java-1.8.0-openjdk-devel
+    dnf -y install krita
     dnf -y install levien-inconsolata-fonts
+    dnf -y install meld
+    dnf -y install umbrello
     dnf -y install zsh
 
 Idiomas
