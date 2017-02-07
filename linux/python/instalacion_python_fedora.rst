@@ -37,7 +37,6 @@ Reload ``~/.bashrc``
 
 .. code-block:: bash
 
-    # Guardar y salir
     source ~/.bashrc
 
 Entorno virtual **default**
