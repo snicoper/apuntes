@@ -9,7 +9,6 @@ Python3
 
 .. code-block:: bash
 
-    su
     dnf install -y python3-setuptools python3-devel redhat-rpm-config
 
 Virtualenvwrapper
@@ -24,6 +23,7 @@ Editar ``.bashrc``
 
 .. code-block:: bash
 
+    # Como usuario normal
     vim ~/.bashrc
 
     # Virtualenvwrapper
