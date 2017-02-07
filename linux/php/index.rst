@@ -4,7 +4,9 @@
 PHP
 ###
 
-Todo esto puede estar muy desactualizado.
+.. warning::
+
+    Todo esto puede estar muy desactualizado.
 
 Categorias:
 
