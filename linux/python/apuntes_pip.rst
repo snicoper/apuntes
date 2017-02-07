@@ -31,6 +31,8 @@ Pillow
         tcl-devel \
         tk-devel
 
+    (virtualenv) pip install Pillow
+
 pygraphviz
 **********
 

@@ -1,8 +1,12 @@
 .. _reference-linux-python-compilar_python_34_centos:
 
 #################################
-Compilar Python 3.5.2 en Centos 7
+Compilar Python 3.6.0 en Centos 7
 #################################
+
+.. note::
+
+    Con la version 3.6 no lo he probado.
 
 Compilación
 ***********
@@ -28,15 +32,15 @@ Compilación
 
 .. code-block:: bash
 
-    wget https://www.python.org/ftp/python/3.5.2/Python-3.5.2.tgz
-    tar -zxvf Python-3.5.2.tgz
-    cd Python-3.5.2
+    wget https://www.python.org/ftp/python/3.6.0/Python-3.6.0.tgz
+    tar -zxvf Python-3.6.0.tgz
+    cd Python-3.6.0
 
     ./configure --prefix=/usr/local --enable-shared LDFLAGS="-Wl,-rpath /usr/local/lib"
     make
     sudo make altinstall
 
-Usar pip con ``pip3.5``
+Usar pip con ``pip3.6``
 
 Virtualenvwrapper
 *****************
@@ -44,7 +48,7 @@ Virtualenvwrapper
 .. code-block:: bash
 
     su
-    pip3.5 install virtualenvwrapper
+    pip3.6 install virtualenvwrapper
     exit
 
 Como usuario:
@@ -59,7 +63,7 @@ Añadir a ``~/.bashrc``
 
     vim ~/.bashrc
 
-    export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3.5
+    export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3.6
     export WORKON_HOME=$HOME/.virtualenvs
     source /usr/local/bin/virtualenvwrapper.sh
 

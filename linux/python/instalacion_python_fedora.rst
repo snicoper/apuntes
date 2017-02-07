@@ -17,9 +17,10 @@ Virtualenvwrapper
 
 .. code-block:: bash
 
-    pip3 install virtualenvwrapper
+    # pip3 install virtualenvwrapper
+    dnf install -y python3-virtualenvwrapper
 
-Editar .bashrc
+Editar ``.bashrc``
 
 .. code-block:: bash
 
@@ -30,8 +31,18 @@ Editar .bashrc
     export WORKON_HOME=$HOME/.virtualenvs
     source /usr/bin/virtualenvwrapper.sh
 
+En ``source`` el valor de ``which virtualenvwrapper.sh``
+
+Reload ``~/.bashrc``
+
+.. code-block:: bash
+
     # Guardar y salir
     source ~/.bashrc
+
+Entorno virtual **default**
+
+.. code-block:: bash
 
     mkvirtualenv default
 
@@ -49,7 +60,7 @@ Comandos
 
 * mkvirtualenv // Crea un nuevo virtualenv
 * rmvirtualenv // Elimina un virtualenv existente
-* workon // Cambia el actual virtualenv
+* workon nombre_env // Activar entorno virtual, si se omite nombre_env, mostrara todos los disponibles
 * deactivate // Desactivar virtualenv
 * lsvirtualenv // Listar virtualenvs
 

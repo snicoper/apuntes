@@ -34,6 +34,8 @@ Añadir
     export WORKON_HOME=$HOME/.virtualenvs
     source /usr/local/bin/virtualenvwrapper.sh
 
+En ``source`` el valor de ``which virtualenvwrapper.sh``
+
 Comandos
 
 * mkvirtualenv // Crea un nuevo virtualenv
