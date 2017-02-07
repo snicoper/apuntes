@@ -131,7 +131,7 @@ Si los archivos static no se ven, mirar ``collectstatic`` de Django, o modificar
 ``location /static/admin/``
 
 En Fedora/Centos, mirar :ref:`reference-linux-fedora-centos-reglas_selinux` y si el
-proyecto esta en el ``home`` de un usuario, poner permisos ``711`` en la carpeta
+proyecto esta en el ``home`` de un usuario, poner permisos ``711`` en el directorio
 del usuario, de lo contrario, mostrara un error ``403``
 
 Reiniciar nginx

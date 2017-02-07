@@ -8,10 +8,10 @@ Cambiar el tamaño de una imagen en %
 
 .. code-block:: bash
 
-    convert imagen.png -resize 50% carpeta/imagen.png
+    convert imagen.png -resize 50% directorio/imagen.png
 
 Cambiar el tañano de una imagen en pixels
 
 .. code-block:: bash
 
-    convert imagen.png -resize 60x60 carpeta/imagen.png
+    convert imagen.png -resize 60x60 directorio/imagen.png

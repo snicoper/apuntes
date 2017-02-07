@@ -36,7 +36,7 @@ La platilla ``blog/_categories.html``
         {% endfor %}
     </ul>
 
-Dentro de la ``app`` creamos una carpeta con el nombre ``templatetags`` y
+Dentro de la ``app`` creamos un directorio con el nombre ``templatetags`` y
 dentro de ``templatetags`` un archivo ``__init__.py`` y por ultimo
 un archivo donde irán los template tags con el nombre ``blog_tags``.
 

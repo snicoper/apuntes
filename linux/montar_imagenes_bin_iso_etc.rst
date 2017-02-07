@@ -132,7 +132,7 @@ como “ccd2iso-0.2.tar.gz” (puede variar la versión) y primero lo descomprim
 
     tar -xzvf ccd2iso-0.2.tar.gz
 
-Ahora que tendremos una carpeta llamada “ccd2iso”, hacemos lo siguiente:
+Ahora que tendremos un directorio llamada “ccd2iso”, hacemos lo siguiente:
 
 .. code-block:: bash
 

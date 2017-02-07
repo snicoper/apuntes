@@ -15,7 +15,7 @@ Apache y Nginx
     sudo apt-get install -y php5 php5-cli php5-gd php5-xsl php5-json php5-mcrypt
 
 .. note::
-    Si se instala Nginx, desactivar uno de los dos, ver carpeta de
+    Si se instala Nginx, desactivar uno de los dos, ver directorio de
     Ubuntu para desactivar servicios.
 
 .. important::

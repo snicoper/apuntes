@@ -9,14 +9,14 @@ Montar particiones al iniciar sistema
     o ``df``
 
 .. note::
-    La única diferencia entre Fedora y Ubuntu es donde montan las
-    carpetas. Fedora lo hace en ``/run/media/nombre_usuario/`` y
+    La única diferencia entre Fedora y Ubuntu es donde montan los
+    directorios. Fedora lo hace en ``/run/media/nombre_usuario/`` y
     Ubuntu lo hace en ``/media/nombre_usuario``
 
 Fedora ntfs
 ***********
 
-Desmontar partición (si esta montada) y crear carpeta data
+Desmontar partición (si esta montada) y crear directorio data
 
 .. code-block:: bash
 
@@ -76,7 +76,7 @@ Fedora ext4
 
     /dev/sda5 /run/media/snicoper/data ext4 defaults 1 2
 
-Si es la primera vez que se crea la partición, crear una carpeta
+Si es la primera vez que se crea la partición, crear una directorio
 
 .. code-block:: bash
 

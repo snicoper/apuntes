@@ -57,7 +57,7 @@ Copiar el sitio creado a sites-enabled
 
 **Si instalo phpmyadmin**
 
-En Ubuntu además, hago un enlace simbólico de phpmyadmin en la carpeta home,
+En Ubuntu además, hago un enlace simbólico de phpmyadmin en el directorio home,
 para acceder luego a phpmyadmin http://www.workspace.local/phpmyadmin y me ahorro
 tener que crear un nuevo vhost para phpmyadmin.
 

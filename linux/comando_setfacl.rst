@@ -5,7 +5,7 @@ Comando setfacl
 ###############
 
 Para poder compartir permisos con 2 usuarios distintos, usar setfacl
-Por ejemplo, en la carpeta /home/snicoper/public_html/example.com/uploads
+Por ejemplo, en el directorio /home/snicoper/public_html/example.com/uploads
 
 .. code-block:: bash
 

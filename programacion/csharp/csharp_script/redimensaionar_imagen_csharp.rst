@@ -18,7 +18,7 @@ Redimensionar imagen C#
             /// Redimensiona una imagen a un ancho/alto dado.
             /// </summary>
             /// <param name="filename">Nombre del archivo, incluida extension</param>
-            /// <param name="filepath">Carpeta contenedora para guardar</param>
+            /// <param name="filepath">directorio contenedor para guardar</param>
             /// <param name="thumbWi">Ancho de la imagen a redimensionar</param>
             /// <param name="thumbHi">Alto de la imagen a redimensionar</param>
             /// <param name="maintainAspect">Mantener proporciones ancho/alto?</param>

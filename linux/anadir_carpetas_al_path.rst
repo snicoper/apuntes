@@ -1,8 +1,8 @@
 .. _reference-linux-anadir_carpetas_al_path:
 
-#######################
-Añadir carpetas al PATH
-#######################
+##########################
+Añadir directorios al PATH
+##########################
 
 Editar ~/.bashrc
 
