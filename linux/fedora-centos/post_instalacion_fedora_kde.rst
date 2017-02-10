@@ -16,7 +16,7 @@ Desinstalar
     dnf remove -y \
         akregator \
         amarok \
-        kate \
+        kwrite \
         kdegames-minimal \
         kget \
         knode \
@@ -32,7 +32,7 @@ Programas básicos
     dnf -y install \
         ffmpegthumbs \
         gvfs \
-        kwrite \
+        kate \
         transmission-qt
 
 * ``ffmpegthumbs`` Previews para los videos en Dolphin, se ha de activar igual que las imágenes.
