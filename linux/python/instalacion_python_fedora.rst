@@ -16,8 +16,8 @@ Virtualenvwrapper
 
 .. code-block:: bash
 
-    # pip3 install virtualenvwrapper
-    dnf install -y python3-virtualenvwrapper
+    pip3 install virtualenvwrapper
+    # dnf install -y python3-virtualenvwrapper
 
 Editar ``.bashrc``
 
