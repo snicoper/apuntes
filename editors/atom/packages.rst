@@ -19,7 +19,7 @@ Estos son los plugins que instalo, sobre todo para **Python/Django**
     apm install sort-lines # Por defecto F5
     apm install tab-control
     apm install tasks
-    apm install terminator
+    apm install termination
     apm install todo-show
 
     # HTML CSS
@@ -42,6 +42,7 @@ Estos son los plugins que instalo, sobre todo para **Python/Django**
     # Linters
     apm install linter
     apm install linter-flake8
+    apm install linter-htmlhint
 
     # Nginx
     apm install language-nginx
