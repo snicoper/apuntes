@@ -41,6 +41,7 @@ Estos son los plugins que instalo, sobre todo para **Python/Django**
 
     # Linters
     apm install linter
+    apm install linter-eslint
     apm install linter-flake8
     apm install linter-htmlhint
 

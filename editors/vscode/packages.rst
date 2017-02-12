@@ -25,6 +25,9 @@ Estos son los plugins que instalo, sobre todo para **Python/Django**
     code --install-extension donjayamanne.python
     code --install-extension bibhasdn.django-html
 
+    # JavaScript
+    code --install-extension dbaeumer.vscode-eslint
+
     # Vim
     # code --install-extension vscodevim.vim
 
