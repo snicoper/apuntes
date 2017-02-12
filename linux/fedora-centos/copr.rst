@@ -36,4 +36,14 @@ Atom
 .. code-block:: bash
 
     dnf copr enable mosquito/atom
-    dnf install atom
+    dnf update -y
+    dnf install -y atom
+
+vscode
+******
+
+.. code-block:: bash
+
+    dnf copr enable mosquito/vscode
+    dnf update -y
+    dnf install -y vscode
