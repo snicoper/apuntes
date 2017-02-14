@@ -14,8 +14,8 @@ Generar un Token
 
 Argumentos por defecto:
 
-* length=12
-* allowed_chars='abcdefghijklmnopqrstuvwxyz' 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
+* ``length=12``
+* ``allowed_chars='abcdefghijklmnopqrstuvwxyz' 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'``
 
 Otra opción
 

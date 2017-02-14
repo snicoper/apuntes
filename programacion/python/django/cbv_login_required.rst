@@ -4,6 +4,21 @@
 CBV login_required
 ##################
 
+A partir de Django 1.9
+**********************
+
+.. code-block:: python
+
+    # views.py
+    from django.contrib.auth.mixins import LoginRequiredMixin
+    from django.views import generic
+
+    class UpdateContactView(LoginRequiredMixin, generic.UpdateView):
+        pass
+
+Antes de Django 1.9
+*******************
+
 .. code-block:: python
 
     from django.contrib.auth.decorators import login_required
@@ -19,17 +34,6 @@ CBV login_required
 
     # views.py
     class UpdateContactView(LoggedInMixin, generic.UpdateView):
-        pass
-
-A partir de Django 1.9
-
-.. code-block:: python
-
-    # views.py
-    from django.contrib.auth.mixins import LoginRequiredMixin
-    from django.views import generic
-
-    class UpdateContactView(LoginRequiredMixin, generic.UpdateView):
         pass
 
 Tambien pueda interesar `django-braces <https://github.com/brack3t/django-braces>`_

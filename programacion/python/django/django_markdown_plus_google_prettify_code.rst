@@ -77,10 +77,10 @@ Añado en el template que mostrara el código markdown
     {% load markdown_deux_tags %}
 
     {% block content %}
-        <h2>{{ article.title }}</h2><hr>
-        <div>
-            {{ article.body|markdown }}
-        </div>
+      <h2>{{ article.title }}</h2><hr>
+      <div>
+        {{ article.body|markdown }}
+      </div>
     {% endblock content %}
 
 Ver todas las opciones `django-markdown-deux <https://github.com/trentm/django-markdown-deux>`_
