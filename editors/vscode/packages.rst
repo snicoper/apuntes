@@ -18,15 +18,16 @@ Estos son los plugins que instalo, sobre todo para **Python/Django**
     # Html css
     code --install-extension bibhasdn.django-html
     code --install-extension formulahendry.auto-close-tag
-    code --install-extension mkaufman.HTMLHint
     code --install-extension Zignd.html-css-class-completion
 
     # Python
     code --install-extension donjayamanne.python
     code --install-extension bibhasdn.django-html
 
-    # JavaScript
+    # Linters
     code --install-extension dbaeumer.vscode-eslint
+    code --install-extension mkaufman.HTMLHint
+    code --install-extension shinnn.stylelint
 
     # Vim
     # code --install-extension vscodevim.vim
