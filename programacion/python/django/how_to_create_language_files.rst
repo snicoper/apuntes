@@ -6,7 +6,7 @@ Cómo crear archivos de idioma
 
 **Fuentes**
 
-* https://docs.djangoproject.com/en/1.7/topics/i18n/translation/
+* https://docs.djangoproject.com/en/dev/topics/i18n/translation/
 * http://www.i18nguy.com/unicode/language-identifiers.html
 * http://django-book.readthedocs.org/en/latest/chapter19.html
 
@@ -14,13 +14,11 @@ Cómo crear archivos de idioma
 
 Es posible hacerlo de dos maneras diferentes.
 
-Desde la raíz del proyecto Django, donde esta ``manage.py`` o desde
-la raíz de la ``app``.
+Desde la raíz del proyecto Django, donde esta ``manage.py`` o desde la raíz de la ``app``.
 
 **Desde la raíz del proyecto**
 
-Hay que editar ``settings.py`` para decirle los módulos que tendrán
-traducciones.
+Hay que editar ``settings.py`` para decirle los módulos que tendrán traducciones.
 
 .. code-block:: python
 
@@ -38,9 +36,8 @@ Donde ``es`` es el identificador de lenguaje, `aqui <http://www.i18nguy.com/unic
 
 **Desde la raíz de la app**
 
-Aquí no es necesario añadir ``LOCALE_PATHS`` a ``settings.py``, y en vez de
-usar ``manage.py``, se usa ``django-admin.py``, además el directorio locale
-se ha de crear a mano.
+Aquí no es necesario añadir ``LOCALE_PATHS`` a ``settings.py``, y en vez de usar ``manage.py``, se
+usa ``django-admin.py``, además el directorio locale se ha de crear a mano.
 
 .. code-block:: bash
 
@@ -48,11 +45,9 @@ se ha de crear a mano.
     mkdir locale
     django-admin.py makemessages -l es
 
-El script recorre completamente el árbol en el cual es ejecutado y extrae
-todas las cadenas marcadas para traducción. Crea (o actualiza) un archivo
-de mensajes en el directorio ``locale``. En el ejemplo ``es``, el archivo
-será ``locale/de/LC_MESSAGES/django.po``.
-
+El script recorre completamente el árbol en el cual es ejecutado y extrae todas las cadenas marcadas
+para traducción. Crea (o actualiza) un archivo de mensajes en el directorio ``locale``.
+En el ejemplo ``es``, el archivo será ``locale/de/LC_MESSAGES/django.po``.
 
 Dentro de los archivos ``.po``, se va algo así.
 
@@ -66,11 +61,10 @@ Dentro de los archivos ``.po``, se va algo así.
 * **msgstr** es donde colocas la traducción específica a un idioma. Su valor inicial es vacío de manera que es tu responsabilidad el cambiar esto. Asegúrate de que mantienes las comillas alrededor de tu traducción.
 * Por conveniencia, cada mensaje incluye el nombre del archivo y el número de línea desde el cual la cadena de traducción fue extraída.
 
-
 .. code-block:: python
 
     #...
-    from django.utils.translation import gettext_lazy as _
+    from django.utils.translation import gettext as _
 
 
     def index(request):
@@ -79,9 +73,8 @@ Dentro de los archivos ``.po``, se va algo así.
 
 el valor de ``var_name`` sera ``nombre``
 
-Después, hay que compilarlo con ``compilemessages``, y se aplica lo mismo
-que antes, cuando se hizo desde la raiz del proyecto Django o desde
-la raíz de la aplicación.
+Después, hay que compilarlo con ``compilemessages``, y se aplica lo mismo que antes, cuando se hizo
+desde la raiz del proyecto Django o desde la raíz de la aplicación.
 
 .. code-block:: bash
 
