@@ -26,6 +26,8 @@ Hay que editar ``settings.py`` para decirle los módulos que tendrán traduccion
         os.path.join(BASE_DIR, 'apps/home/locale/'),
     )
 
+Requiere crear el directorio ``locale`` manualmente?
+
 Después, ejecutar
 
 .. code-block:: bash
