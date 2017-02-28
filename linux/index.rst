@@ -47,6 +47,7 @@ Contents:
    instalacion_nodejs
    instalar_libsass_sassc
    instalar_mono_monodevelop
+   logrotate
    montar_imagenes_bin_iso_etc
    montar_particion_ssh
    montar_particiones_al_iniciar_sistema
