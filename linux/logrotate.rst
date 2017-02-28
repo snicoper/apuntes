@@ -65,6 +65,6 @@ Aquí hay algunas opciones mas que se pueden poner **(sacado de man logrotate)**
 **Fuentes**
 
 * man logrotate
-* [http://manpages.ubuntu.com/manpages/lucid/es/man8/logrotate.8.html](http://manpages.ubuntu.com/manpages/lucid/es/man8/logrotate.8.html)
-* [https://www.linode.com/docs/uptime/logs/use-logrotate-to-manage-log-files](https://www.linode.com/docs/uptime/logs/use-logrotate-to-manage-log-files)
-* [http://linuxconfig.org/logrotate](http://linuxconfig.org/logrotate)
+* http://manpages.ubuntu.com/manpages/lucid/es/man8/logrotate.8.html
+* https://www.linode.com/docs/uptime/logs/use-logrotate-to-manage-log-files
+* http://linuxconfig.org/logrotate
