@@ -14,6 +14,7 @@ Estos son los plugins que instalo, sobre todo para **Python/Django**
     apm install editorconfig
     apm install file-icons
     apm install highlight-selected
+    apm install multi-wrap-guide
     apm install project-manager
     apm install remember-file-positions
     apm install sort-lines # Por defecto F5
@@ -28,6 +29,7 @@ Estos son los plugins que instalo, sobre todo para **Python/Django**
 
     # Git
     apm install git-plus
+    apm install line-diff-details
     apm install merge-conflicts
     apm install split-diff
 

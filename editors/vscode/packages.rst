@@ -39,9 +39,10 @@ Estos son los plugins que instalo, sobre todo para **Python/Django**
     code --install-extension lextudio.restructuredtext
 
     # Theme Icons
-    code --install-extension emmanuelbeziat.vscode-great-icons
+    # code --install-extension emmanuelbeziat.vscode-great-icons
     code --install-extension file-icons.file-icons
+    # code --install-extension robertohuertasm.vscode-icons
 
     # Theme schema
     code --install-extension jprestidge.theme-material-theme
-    code --install-extension akamud.vscode-theme-onedark
+    # code --install-extension akamud.vscode-theme-onedark
