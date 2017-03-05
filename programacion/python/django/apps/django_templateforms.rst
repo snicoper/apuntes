@@ -19,8 +19,10 @@ La manera mas rápida de usarla es con el tag ``form`` pasando como parámetro e
 
     <form method="post" action="">
       {% csrf_token %}
-      {% form form %}
-      <button type="submit">Submit</button>
+      <div class="row">
+        {% form form %}
+        <button type="submit">Submit</button>
+      </div>
     </form>
 
 Si se quiere omitir el ``*`` cuando el campo es requerido ``{% form form hidden_required='1' %}``
@@ -29,8 +31,10 @@ Si se quiere omitir el ``*`` cuando el campo es requerido ``{% form form hidden_
 
     <form method="post" action="">
       {% csrf_token %}
-      {% form form hidden_required='1' %}
-      <button type="submit">Submit</button>
+      <div class="row">
+        {% form form hidden_required='1' %}
+        <button type="submit">Submit</button>
+      </div>
     </form>
 
 Campo a campo
@@ -50,7 +54,9 @@ Otra manera es pasando cada campo del formulario, pudiendo pasar parámetros.
       {% form_hidden_fields form.hidden_fields %}
 
       {# Campos del formulario #}
-      {% form_field form.myfield label='My Field' %}
+      <div class="row">
+        {% form_field form.myfield label='My Field' %}
+      </div>
       <button type="submit">Submit</button>
     </form>
 
@@ -68,12 +74,12 @@ Estos parámetros los acepta todos los campos.
 
     <div class="row">
         <!-- Materializecss -->
-        {% form_field form.myfield col='s12 m12 l6' %}
+        <div class="row">
+          {% form_field form.myfield col='s12 m12 l6' %}
+        </div>
     </div>
 
 Pondrá en ``large`` un campo al lado del otro. Requiere envolverlo en un ``div`` (u otro contenedor) con ``class="row"``.
-
-Si se omite, envolverá internamente el campo en un ``<section class="row"><div class="col s12">``.
 
 ``tpl_name``: Omite el template del **tipo de campo** por defecto.
 
