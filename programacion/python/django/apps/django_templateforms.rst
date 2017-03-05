@@ -50,7 +50,7 @@ Otra manera es pasando cada campo del formulario, pudiendo pasar parámetros.
       {% form_hidden_fields form.hidden_fields %}
 
       {# Campos del formulario #}
-      {% form_field form.myfield label='My Field' extras='placeholder="My Placeholder"' %}
+      {% form_field form.myfield label='My Field' %}
       <button type="submit">Submit</button>
     </form>
 
@@ -80,24 +80,6 @@ Si se omite, envolverá internamente el campo en un ``<div class="row"><div clas
 .. code-block:: console
 
     {% form_field form.myfield tpl_name='mistemplates/mitemplate.html' %}
-
-``klass``: Clases a insertar en el campo.
-
-.. code-block:: console
-
-    {% form_field form.myfield klass='miclass miclass2' %}
-
-    {# Sera rempladado por #}
-    <input|select|textarea| class="miclass miclass2" ...>
-
-``extras``: Propiedades extras que se añadirán.
-
-.. code-block:: console
-
-    {% form_field form.myfield extras='ng-model="mimodel" otras="xxx"' %}
-
-    {# Sera rempladado por #}
-    <input|select|textarea| ng-model="mimodel" otras="xxx" ...>
 
 ``label``: Nombre a mostrar
 
@@ -129,6 +111,8 @@ Los campos de tipo texto como ``text``, ``email``, ``number``, ``date``, ``passw
 Internamente, ya añade un ``type`` adecuado, pero si algún campo no lo he puesto, es posible ponerlo desde estos parámetros.
 
 ``img``: Añade una imagen a la izquierda del campo (**materializecss**).
+
+TODO: No lo hace en todos los campos, por hacer...
 
 **Requiere las fuentes de material icons**
 
