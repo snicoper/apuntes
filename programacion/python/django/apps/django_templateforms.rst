@@ -73,7 +73,7 @@ Estos parámetros los acepta todos los campos.
 
 Pondrá en ``large`` un campo al lado del otro. Requiere envolverlo en un ``div`` (u otro contenedor) con ``class="row"``.
 
-Si se omite, envolverá internamente el campo en un ``<div class="row"><div class="col s12">``.
+Si se omite, envolverá internamente el campo en un ``<section class="row"><div class="col s12">``.
 
 ``tpl_name``: Omite el template del **tipo de campo** por defecto.
 
@@ -108,9 +108,9 @@ Los campos de tipo texto como ``text``, ``email``, ``number``, ``date``, ``passw
 
 ``ftype``: Para cambiar el ``type=""``, por defecto ``text``
 
-Internamente, ya añade un ``type`` adecuado, pero si algún campo no lo he puesto, es posible ponerlo desde estos parámetros.
+Internamente ya añade un ``type`` adecuado, pero si algún campo no lo he puesto, es posible ponerlo desde estos parámetros.
 
-``img``: Añade una imagen a la izquierda del campo (**materializecss**).
+``img``: Añade una imagen (fuente) a la izquierda del campo (**materializecss**).
 
 TODO: No lo hace en todos los campos, por hacer...
 
