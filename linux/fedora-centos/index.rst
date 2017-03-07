@@ -12,6 +12,7 @@ Contents:
    aletas_selinux_por_email
    bind_fedora
    cambiar_plymouth
+   certificado_lets_encrypt
    configurar_red
    configurar_ssh
    copr
