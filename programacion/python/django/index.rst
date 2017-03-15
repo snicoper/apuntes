@@ -20,6 +20,7 @@ Categorias:
     atributos_todos_campos_modelform
     cambiar_nombre_cabecera_admin
     cbv_login_required
+    check_field_model_has_change_value
     concatenar_un_valor_en_settings
     crear_database_en_tests
     django_markdown
