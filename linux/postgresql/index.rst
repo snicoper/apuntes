@@ -11,3 +11,4 @@ Categorias:
 
    instalacion_postgis
    instalacion_postgresql
+   pgadmin4_virtualenv
