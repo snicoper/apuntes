@@ -40,3 +40,5 @@ El archivo esta en ``lib/python2.7/site-packages/pgadmin4/pgAdmin4.py``, crear e
 **Ver** http://askubuntu.com/questions/831262/how-to-install-pgadmin-4-in-desktop-mode-on-ubuntu-16-04
 
 ``echo "SERVER_MODE = False" >> lib/python2.7/site-packages/pgadmin4/config_local.py``
+
+La configuración la guarda en ``~/pgadmin``
