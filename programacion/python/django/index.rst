@@ -43,6 +43,7 @@ Categorias:
     pasar_request_en_modelform
     problema_con_trror_that_port_is_already_in_use
     redis_cache
+    reset_migrations
     restringir_admin_por_ips
     settings_a_nivel_app
     union_querysets

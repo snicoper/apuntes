@@ -73,31 +73,31 @@ Aquí no es necesario preparar las variables de contexto.
 .. code-block:: html
 
     {% with article_previous=article.get_previous_by_create_at %}
-    {% if article_previous %}
-      <div class="article-previous">
-        <a class="btn waves-effect tooltipped"
-          data-position="bottom"
-          data-delay="50"
-          data-tooltip="{{ article_previous.title }}"
-          href="{% url 'blog:article_detail' article_previous.slug %}"
-        >
-          <i class="fa fa-caret-left" aria-hidden="true"></i> {{ article_previous.title|truncatewords:3 }}
-        </a>
-      </div>
-    {% endif %}
-  {% endwith %}
+      {% if article_previous %}
+        <div class="article-previous">
+          <a class="btn waves-effect tooltipped"
+             data-position="bottom"
+             data-delay="50"
+             data-tooltip="{{ article_previous.title }}"
+             href="{% url 'blog:article_detail' article_previous.slug %}"
+          >
+            <i class="fa fa-caret-left" aria-hidden="true"></i> {{ article_previous.title|truncatewords:3 }}
+          </a>
+        </div>
+      {% endif %}
+    {% endwith %}
 
-  {% with article_next=article.get_next_by_create_at %}
-    {% if article_next %}
-      <div class="article-next">
-        <a class="btn waves-effect tooltipped"
-          data-position="bottom"
-          data-delay="50"
-          data-tooltip="{{ article_next.title }}"
-          href="{% url 'blog:article_detail' article_next.slug %}"
-        >
-          {{ article_next.title|truncatewords:3 }} <i class="fa fa-caret-right" aria-hidden="true"></i>
-        </a>
-      </div>
-    {% endif %}
-  {% endwith %}
+    {% with article_next=article.get_next_by_create_at %}
+      {% if article_next %}
+        <div class="article-next">
+          <a class="btn waves-effect tooltipped"
+             data-position="bottom"
+             data-delay="50"
+             data-tooltip="{{ article_next.title }}"
+             href="{% url 'blog:article_detail' article_next.slug %}"
+          >
+            {{ article_next.title|truncatewords:3 }} <i class="fa fa-caret-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      {% endif %}
+    {% endwith %}
