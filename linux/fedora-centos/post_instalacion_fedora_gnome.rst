@@ -59,6 +59,17 @@ Global Dark Theme
 
 Require reloguear.
 
+La Capitaine Icon Theme
+***********************
+
+.. code-block:: bash
+
+    dnf copr enable tcg/themes
+    dnf install la-capitaine-icon-theme
+
+    # Como usuario normal.
+    gsettings set org.gnome.desktop.interface icon-theme 'La Capitaine'
+
 Terminix
 ********
 
