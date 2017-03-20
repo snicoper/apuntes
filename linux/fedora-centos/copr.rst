@@ -39,11 +39,13 @@ Atom
     dnf update -y
     dnf install -y atom
 
-vscode
-******
+La Capitaine Icon Theme
+***********************
 
 .. code-block:: bash
 
-    dnf copr enable mosquito/vscode
-    dnf update -y
-    dnf install -y vscode
+    dnf copr enable tcg/themes
+    dnf install la-capitaine-icon-theme
+
+    # Como usuario normal.
+    gsettings set org.gnome.desktop.interface icon-theme 'La Capitaine'
