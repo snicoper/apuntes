@@ -17,8 +17,8 @@ Neovim
     dnf update -y
     dnf install -y neovim
 
-terminix
-********
+Tilix (Terminix)
+****************
 
 * https://github.com/gnunn1/terminix#install-terminix
 
@@ -27,6 +27,16 @@ terminix
     dnf copr enable heikoada/terminix
     dnf update -y
     dnf install -y terminix
+
+nautilus-git
+************
+
+* https://github.com/bil-elmoussaoui/nautilus-git
+
+.. code-block:: bash
+
+    dnf copr enable heikoada/nautilus-git
+    dnf install nautilus-git
 
 Atom
 ****

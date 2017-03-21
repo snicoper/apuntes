@@ -59,8 +59,8 @@ Global Dark Theme
 
 Require reloguear.
 
-Terminix
-********
+Tilix (Terminix)
+****************
 
 .. code-block:: bash
 
