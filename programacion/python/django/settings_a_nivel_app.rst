@@ -8,7 +8,7 @@ Hay varias formas para tener configuraciones a nivel de aplicación.
 
 # Opción 1
 
-Crear archivo ``conf.py`` en la app
+Crear archivo ``settings.py`` en la **app**
 
 .. code-block:: python
 
@@ -20,7 +20,7 @@ Si no existe ``MI_CONFIGURACION`` en ``django.conf.settings`` le asigna un valor
 
 # Opción 2
 
-Crear archivo ``conf.py``
+Crear archivo ``settings.py``
 
 .. code-block:: python
 
@@ -55,7 +55,7 @@ Crear archivo ``conf.py``
 
     settings = AppSettings()
 
-Y luego a nivel de aplicación en el archivo ``conf.py``
+Y luego a nivel de aplicación en el archivo ``settings.py``
 
 .. code-block:: python
 
@@ -72,4 +72,4 @@ En todos los casos, para usarlo desde un archivo ``*.py``
     print(myapp_settings.MI_CONFIGURACION)
 
 Si ``MI_CONFIGURACION`` tiene un valor en ``settings.py`` (archivo de configuración por defecto de Django)
-devolverá el valor de ``settings.MI_CONFIGURACION``, en caso contrario, ``conf.MI_CONFIGURACION``
+devolverá el valor de ``settings.MI_CONFIGURACION``, en caso contrario, ``app.settings.MI_CONFIGURACION``

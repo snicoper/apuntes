@@ -9,9 +9,9 @@ Con django
 .. code-block:: python
 
     # myapp/models.py
-    from django.core.urlresolvers import reverse
     from django.db import models
     from django.template.defaultfilters import slugify
+    from django.urls import reverse
 
 
     class Noticia(models.Model):
@@ -29,8 +29,8 @@ Manualmente
     # myapp/models.py
     import re
 
-    from django.core.urlresolvers import reverse
     from django.db import models
+    from django.urls import reverse
 
 
     class Noticia(models.Model):

@@ -24,5 +24,5 @@ el ``class="form-control"`` y no estar haciéndolo de uno a uno en todos sus cam
                 # Recorremos todos los campos del modelo para añadirle class="form-control
                 self.fields[field].widget.attrs.update({'class': 'form-control'})
 
-            # Añadir atributos personalizados a campos sueltos.
+            # Añadir atributos personalizados a un campo.
             self.fields['title'].widget.attrs.update({'placeholder': 'Titulo'})

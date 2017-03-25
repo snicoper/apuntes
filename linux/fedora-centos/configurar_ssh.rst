@@ -25,21 +25,23 @@ Editamos el archivo de configuración de ssh.
 
     vim /etc/ssh/sshd_config
 
+Las lineas entre (parentesis) Centos, normal para Fedora.
+
 .. code-block:: bash
 
     # Puerto
-    # Linea 17, descomentar y cambiar puerto por defecto
+    # Linea 17 (17), descomentar y cambiar puerto por defecto
     Port 50022
 
     # Permitir login con root?
-    # line 48: uncomment and change 'no'
+    # line 38 (49): uncomment and change 'no'
     PermitRootLogin no
 
-    # line 77: uncomment
+    # line 64 (79): uncomment
     PermitEmptyPasswords no
 
     # Disable password authentication forcing use of keys
-    # line 78:
+    # line 63 (78):
     PasswordAuthentication yes
 
     # Usuarios a los que se les permite conectarse
@@ -86,6 +88,7 @@ En el servidor, como **usuario**
     cat id_rsa.pub > .ssh/authorized_keys
 
 Firewalld
+*********
 
 .. code-block:: bash
 
@@ -96,6 +99,7 @@ Firewalld
     firewall-cmd --reload
 
 SELinux
+*******
 
 Si es un puerto distinto al 22
 

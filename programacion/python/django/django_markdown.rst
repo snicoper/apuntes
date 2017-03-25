@@ -4,6 +4,8 @@
 Django markdown
 ###############
 
+Este lo tengo mas actualizado https://github.com/snicoper/django-boilerplate/blob/master/src/apps/utils/templatetags/utils_tags.txt#L10
+
 .. code-block:: bash
 
     pip install markdown2

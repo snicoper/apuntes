@@ -36,4 +36,4 @@ Antes de Django 1.9
     class UpdateContactView(LoggedInMixin, generic.UpdateView):
         pass
 
-Tambien pueda interesar `django-braces <https://github.com/brack3t/django-braces>`_
+Tambien puede interesar `django-braces <https://github.com/brack3t/django-braces>`_

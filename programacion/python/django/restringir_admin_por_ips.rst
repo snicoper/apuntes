@@ -13,14 +13,13 @@ Restringir admin por IPs
 .. code-block:: python
 
     from django.conf import settings
-    from django.core.urlresolvers import reverse, NoReverseMatch
     from django.http import Http404
+    from django.urls import reverse, NoReverseMatch
 
 
     class InternalUseOnlyMiddleware(object):
-        """
-        Middleware to prevent access to the admin if the user IP
-        isn't in the INTERNAL_IPS setting.
+        """Middleware to prevent access to the admin if the user IP isn't in the
+        INTERNAL_IPS setting.
         """
 
         def process_request(self, request):

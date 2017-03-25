@@ -4,6 +4,8 @@
 Django Markdown y Google Prettify
 #################################
 
+**TODO:** Cambiar esto por **highlightjs** y simplemente :ref:`reference-programacion-python-django-django_markdown`
+
 **Fuentes**
 
 * https://github.com/timmyomahony/django-pagedown

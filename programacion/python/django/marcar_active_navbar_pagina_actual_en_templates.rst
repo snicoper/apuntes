@@ -9,7 +9,7 @@ Crear en la app **core** un directorio ``template_tags`` con su ``__init__.py``.
 .. code-block:: python
 
     from django.template import Library
-    from django.core.urlresolvers import reverse
+    from django.urls import reverse
 
     register = Library()
 

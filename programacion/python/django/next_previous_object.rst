@@ -5,6 +5,7 @@ Obtener el anterior y el siguiente del objeto actual.
 #####################################################
 
 **Fuentes**
+
 * https://docs.djangoproject.com/en/dev/ref/models/instances/#django.db.models.Model.get_next_by_FOO
 
 --------------

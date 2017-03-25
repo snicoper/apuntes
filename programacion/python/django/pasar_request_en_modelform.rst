@@ -11,7 +11,7 @@ En el ``FormView`` o lo que sea ``*View`` crear metodo:
     class MyView(generic.FormView):
 
         def get_form_kwargs(self):
-            kwargs = super(RegisterFormView, self).get_form_kwargs()
+            kwargs = super().get_form_kwargs()
             kwargs['request'] = self.request
             return kwargs
 
@@ -23,4 +23,4 @@ Ahora estara accesible en el ``Form`` desde el metodo ``__init__()``.
 
         def __init__(self, *args, **kwargs):
             self.request = kwargs.pop('request', None)
-            super(MyForm, self).__init__(*args, **kwargs)
+            super().__init__(*args, **kwargs)

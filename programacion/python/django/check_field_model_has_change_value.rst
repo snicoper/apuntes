@@ -1,7 +1,7 @@
 .. _reference-programacion-python-django-check_field_model_has_change_value:
 
 ##############################################
-Cpmprobar si un campo en un modelo ha cambiado
+Comprobar si un campo de un modelo ha cambiado
 ##############################################
 
 **Fuentes**
