@@ -18,11 +18,11 @@ https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-
 
     yum install certbot
 
-.. code-block:: conf
+.. code-block:: bash
 
     vim /etc/nginx/default.d/le-well-known.conf
 
-.. code-block:: conf
+.. code-block:: bash
 
     location ~ /.well-known {
       allow all;
