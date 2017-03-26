@@ -17,7 +17,7 @@ Descomprimir como usuario
 
 .. code-block:: bash
 
-    su
+    su -
     mv sublime_text_3 /opt/sublime_text_3
     chmod +x /opt/sublime_text_3/sublime_text
 
@@ -48,12 +48,12 @@ PyCharm
 
 .. code-block:: bash
 
-    su
+    su -
     # Si no existe /opt/jetbrains
     mkdir /opt/jetbrains
-    gzip -d pycharm-professional-2016.1.4.tar.gz
-    tar -xvf pycharm-professional-2016.1.4.tar
-    mv pycharm-2016.1.4/ /opt/jetbrains/pycharm
+    gzip -d pycharm-professional-2017.1.tar.gz
+    tar -xvf pycharm-professional-2017.1.tar
+    mv pycharm-2017.1/ /opt/jetbrains/pycharm
     chmod +x /opt/jetbrains/pycharm/bin/pycharm.sh
 
 .. code-block:: bash
@@ -82,7 +82,7 @@ WebStrom
 
 .. code-block:: bash
 
-    su
+    su -
     # Si no existe /opt/jetbrains
     mkdir /opt/jetbrains
     gzip -d WebStorm-11.0.1.tar.gz
@@ -124,7 +124,7 @@ Descargar y descomprimir de `GitHub <https://github.com/crmarsh/discord-linux-bu
 
 .. code-block:: bash
 
-    su
+    su -
     mv DiscordCanary /opt/discord
     chmod +x /opt/discord/DiscordCanary
 
@@ -161,7 +161,7 @@ Para mostrar icono en la bandeja
 
 .. code-block:: bash
 
-    su
+    su -
     tar Jxvf tsetup.0.9.40.tar.xz
     chmod +x Telegram/Telegram
     mv Telegram /opt/Telegram
