@@ -50,6 +50,7 @@ Entorno virtual **default**
         Django \
         flake8 \
         isort \
+        livereload \
         pydocstyle \
         Sphinx \
         sphinx-autobuild \
