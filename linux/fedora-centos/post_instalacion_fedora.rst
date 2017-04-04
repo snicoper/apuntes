@@ -69,6 +69,7 @@ Programas básicos
         p7zip-plugins \
         pwgen \
         unrar \
+        util-linux-user \
         vim \
         wget
 
