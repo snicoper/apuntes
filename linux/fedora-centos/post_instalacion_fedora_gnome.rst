@@ -4,7 +4,7 @@
 Post instalación Fedora Gnome
 #############################
 
-**Fedora 25 Workstation**
+**Fedora 26 Workstation**
 
 :ref:`reference-linux-fedora-centos-post_instalacion_fedora`
 
@@ -63,11 +63,13 @@ Require reloguear.
 Tilix (Terminix)
 ****************
 
+Se encuentran en los repos de **Fedora 26**
+
 .. code-block:: bash
 
-    dnf copr enable heikoada/terminix
+    # dnf copr enable heikoada/terminix
 
-    dnf install -y terminix terminix-nautilus
+    dnf install -y tilix tilix-nautilus
 
 la-capitaine-icon-theme
 ***********************

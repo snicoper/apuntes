@@ -14,7 +14,6 @@ Neovim
 .. code-block:: bash
 
     dnf copr -y enable dperson/neovim
-    dnf update -y
     dnf install -y neovim
 
 Tilix (Terminix)
@@ -25,7 +24,6 @@ Tilix (Terminix)
 .. code-block:: bash
 
     dnf copr enable heikoada/terminix
-    dnf update -y
     dnf install -y terminix
 
 nautilus-git
@@ -46,7 +44,6 @@ Atom
 .. code-block:: bash
 
     dnf copr enable mosquito/atom
-    dnf update -y
     dnf install -y atom
 
 La Capitaine Icon Theme

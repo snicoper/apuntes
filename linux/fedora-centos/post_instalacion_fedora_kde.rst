@@ -4,7 +4,7 @@
 Post instalación Fedora KDE
 ###########################
 
-**Fedora 25 KDE**
+**Fedora 26 KDE**
 
 :ref:`reference-linux-fedora-centos-post_instalacion_fedora`
 

@@ -89,7 +89,7 @@ Opcionales
     dnf -y install gnome-calendar
     dnf -y install gnome-music
     dnf -y install gnome-photos
-    dnf -y install gnome-terminal-nautilus # Si no se instala terminix.
+    dnf -y install gnome-terminal-nautilus # Si no se instala tilix.
     dnf -y install gnome-todo
     dnf -y install inkscape
     dnf -y install java-1.8.0-openjdk-devel
@@ -135,9 +135,8 @@ Atom
 
 .. code-block:: bash
 
-    wget -O atom.rpm https://atom.io/download/rpm atom.rpm
-    dnf install atom.rpm
-    rm -f atom.rpm
+    dnf copr enable mosquito/atom
+    dnf install -y atom
 
 Post post instalación
 *********************
