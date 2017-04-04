@@ -4,7 +4,7 @@
 Post instalación Fedora
 #######################
 
-**Fedora 25**
+**Fedora 26**
 
 Actualizar
 **********
@@ -80,6 +80,7 @@ Opcionales
 .. code-block:: bash
 
     dnf -y install breeze-icon-theme
+    dnf -y install chromium
     dnf -y install dia
     dnf -y install gedit-plugins
     dnf -y install gimp
@@ -128,6 +129,15 @@ vscode
     sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
 
     sudo dnf install -y code
+
+Atom
+****
+
+.. code-block:: bash
+
+    wget -O atom.rpm https://atom.io/download/rpm atom.rpm
+    dnf install atom.rpm
+    rm -f atom.rpm
 
 Post post instalación
 *********************

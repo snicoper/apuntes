@@ -5,7 +5,7 @@ Postfix
 #######
 
 .. note::
-    Probado en Fedora 25, Centos 7
+    Probado en Fedora 26, Centos 7
 
     Las lineas entre paréntesis '(x)', son las de Centos.
 
@@ -166,10 +166,10 @@ Dovecot
 
 .. code-block:: bash
 
-    # Descomentar linea 28 (26)
+    # Descomentar linea 29 (26)
     smtps       inet   n       -       n       -       -       smtpd
 
-    # Descomentar lineas 29 (27) y 30 (28)
+    # Descomentar lineas 30 (27) y 31 (28)
     -o syslog_name=postfix/smtps
     -o smtpd_tls_wrappermode=yes
 
