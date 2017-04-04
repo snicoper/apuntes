@@ -69,6 +69,18 @@ Tilix (Terminix)
 
     dnf install -y terminix terminix-nautilus
 
+la-capitaine-icon-theme
+***********************
+
+* https://github.com/keeferrourke/la-capitaine-icon-theme
+
+.. code-block:: bash
+
+    dnf copr enable tcg/themes
+    dnf install la-capitaine-icon-theme
+
+    gsettings set org.gnome.desktop.interface icon-theme 'La Capitaine'
+
 Desinstalar
 ***********
 
