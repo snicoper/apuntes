@@ -41,7 +41,7 @@ Las lineas entre (parentesis) Centos, normal para Fedora.
     PermitEmptyPasswords no
 
     # Disable password authentication forcing use of keys
-    # line 63 (78):
+    # line 65 (78):
     PasswordAuthentication yes
 
     # Usuarios a los que se les permite conectarse
