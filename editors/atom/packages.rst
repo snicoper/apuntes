@@ -24,6 +24,7 @@ Estos son los plugins que instalo, sobre todo para **Python/Django**
     apm install todo-show
 
     # HTML CSS
+    apm install emmet
     apm install pigments
     apm install tag
 
@@ -42,11 +43,15 @@ Estos son los plugins que instalo, sobre todo para **Python/Django**
     apm install language-restructuredtext
 
     # Linters
+    # apm install linter-eslint
     apm install linter
-    apm install linter-eslint
+    apm install linter-ui-default
     apm install linter-flake8
     apm install linter-htmlhint
     apm install linter-stylelint
+
+    # rest
+    apm install rest-client
 
     # Nginx
     apm install language-nginx
@@ -54,6 +59,9 @@ Estos son los plugins que instalo, sobre todo para **Python/Django**
     # Vim
     apm install language-viml
     apm install vim-mode
+
+    # Vue
+    apm install language-vue
 
     # .ini
     apm install language-ini
