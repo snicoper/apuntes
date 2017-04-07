@@ -18,28 +18,28 @@ También se puede crear un archivo ``pip-upgrade-all``
 
     #!/bin/bash
     # Actualiza todos los paquetes pip de un entorno virtual.
-    # Primero genera un archivo en el directorio actual, con los
-    # paquetes.
-    # Después actualiza todos los paquetes a la ultima versión.
 
-    env_name=$(basename "$VIRTUAL_ENV")
+    ENV_NAME=$(basename "$VIRTUAL_ENV")
+    OUTPUT="$(pip list --outdate)"
 
-    if [ -n "$env_name" ]
+    if [ -n "$ENV_NAME" ]
     then
-      path_backup="${PWD}/pip-${env_name}-backup.txt"
+      PATH_BACKUP="${PWD}/pip-${ENV_NAME}-backup.txt"
 
       # Creara un backup con las versiones actuales, por si pasa algo.
-      pip freeze > $path_backup
+      pip freeze > $PATH_BACKUP
 
       pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs pip install -U
+
+      echo "$OUTPUT"
     else
       echo "No estas en un entorno virtual"
     fi
 
-    read -p "Eliminar ${path_backup}(y/[N]) " yn
+    read -p "Eliminar ${PATH_BACKUP}(y/[N]) " yn
     if [ "$yn" == "y" -o "$yn" == "Y" ]
     then
-      rm -f $path_backup
+      rm -f $PATH_BACKUP
     fi
 
 Dar permisos de ejecución y moverlo a ``/usr/bin/``
