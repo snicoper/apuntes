@@ -60,17 +60,6 @@ Global Dark Theme
 
 Require reloguear.
 
-Tilix (Terminix)
-****************
-
-Se encuentran en los repos de **Fedora 26**
-
-.. code-block:: bash
-
-    # dnf copr enable heikoada/terminix
-
-    dnf install -y tilix tilix-nautilus
-
 la-capitaine-icon-theme
 ***********************
 

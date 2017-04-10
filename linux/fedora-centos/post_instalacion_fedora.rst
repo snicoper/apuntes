@@ -68,6 +68,8 @@ Programas básicos
         p7zip \
         p7zip-plugins \
         pwgen \
+        tilix \
+        tilix-nautilus \
         unrar \
         util-linux-user \
         vim \
