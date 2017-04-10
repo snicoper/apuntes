@@ -13,6 +13,8 @@ Gnome Settings
 
 .. code-block:: bash
 
+    # Como usuario.
+
     # General
     gsettings set org.gnome.desktop.interface clock-show-date true
     gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita'
@@ -59,18 +61,6 @@ Global Dark Theme
     EOF
 
 Require reloguear.
-
-la-capitaine-icon-theme
-***********************
-
-* https://github.com/keeferrourke/la-capitaine-icon-theme
-
-.. code-block:: bash
-
-    dnf copr enable tcg/themes
-    dnf install la-capitaine-icon-theme
-
-    gsettings set org.gnome.desktop.interface icon-theme 'La Capitaine'
 
 Desinstalar
 ***********
