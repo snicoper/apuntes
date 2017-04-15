@@ -82,25 +82,26 @@ Opcionales
 
 .. code-block:: bash
 
-    dnf -y install breeze-icon-theme
     dnf -y install chromium
-    dnf -y install dia
     dnf -y install gedit-plugins
     dnf -y install gimp
     dnf -y install gitg
+    dnf -y install gnome-todo
+    dnf -y install meld
+    dnf -y install zsh
+
+    dnf -y install breeze-icon-theme
+    dnf -y install dia
     dnf -y install gnome-builder
     dnf -y install gnome-calendar
     dnf -y install gnome-music
     dnf -y install gnome-photos
     dnf -y install gnome-terminal-nautilus # Si no se instala tilix.
-    dnf -y install gnome-todo
     dnf -y install inkscape
     dnf -y install java-1.8.0-openjdk-devel
     dnf -y install krita
     dnf -y install levien-inconsolata-fonts
-    dnf -y install meld
     dnf -y install umbrello
-    dnf -y install zsh
 
 Idiomas
 *******
@@ -132,14 +133,6 @@ vscode
     sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
 
     sudo dnf install -y code
-
-Atom
-****
-
-.. code-block:: bash
-
-    dnf copr enable mosquito/atom
-    dnf install -y atom
 
 Post post instalación
 *********************
