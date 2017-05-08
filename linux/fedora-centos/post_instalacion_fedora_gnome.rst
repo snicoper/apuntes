@@ -39,6 +39,10 @@ Gnome Settings
     gsettings set org.gnome.nautilus.desktop trash-icon-visible false
     gsettings set org.gnome.nautilus.desktop volumes-visible false
 
+    # Extension Logo Fedora
+    gsettings set org.fedorahosted.background-logo-extension logo-always-visible true
+    gsettings set org.fedorahosted.background-logo-extension logo-opacity 170
+
     # Files
     gsettings set org.gnome.nautilus.icon-view default-zoom-level 'standard'
     gsettings set org.gnome.nautilus.list-view use-tree-view true

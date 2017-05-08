@@ -12,7 +12,8 @@ Enviar alertas SELinux por email
 
 .. code-block:: bash
 
-    yum install setroubleshoot{-server,-plugins,-doc}
+    # Centos
+    yum install setroubleshoot{-server,-plugins}
 
 El archivo de configuración esta en: ``/etc/setroubleshoot/setroubleshoot.conf``,
 lo dejo todo por defecto.

@@ -40,7 +40,7 @@ Establecer contraseña de postgres
     psql
     \password postgres
 
-    CREATE USER snicoper WITH PASSWORD '123456' NOCREATEDB NOCREATEUSER;
+    CREATE USER snicoper WITH PASSWORD '123456';
     CREATE DATABASE practicas WITH OWNER snicoper;
     \q
     exit
