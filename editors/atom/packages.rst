@@ -22,16 +22,14 @@ Estos son los plugins que instalo, sobre todo para **Python/Django**
     apm install tasks
     apm install termination
     apm install todo-show
+    apm install toggle-quote
 
     # HTML CSS
-    apm install emmet
-    apm install pigments
     apm install tag
+    apm install pigments
 
     # Git
     apm install git-plus
-    apm install line-diff-details
-    apm install merge-conflicts
     apm install split-diff
 
     # Python Django
@@ -43,15 +41,15 @@ Estos son los plugins que instalo, sobre todo para **Python/Django**
     apm install language-restructuredtext
 
     # Linters
-    # apm install linter-eslint
     apm install linter
+    apm install busy-signal
+    apm install intentions
     apm install linter-ui-default
+
+    apm install linter-eslint
     apm install linter-flake8
     apm install linter-htmlhint
     apm install linter-stylelint
-
-    # rest
-    apm install rest-client
 
     # Nginx
     apm install language-nginx
@@ -59,9 +57,6 @@ Estos son los plugins que instalo, sobre todo para **Python/Django**
     # Vim
     apm install language-viml
     apm install vim-mode
-
-    # Vue
-    apm install language-vue
 
     # .ini
     apm install language-ini
