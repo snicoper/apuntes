@@ -30,5 +30,6 @@ Contents:
    postfix
    reglas_selinux
    reinstall_grup_post_install_windows
+   steam_nvidia_fedora
    virt_manager
    virtualbox
