@@ -1,10 +1,12 @@
-.. _reference-programacion-asp_mvc-lower_case_route_asp_net_mvc:
+.. _reference-programacion-asp_mvc-append_slash_router:
 
-###########################
-Route ASP.net MVC lowercase
-###########################
+######################
+Append slash en la URI
+######################
 
-Editar ``App_Start/RouteConfig.cs`` y añadir ``routes.LowercaseUrls = true;``
+Añade en las **URLs** el slash al final ``\``
+
+Editar Editar ``App_Start/RouteConfig.cs`` y añadir ``routes.AppendTrailingSlash = true;``
 
 .. code-block:: csharp
 
@@ -14,7 +16,7 @@ Editar ``App_Start/RouteConfig.cs`` y añadir ``routes.LowercaseUrls = true;``
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.LowercaseUrls = true;
+            routes.AppendTrailingSlash = true;
 
             routes.MapRoute(
                 name: "Default",
