@@ -4,7 +4,7 @@
 Configuración
 #############
 
-**Visual Studio Comunity 2017**
+**Visual Studio Community 2017**
 
 Extensions
 ==========
