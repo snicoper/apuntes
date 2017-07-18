@@ -17,7 +17,7 @@ Configuración
 =============
 
 * ``Environment > Color Theme:`` ``Dark``
-* ``Environment > Fonts and Colors:`` ``DejaVu Sans Mono 11``
+* ``Environment > Fonts and Colors:`` ``DejaVu Sans Mono 10``
 * ``Environment > Fonts and Colors > Display Items:``
 
 Buscar: ``HTML Razor Code Background``
@@ -30,3 +30,8 @@ Configurar Visual Studio Spell Checker
 
 En ``Global Dictionary``, seleccionar **Spanish** en primer lugar y en segundo
 lugar **English**.
+
+Theme
+=====
+
+* https://studiostyl.es/schemes/one-dark
