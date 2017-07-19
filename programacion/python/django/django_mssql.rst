@@ -3,43 +3,36 @@ Django y MSSQL
 
 **Fuentes**
 
-* https://django-mssql.readthedocs.org/en/latest/index.html
-* https://bitbucket.org/Manfre/django-mssql
-* http://sourceforge.net/projects/pywin32/
+* https://github.com/michiya/django-pyodbc-azure
 
 ------------
 
-Probado con sqlexpress 2014, python 3.4.2 x64, Windows 8.1
+Probado con sqlexpress 2016, python 3.6.1 x64, Windows 10 x64
 
 .. code-block:: bash
 
-    pip install django-mssql
+    pip install django-pyodbc-azure
 
-Descargar el .exe de `pywin32 <http://sourceforge.net/projects/pywin32/>`_
-según versión y arquitectura
-
-Yo lo instalo con virtualenv, supongo que si se hace en el python principal,
-doble click, siguiente, siguiente...
-
-.. code-block:: bash
-
-    # Con virtualenv
-    cd ~/Downloads
-    easy_install pywin32-219.win-amd64-py3.4.exe
-
-Configuración de settings.py
+Configuración ``settings.py``
 
 .. code-block:: python
 
     DATABASES = {
         'default': {
-            'NAME': 'django',
-            'ENGINE': 'sqlserver_ado',
-            'HOST': r'.\SQLEXPRESS',
-            'USER': 'snicoper',
-            'PASSWORD': '123456',
+            'ENGINE': 'sql_server.pyodbc',
+            'NAME': 'DbName',
+            'USER': 'sa',
+            'PASSWORD': 'PASSWORD',
+            'HOST': 'DESKTOP-XXXXXXX\SQLEXPRESS',
             'OPTIONS': {
-                'provider': 'SQLNCLI11',
+                'driver': 'ODBC Driver 13 for SQL Server'
             },
         }
     }
+
+# Reverse Db
+
+.. code-block:: bash
+
+    python manage.py inspectdb
+    python manage.py inspectdb > myapp/models.py
