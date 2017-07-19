@@ -17,7 +17,7 @@ Configuración
 =============
 
 * ``Environment > Color Theme:`` ``Dark``
-* ``Environment > Fonts and Colors:`` ``DejaVu Sans Mono 10``
+* ``Environment > Fonts and Colors:`` ``DejaVu Sans Mono 11``
 * ``Environment > Fonts and Colors > Display Items:``
 
 Buscar: ``HTML Razor Code Background``
@@ -35,3 +35,9 @@ Theme
 =====
 
 * https://studiostyl.es/schemes/one-dark
+
+El texto seleccionado no se aprecia muy bien el color de fondo.
+
+* ``Environment > Fonts and Colors > Display Items:``
+
+En ``Selected Text`` poner **Red** ``168``, **Green** ``175``, **Blue** ``189``
