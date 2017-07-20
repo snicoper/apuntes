@@ -14,3 +14,4 @@ ASP.net MVC
     comprobar_if_debug_en_views
     lower_case_route_asp_net_mvc
     mandar_email_con_template_cshtml
+    upload_images
