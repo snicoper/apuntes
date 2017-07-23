@@ -26,6 +26,8 @@ Gitconfig con kdiff3
         ui = true
     [core]
         editor = vim
+        autocrlf = input
+	    eol = lf
     [alias]
         lg = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr %an)%Creset' --abbrev-commit --date=relative
         co = checkout

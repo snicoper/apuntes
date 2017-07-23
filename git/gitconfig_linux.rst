@@ -39,7 +39,7 @@ Configuración con Meld
         trustExitCode = false
         keepTemporaries = false
     [push]
-        default = current
+        default = simple
 
 Configuracion con Kdiff3
 ************************
@@ -69,4 +69,4 @@ Configuracion con Kdiff3
         trustExitCode = false
         keepTemporaries = false
     [push]
-        default = current
+        default = simple
