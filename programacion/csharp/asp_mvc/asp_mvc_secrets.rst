@@ -4,6 +4,9 @@
 Archivo configuración para secrets
 ##################################
 
+appSettings
+===========
+
 Editar ``Web.config`` y añadir ``file="secrets.config"`` en ``<appSettings>``
 
 .. code-block:: xml
@@ -15,7 +18,7 @@ Editar ``Web.config`` y añadir ``file="secrets.config"`` en ``<appSettings>``
         <add key="UnobtrusiveJavaScriptEnabled" value="true"/>
     </appSettings>
 
-Crear en la raiz (donde Web.config) ``secrets.config`` y añadir lo parametros.
+Crear en la raíz (donde Web.config) ``secrets.config`` y añadir lo parámetros.
 
 .. code-block:: xml
 
@@ -32,3 +35,13 @@ Por ultimo, añadirlo a ``.gitignore``
 .. code-block:: txt
 
     secrets.config
+
+connectionStrings
+=================
+
+Lo mismo que con ``appSettings``
+
+.. code-block:: xml
+
+    <connectionStrings configSource="ConnectionStringsSecret.config">
+    </connectionStrings>
