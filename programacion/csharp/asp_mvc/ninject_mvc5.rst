@@ -10,7 +10,9 @@ Ninject proyecto ASP.NET MVC 5
 
 ---
 
-Instalacion
+Añadir Ninject a un proyecto ASP.NET MVC 5.
+
+Instalación
 ===========
 
 .. code-block:: bash
@@ -19,7 +21,7 @@ Instalacion
     Install-Package Ninject.Web.Common
     Install-Package Ninject.MVC5
 
-Configuracion
+Configuración
 =============
 
 Crear directorio ``Infrastructure`` y crear archivo (**class**) ``NinjectDependencyResolver.cs``
