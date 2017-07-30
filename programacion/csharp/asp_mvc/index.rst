@@ -12,6 +12,7 @@ ASP.net MVC
     append_slash_router
     asp_mvc_secrets
     comprobar_if_debug_en_views
+    connectionstring
     lower_case_route_asp_net_mvc
     mandar_email_con_template_cshtml
     ninject_mvc5
