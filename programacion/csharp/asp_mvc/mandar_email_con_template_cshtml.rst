@@ -28,6 +28,7 @@ Mandar un email con un template ``.cshtml`` o ``.txt``
         /// y pasar el nombre y la extension "MiTemplate.cshtml|txt".
         ///
         /// Example:
+        ///
         /// SimpleEmail<Person> email = new SimpleEmail<Person>
         /// {
         ///     Template = "Register.html",
@@ -46,7 +47,7 @@ Mandar un email con un template ``.cshtml`` o ``.txt``
         ///
         /// Install-Package RazorEngine // https://antaris.github.io/RazorEngine/
         ///
-        /// Requiere de los siguientes campos en Web.config de la raíz:
+        /// En Web.config (de la raíz) requiere añadir en appSettings:
         ///
         /// <!-- SMTP -->
         /// <add key="Host" value="smtp.example.com" />
@@ -100,6 +101,7 @@ Mandar un email con un template ``.cshtml`` o ``.txt``
             /// Directorio contenedor de los templates.
             /// Ha de ser un ruta relativa desde el root del proyecto.
             /// Utiliza Server.MapPath para componer la ruta absoluta.
+            /// No añadir / al final.
             /// </summary>
             private const string TEMPLATE_DIR = "~/Views/TemplateEmails";
 
@@ -217,7 +219,7 @@ Mandar un email con un template ``.cshtml`` o ``.txt``
             /// <param name="fieldName">Nombre del campo</param>
             private void _raiseException(string fieldName)
             {
-                string message = $"{fieldName} no contiene valor y es requerido";
+                string message = $"La propiedad \"{fieldName}\" no contiene valor y es requerido";
                 throw new SettingsPropertyNotFoundException(message);
             }
         }
