@@ -24,8 +24,8 @@ Mandar un email con un template ``.cshtml`` o ``.txt``
         /// Envía un simple email usando templates Razor.
         /// Se puede enviar el email en texto plano o HTML.
         ///
-        /// Los templates deben estar en el directorio ~/Views/TemplateEmails y pasar el nombre
-        /// y la extension "MiTemplate.cshtml|txt"
+        /// Los templates deben estar (por defecto) en el directorio ~/Views/TemplateEmails
+        /// y pasar el nombre y la extension "MiTemplate.cshtml|txt".
         ///
         /// Example:
         /// SimpleEmail<Person> email = new SimpleEmail<Person>
@@ -91,7 +91,17 @@ Mandar un email con un template ``.cshtml`` o ``.txt``
             /// </summary>
             public TModel Model { get; set; }
 
+            /// <summary>
+            /// El email sera enviado como HTML?
+            /// </summary>
             private bool IsBodyHtml { get; set; }
+
+            /// <summary>
+            /// Directorio contenedor de los templates.
+            /// Ha de ser un ruta relativa desde el root del proyecto.
+            /// Utiliza Server.MapPath para componer la ruta absoluta.
+            /// </summary>
+            private const string TEMPLATE_DIR = "~/Views/TemplateEmails";
 
             /// <summary>
             /// Envía un email con template como HTML.
@@ -187,7 +197,7 @@ Mandar un email con un template ``.cshtml`` o ``.txt``
             {
                 // Obtener el template y pasarlo a string.
                 HttpContext httpContext = HttpContext.Current;
-                string template = httpContext.Server.MapPath($"~/Views/TemplateEmails/{Template}");
+                string template = httpContext.Server.MapPath($"{TEMPLATE_DIR}/{Template}");
 
                 // Lanza un FileNotFoundException si el archivo no existe.
                 if (!File.Exists(template))
@@ -212,7 +222,6 @@ Mandar un email con un template ``.cshtml`` o ``.txt``
             }
         }
     }
-
 
 En el archivo ``Web.config``
 
