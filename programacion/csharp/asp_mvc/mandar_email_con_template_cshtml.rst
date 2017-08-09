@@ -157,7 +157,7 @@ Mandar un email con un template ``.cshtml`` o ``.txt``
             public async Task SendAsHtmlAsync()
             {
                 _isBodyHtml = true;
-                _body = _renderTemplate();
+                _body = _render();
                 await _sendAsync();
             }
 
@@ -167,7 +167,7 @@ Mandar un email con un template ``.cshtml`` o ``.txt``
             public void SendAsHtml()
             {
                 _isBodyHtml = true;
-                _body = _renderTemplate();
+                _body = _render();
                 _send();
             }
 
@@ -177,7 +177,7 @@ Mandar un email con un template ``.cshtml`` o ``.txt``
             public async Task SendAsTextAsync()
             {
                 _isBodyHtml = false;
-                _body = _renderTemplate().Replace(Environment.NewLine, "\n");
+                _body = _render().Replace(Environment.NewLine, "\n");
                 await _sendAsync();
             }
 
@@ -187,7 +187,7 @@ Mandar un email con un template ``.cshtml`` o ``.txt``
             public void SendAsText()
             {
                 _isBodyHtml = false;
-                _body = _renderTemplate().Replace(Environment.NewLine, "\n");
+                _body = _render().Replace(Environment.NewLine, "\n");
                 _send();
             }
 
@@ -300,7 +300,7 @@ Mandar un email con un template ``.cshtml`` o ``.txt``
             /// Obtiene un template y remplaza el contexto.
             /// Si el template no existe, lanzara FileNotFoundException.
             /// </summary>
-            private string _renderTemplate()
+            private string _render()
             {
                 string result;
 
