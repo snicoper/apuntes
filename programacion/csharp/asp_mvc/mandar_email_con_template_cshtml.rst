@@ -38,7 +38,7 @@ Mandar un email con un template ``.cshtml`` o ``.txt``
         ///     {
         ///         new MailAddress("palote@example.com")
         ///     },
-        ///     Model = model
+        ///     ViewModel = model // Opcional, sin ViewModel enviara el archivo plano.
         /// };
         /// email.SendAsHtml();
         /// email.SendAsText();
@@ -90,7 +90,7 @@ Mandar un email con un template ``.cshtml`` o ``.txt``
             /// <summary>
             /// Keys => Values para remplazarlo en Template.
             /// </summary>
-            public TModel Model { get; set; }
+            public TModel ViewModel { get; set; }
 
             /// <summary>
             /// El email sera enviado como HTML?
@@ -197,9 +197,10 @@ Mandar un email con un template ``.cshtml`` o ``.txt``
             /// </summary>
             private string _renderTemplate()
             {
+                string result;
+
                 // Obtener el template y pasarlo a string.
-                HttpContext httpContext = HttpContext.Current;
-                string template = httpContext.Server.MapPath($"{TEMPLATE_DIR}/{Template}");
+                string template = HttpContext.Current.Server.MapPath($"{TEMPLATE_DIR}/{Template}");
 
                 // Lanza un FileNotFoundException si el archivo no existe.
                 if (!File.Exists(template))
@@ -208,8 +209,18 @@ Mandar un email con un template ``.cshtml`` o ``.txt``
                     string message = $"El archivo {filename} no existe en {template}";
                     throw new FileNotFoundException(message);
                 }
+
                 string content = File.ReadAllText(template);
-                string result = Engine.Razor.RunCompile(content, Template, null, Model);
+
+                // Solo si Model tiene "contexto", usa Razor engine.
+                if (ViewModel != null)
+                {
+                    result = Engine.Razor.RunCompile(content, Template, null, ViewModel);
+                }
+                else
+                {
+                    result = content;
+                }
                 return result;
             }
 
