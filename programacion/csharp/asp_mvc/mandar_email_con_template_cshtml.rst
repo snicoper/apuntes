@@ -349,9 +349,9 @@ En el archivo ``Web.config``
 
     <appSettings>
         <!-- ... --->
-        <add key="Host" value="smtp.gmail.com"/>
-        <add key="EnableSsl" value="true"/>
-        <add key="UserName" value="username@gmail.com"/>
-        <add key="Password" value="MI_PASSWORD"/>
-        <add key="Port" value="587" />
+        <add key="SMTPHost" value="smtp.gmail.com"/>
+        <add key="SMTPEnableSsl" value="true"/>
+        <add key="SMTPUserName" value="username@gmail.com"/>
+        <add key="SMTPPassword" value="MI_PASSWORD"/>
+        <add key="SMTPPort" value="587" />
     </appSettings>
