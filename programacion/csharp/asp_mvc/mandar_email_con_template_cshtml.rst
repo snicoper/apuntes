@@ -71,11 +71,11 @@ Mandar un email con un template ``.cshtml`` o ``.txt``
         /// En Web.config (de la raíz) requiere añadir en appSettings:
         ///
         /// <!-- SMTP -->
-        /// <add key="Host" value="smtp.example.com" />
-        /// <add key = "EnableSsl" value="true"/>
-        /// <add key = "UserName" value="username@example.com" />
-        /// <add key = "Password" value="mi_password" />
-        /// <add key = "Port" value="587" />
+        /// <add key="SMTPHost" value="smtp.example.com" />
+        /// <add key="SMTPEnableSsl" value="true"/>
+        /// <add key="SMTPUserName" value="username@example.com" />
+        /// <add key="SMTPPassword" value="mi_password" />
+        /// <add key="SMTPPort" value="587" />
         /// <!-- End SMTP -->
         ///
         /// Limitaciones:
