@@ -16,6 +16,7 @@ Mandar un email con un template ``.cshtml`` o ``.txt``
     using System.IO;
     using System.Net;
     using System.Net.Mail;
+    using System.Threading.Tasks;
     using System.Web;
 
     namespace SendEmail.Core.Emails
@@ -29,6 +30,9 @@ Mandar un email con un template ``.cshtml`` o ``.txt``
         ///
         /// Example:
         ///
+        /// -> Instanciando:
+        /// ========================================================
+        ///
         /// SimpleEmail<Person> email = new SimpleEmail<Person>
         /// {
         ///     Template = "Register.html",
@@ -38,10 +42,27 @@ Mandar un email con un template ``.cshtml`` o ``.txt``
         ///     {
         ///         new MailAddress("palote@example.com")
         ///     },
-        ///     ViewModel = model // Opcional, sin ViewModel enviara el archivo plano.
+        ///     ViewModel = model // Opcional.
         /// };
         /// email.SendAsHtml();
+        /// await email.SendAsHtmlAsync();
         /// email.SendAsText();
+        /// await email.SendAsTextAsync();
+        ///
+        /// -> Static
+        /// ========================================================
+        ///
+        /// await SimpleEmail<Persona>.SendAsync|SimpleEmail<Persona>.Send(
+        ///     "Register.cshtml",
+        ///     "Email de prueba",
+        ///      new MailAddress("snicoper@ofervivienda.com"),
+        ///      new List<MailAddress>
+        ///      {
+        ///         new MailAddress("snicoper@gmail.com")
+        ///      },
+        ///      persona, // Opcional.
+        ///      true // Opcional, por defecto true
+        /// );
         ///
         /// Required:
         ///
@@ -60,7 +81,7 @@ Mandar un email con un template ``.cshtml`` o ``.txt``
         /// Limitaciones:
         /// No tiene implementado CC, BCC, ReplyTo entre otras.
         /// </summary>
-        public class SimpleEmail<TModel>
+        public class SimpleEmail<TModel> : IDisposable
         {
             /// <summary>
             /// Template para el email.
@@ -71,11 +92,6 @@ Mandar un email con un template ``.cshtml`` o ``.txt``
             /// Titulo del email.
             /// </summary>
             public string Subject { get; set; }
-
-            /// <summary>
-            /// Cuerpo del email, no requerido si se usa templates.
-            /// </summary>
-            public string Body { get; set; }
 
             /// <summary>
             /// Cabecera FROM:
@@ -93,9 +109,19 @@ Mandar un email con un template ``.cshtml`` o ``.txt``
             public TModel ViewModel { get; set; }
 
             /// <summary>
-            /// El email sera enviado como HTML?
+            /// ¿El email sera enviado como HTML?
             /// </summary>
-            private bool IsBodyHtml { get; set; }
+            private bool _isBodyHtml { get; set; }
+
+            /// <summary>
+            /// Cuerpo del email.
+            /// </summary>
+            private string _body { get; set; }
+
+            // SMTP
+            private MailMessage _mailMessage;
+            private NetworkCredential _networkCredential;
+            private SmtpClient _smtpClient;
 
             /// <summary>
             /// Directorio contenedor de los templates.
@@ -105,14 +131,54 @@ Mandar un email con un template ``.cshtml`` o ``.txt``
             /// </summary>
             private const string TEMPLATE_DIR = "~/Views/TemplateEmails";
 
+            public SimpleEmail()
+            {
+                _mailMessage = new MailMessage();
+
+                _networkCredential = new NetworkCredential()
+                {
+                    UserName = ConfigurationManager.AppSettings["UserName"],
+                    Password = ConfigurationManager.AppSettings["Password"]
+                };
+
+                _smtpClient = new SmtpClient()
+                {
+                    Host = ConfigurationManager.AppSettings["Host"],
+                    EnableSsl = Convert.ToBoolean(ConfigurationManager.AppSettings["EnableSsl"]),
+                    UseDefaultCredentials = true,
+                    Credentials = _networkCredential,
+                    Port = int.Parse(ConfigurationManager.AppSettings["Port"])
+                };
+            }
+
+            /// <summary>
+            /// Envía un email asíncrono con template como HTML.
+            /// </summary>
+            public async Task SendAsHtmlAsync()
+            {
+                _isBodyHtml = true;
+                _body = _renderTemplate();
+                await _sendAsync();
+            }
+
             /// <summary>
             /// Envía un email con template como HTML.
             /// </summary>
             public void SendAsHtml()
             {
-                IsBodyHtml = true;
-                Body = _renderTemplate();
+                _isBodyHtml = true;
+                _body = _renderTemplate();
                 _send();
+            }
+
+            /// <summary>
+            /// Envía un email asíncrono con template como texto plano.
+            /// </summary>
+            public async Task SendAsTextAsync()
+            {
+                _isBodyHtml = false;
+                _body = _renderTemplate().Replace(Environment.NewLine, "\n");
+                await _sendAsync();
             }
 
             /// <summary>
@@ -120,84 +186,129 @@ Mandar un email con un template ``.cshtml`` o ``.txt``
             /// </summary>
             public void SendAsText()
             {
-                IsBodyHtml = false;
-                Body = _renderTemplate().Replace(Environment.NewLine, "\n");
+                _isBodyHtml = false;
+                _body = _renderTemplate().Replace(Environment.NewLine, "\n");
                 _send();
             }
 
             /// <summary>
-            /// Se conecta al SMTP y envía el email.
+            /// Envía un email asíncrono.
             /// </summary>
-            private void _send()
+            /// <typeparam name="T">Model View para la vista</typeparam>
+            /// <param name="template">Nombre del archivo View, con la extensión</param>
+            /// <param name="subject">Titulo del mensaje</param>
+            /// <param name="from">De</param>
+            /// <param name="to">Para</param>
+            /// <param name="viewModel">Modelo para Razor en la View</param>
+            /// <param name="asHtml">¿Mandar email como HTML?</param>
+            /// <returns></returns>
+            public static async Task SendAsync<T>(string template, string subject, MailAddress from, List<MailAddress> to, T viewModel, bool asHtml = true)
             {
-                _checkProperties();
-
-                using (var mail = new MailMessage())
+                SimpleEmail<T> mail = _getInstance(template, subject, from, to, viewModel);
+                if (asHtml)
                 {
-                    mail.From = From;
-                    mail.Subject = Subject;
-                    mail.Body = Body;
-                    mail.IsBodyHtml = IsBodyHtml;
-
-                    foreach (var m in To)
-                    {
-                        mail.To.Add(m);
-                    }
-
-                    var NetWorkCred = new NetworkCredential()
-                    {
-                        UserName = ConfigurationManager.AppSettings["UserName"],
-                        Password = ConfigurationManager.AppSettings["Password"]
-                    };
-
-                    var smtp = new SmtpClient()
-                    {
-                        Host = ConfigurationManager.AppSettings["Host"],
-                        EnableSsl = Convert.ToBoolean(ConfigurationManager.AppSettings["EnableSsl"]),
-                        UseDefaultCredentials = true,
-                        Credentials = NetWorkCred,
-                        Port = int.Parse(ConfigurationManager.AppSettings["Port"])
-                    };
-
-                    smtp.Send(mail);
+                    await mail.SendAsHtmlAsync();
+                }
+                else
+                {
+                    await mail.SendAsTextAsync();
                 }
             }
 
             /// <summary>
-            /// Comprueba que todos los campos tienen valores.
-            /// Estos son los campos requeridos en todos los SendAsXXX.
+            /// Envía un email.
             /// </summary>
-            private bool _checkProperties()
+            /// <typeparam name="T">Model View para la vista</typeparam>
+            /// <param name="template">Nombre del archivo View, con la extensión</param>
+            /// <param name="subject">Titulo del mensaje</param>
+            /// <param name="from">De</param>
+            /// <param name="to">Para</param>
+            /// <param name="viewModel">Modelo para Razor en la View</param>
+            /// <param name="asHtml">¿Mandar email como HTML?</param>
+            /// <returns></returns>
+            public static void Send<T>(string template, string subject, MailAddress from, List<MailAddress> to, T viewModel, bool asHtml = true)
             {
-                if (Template == string.Empty)
+                SimpleEmail<T> mail = _getInstance(template, subject, from, to, viewModel);
+                if (asHtml)
                 {
-                    _raiseException("Template");
+                    mail.SendAsHtml();
                 }
-                if (Subject == string.Empty)
+                else
                 {
-                    _raiseException("Subject");
+                    mail.SendAsText();
                 }
-                if (Body == string.Empty)
+            }
+
+            /// <summary>
+            /// Envía el email asíncrono.
+            /// </summary>
+            private async Task _sendAsync()
+            {
+                _prepare();
+                await _smtpClient.SendMailAsync(_mailMessage);
+            }
+
+            /// <summary>
+            /// Envía el email.
+            /// </summary>
+            private void _send()
+            {
+                _prepare();
+                _smtpClient.Send(_mailMessage);
+            }
+
+            /// <summary>
+            /// Obtener instance de SimpleEmail con método estático para enviar un email.
+            /// </summary>
+            /// <typeparam name="T"></typeparam>
+            /// <param name="template">Nombre del archivo View, con la extensión</param>
+            /// <param name="subject">Titulo del mensaje</param>
+            /// <param name="from">De</param>
+            /// <param name="to">Para</param>
+            /// <param name="viewModel">Modelo para Razor en la View</param>
+            /// <returns></returns>
+            private static SimpleEmail<T> _getInstance<T>(string template, string subject, MailAddress from, List<MailAddress> to, T viewModel)
+            {
+                SimpleEmail<T> email = new SimpleEmail<T>
                 {
-                    _raiseException("Body");
-                }
-                if (From == null)
+                    Template = template,
+                    Subject = subject,
+                    From = from,
+                    To = to,
+                    ViewModel = viewModel
+                };
+                return email;
+            }
+
+            /// <summary>
+            /// Puebla los campos requeridos de EmailMessage.
+            /// </summary>
+            private void _prepare()
+            {
+                _mailMessage.From = From;
+                _mailMessage.Subject = Subject;
+                _mailMessage.Body = _body;
+                _mailMessage.IsBodyHtml = _isBodyHtml;
+
+                foreach (var m in To)
                 {
-                    _raiseException("From");
+                    _mailMessage.To.Add(m);
                 }
-                if (To.Count == 0)
-                {
-                    _raiseException("To");
-                }
-                return true;
             }
 
             /// <summary>
             /// Obtiene un template y remplaza el contexto.
+            /// Si el template no existe, lanzara FileNotFoundException.
             /// </summary>
             private string _renderTemplate()
             {
                 string result;
+
+                if (Template == string.Empty)
+                {
+                    string message = "La propiedad \"Template\" no contiene valor y es requerido";
+                    throw new SettingsPropertyNotFoundException(message);
+                }
 
                 // Obtener el template y pasarlo a string.
                 string template = HttpContext.Current.Server.MapPath($"{TEMPLATE_DIR}/{Template}");
@@ -224,14 +335,10 @@ Mandar un email con un template ``.cshtml`` o ``.txt``
                 return result;
             }
 
-            /// <summary>
-            /// Lanza SettingsPropertyNotFoundException si una propiedad requerida esta sin valor.
-            /// </summary>
-            /// <param name="fieldName">Nombre del campo</param>
-            private void _raiseException(string fieldName)
+            public void Dispose()
             {
-                string message = $"La propiedad \"{fieldName}\" no contiene valor y es requerido";
-                throw new SettingsPropertyNotFoundException(message);
+                _smtpClient.Dispose();
+                _mailMessage.Dispose();
             }
         }
     }
