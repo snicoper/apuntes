@@ -137,17 +137,17 @@ Mandar un email con un template ``.cshtml`` o ``.txt``
 
                 _networkCredential = new NetworkCredential()
                 {
-                    UserName = ConfigurationManager.AppSettings["UserName"],
-                    Password = ConfigurationManager.AppSettings["Password"]
+                    UserName = ConfigurationManager.AppSettings["SMTPUserName"],
+                    Password = ConfigurationManager.AppSettings["SMTPPassword"]
                 };
 
                 _smtpClient = new SmtpClient()
                 {
-                    Host = ConfigurationManager.AppSettings["Host"],
-                    EnableSsl = Convert.ToBoolean(ConfigurationManager.AppSettings["EnableSsl"]),
+                    Host = ConfigurationManager.AppSettings["SMTPHost"],
+                    EnableSsl = Convert.ToBoolean(ConfigurationManager.AppSettings["SMTPEnableSsl"]),
                     UseDefaultCredentials = true,
                     Credentials = _networkCredential,
-                    Port = int.Parse(ConfigurationManager.AppSettings["Port"])
+                    Port = int.Parse(ConfigurationManager.AppSettings["SMTPPort"])
                 };
             }
 
