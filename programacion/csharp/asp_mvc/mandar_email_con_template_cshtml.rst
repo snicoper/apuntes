@@ -6,7 +6,7 @@ Mandar Email con View .cshtml
 
 Mandar un email con un template ``.cshtml`` o ``.txt``
 
-.. code-block:: csharp
+.. code-block:: C#
 
     using RazorEngine;
     using RazorEngine.Templating;
