@@ -12,6 +12,9 @@ EF6 Migraciones en servidor de producción
 
 .. warning:: Siempre crear **Backups**
 
+.. note:: Si se puede, copiar en **producción** la tabla ``dbo._MigrationHistory``
+(todos los **SQL** que genera) para tener una referencia del estado en **producción**.
+
 Para aplicar **migraciones** en **producción**, una manera que he encontrado es generando
 ``Update-Database -Script`` desde el entorno de desarrollo.
 
@@ -50,5 +53,5 @@ utiliza una combinación de ``-SourceMigration`` y ``-TargetMigration``.
     Update-Database -Script -SourceMigration: Tercera -TargetMigration: Quinta
 
 Se pone en ``-SourceMigration`` la ultima migración del servidor de ``producción`` y en
-``-TargetMigration`` la ultima migracion. De esta manera se obtiene todo el **SQL** que se deberá
+``-TargetMigration`` la ultima migración. De esta manera se obtiene todo el **SQL** que se deberá
 aplicar al servidor de **producción**.
