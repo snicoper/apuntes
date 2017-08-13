@@ -12,8 +12,7 @@ EF6 Migraciones en servidor de producción
 
 .. warning:: Siempre crear **Backups**
 
-.. note:: Si se puede, copiar en **producción** la tabla ``dbo._MigrationHistory``
-(todos los **SQL** que genera) para tener una referencia del estado en **producción**.
+.. note:: Si se puede, copiar en **producción** la tabla ``dbo._MigrationHistory`` (todos los **SQL** que genera) para tener una referencia del estado en **producción**.
 
 Para aplicar **migraciones** en **producción**, una manera que he encontrado es generando
 ``Update-Database -Script`` desde el entorno de desarrollo.
