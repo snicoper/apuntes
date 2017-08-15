@@ -18,5 +18,6 @@ ASP.net MVC
     lower_case_route_asp_net_mvc
     mandar_email_con_template_cshtml
     ninject_mvc5
+    redimensionar_image
     upload_images
     validacion_modelos
