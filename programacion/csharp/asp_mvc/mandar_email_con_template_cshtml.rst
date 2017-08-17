@@ -535,7 +535,7 @@ Dentro de ``~/Core`` creo ``SimpleEmail.cs``
             public static async Task SendAsync(string template, string subject, MailAddress from, List<MailAddress> to, object model = null, bool isBodyHtml = true)
             {
                 SimpleEmail email = _getInstance(template, subject, from, to, model, isBodyHtml);
-                await email._sendAsync();
+                await email._smtpClient.SendMailAsync(email._mailMessage);
             }
 
             /// <summary>
@@ -550,7 +550,7 @@ Dentro de ``~/Core`` creo ``SimpleEmail.cs``
             public static async Task SendAsync(string template, string subject, List<MailAddress> to, object model = null, bool isBodyHtml = true)
             {
                 SimpleEmail email = _getInstance(template, subject, null, to, model, isBodyHtml);
-                await email._sendAsync();
+                await email._smtpClient.SendMailAsync(email._mailMessage);
             }
 
             /// <summary>
@@ -565,7 +565,7 @@ Dentro de ``~/Core`` creo ``SimpleEmail.cs``
             public static void Send(string template, string subject, MailAddress from, List<MailAddress> to, object model = null, bool isBodyHtml = true)
             {
                 SimpleEmail email = _getInstance(template, subject, from, to, model, isBodyHtml);
-                email._send();
+                email._smtpClient.Send(email._mailMessage);
             }
 
             /// <summary>
@@ -580,7 +580,7 @@ Dentro de ``~/Core`` creo ``SimpleEmail.cs``
             public static void Send(string template, string subject, List<MailAddress> to, object model = null, bool isBodyHtml = true)
             {
                 SimpleEmail email = _getInstance(template, subject, null, to, model, isBodyHtml);
-                email._send();
+                email._smtpClient.Send(email._mailMessage);
             }
 
             /// <summary>
@@ -623,6 +623,7 @@ Dentro de ``~/Core`` creo ``SimpleEmail.cs``
                 };
                 email._isBodyHtml = isBodyHtml;
                 email._render();
+                email._initialize();
                 return email;
             }
 
@@ -640,25 +641,6 @@ Dentro de ``~/Core`` creo ``SimpleEmail.cs``
                 {
                     _mailMessage.To.Add(m);
                 }
-            }
-
-            /// <summary>
-            /// Envía un email asíncrono.
-            /// </summary>
-            /// <returns></returns>
-            private async Task _sendAsync()
-            {
-                _initialize();
-                await _smtpClient.SendMailAsync(_mailMessage);
-            }
-
-            /// <summary>
-            /// Envía un email.
-            /// </summary>
-            private void _send()
-            {
-                _initialize();
-                _smtpClient.Send(_mailMessage);
             }
 
             /// <summary>
