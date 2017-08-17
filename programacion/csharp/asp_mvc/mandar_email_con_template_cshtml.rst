@@ -465,8 +465,8 @@ Dentro de ``~/Core`` creo ``SimpleEmail.cs``
         /// var subject = "Email de prueba";
         /// var from = new MailAddress("perico@example.com"); //Opcional || SMTPDefaultFrom
         /// var to = new List<MailAddress> { new MailAddress("palote@example.com") };
-        /// var viewModel = new Person { Username = "Perico de los Palotes", Email = "perico@example.com" }; // Opcional
-        /// SimpleEmail.Send(template, subject, from, to, viewModel);
+        /// var model = new Person { Username = "Perico de los Palotes", Email = "perico@example.com" }; // Opcional
+        /// SimpleEmail.Send(template, subject, from, to, model);
         ///
         /// Require:
         ///
@@ -514,14 +514,9 @@ Dentro de ``~/Core`` creo ``SimpleEmail.cs``
             private string _body;
 
             /// <summary>
-            /// ViewModel para la View.
+            /// model para la View.
             /// </summary>
-            private object _viewModel;
-
-            /// <summary>
-            /// Directorio de Views.
-            /// </summary>
-            private const string TEMPLATE_DIR = "~/Views/TemplateEmails/";
+            private object _model;
 
             // SMTP
             private MailMessage _mailMessage;
@@ -535,11 +530,11 @@ Dentro de ``~/Core`` creo ``SimpleEmail.cs``
             /// <param name="subject">Titulo del mensaje</param>
             /// <param name="from">Cabeceras para From:</param>
             /// <param name="to">Lista de emails de recepción</param>
-            /// <param name="viewModel">ViewModel para el contexto</param>
+            /// <param name="model">model para el contexto</param>
             /// <param name="isBodyHtml">¿Mandar mensaje como HTML?</param>
-            public static async Task SendAsync(string template, string subject, MailAddress from, List<MailAddress> to, object viewModel = null, bool isBodyHtml = true)
+            public static async Task SendAsync(string template, string subject, MailAddress from, List<MailAddress> to, object model = null, bool isBodyHtml = true)
             {
-                SimpleEmail email = _getInstance(template, subject, from, to, viewModel, isBodyHtml);
+                SimpleEmail email = _getInstance(template, subject, from, to, model, isBodyHtml);
                 await email._sendAsync();
             }
 
@@ -550,11 +545,11 @@ Dentro de ``~/Core`` creo ``SimpleEmail.cs``
             /// <param name="template">Nombre del archivo en ~/Views/TemplateEmails/</param>
             /// <param name="subject">Titulo del mensaje</param>
             /// <param name="to">Lista de emails de recepción</param>
-            /// <param name="viewModel">ViewModel para el contexto</param>
+            /// <param name="model">model para el contexto</param>
             /// <param name="isBodyHtml">¿Mandar mensaje como HTML?</param>
-            public static async Task SendAsync(string template, string subject, List<MailAddress> to, object viewModel = null, bool isBodyHtml = true)
+            public static async Task SendAsync(string template, string subject, List<MailAddress> to, object model = null, bool isBodyHtml = true)
             {
-                SimpleEmail email = _getInstance(template, subject, null, to, viewModel, isBodyHtml);
+                SimpleEmail email = _getInstance(template, subject, null, to, model, isBodyHtml);
                 await email._sendAsync();
             }
 
@@ -565,11 +560,11 @@ Dentro de ``~/Core`` creo ``SimpleEmail.cs``
             /// <param name="subject">Titulo del mensaje</param>
             /// <param name="from">Cabeceras para From:</param>
             /// <param name="to">Lista de emails de recepción</param>
-            /// <param name="viewModel">ViewModel para el contexto</param>
+            /// <param name="model">model para el contexto</param>
             /// <param name="isBodyHtml">¿Mandar mensaje como HTML?</param>
-            public static void Send(string template, string subject, MailAddress from, List<MailAddress> to, object viewModel = null, bool isBodyHtml = true)
+            public static void Send(string template, string subject, MailAddress from, List<MailAddress> to, object model = null, bool isBodyHtml = true)
             {
-                SimpleEmail email = _getInstance(template, subject, from, to, viewModel, isBodyHtml);
+                SimpleEmail email = _getInstance(template, subject, from, to, model, isBodyHtml);
                 email._send();
             }
 
@@ -580,11 +575,11 @@ Dentro de ``~/Core`` creo ``SimpleEmail.cs``
             /// <param name="template">Nombre del archivo en ~/Views/TemplateEmails/</param>
             /// <param name="subject">Titulo del mensaje</param>
             /// <param name="to">Lista de emails de recepción</param>
-            /// <param name="viewModel">ViewModel para el contexto</param>
+            /// <param name="model">model para el contexto</param>
             /// <param name="isBodyHtml">¿Mandar mensaje como HTML?</param>
-            public static void Send(string template, string subject, List<MailAddress> to, object viewModel = null, bool isBodyHtml = true)
+            public static void Send(string template, string subject, List<MailAddress> to, object model = null, bool isBodyHtml = true)
             {
-                SimpleEmail email = _getInstance(template, subject, null, to, viewModel, isBodyHtml);
+                SimpleEmail email = _getInstance(template, subject, null, to, model, isBodyHtml);
                 email._send();
             }
 
@@ -614,7 +609,7 @@ Dentro de ``~/Core`` creo ``SimpleEmail.cs``
             /// <summary>
             /// Obtener instancia.
             /// </summary>
-            private static SimpleEmail _getInstance(string template, string subject, MailAddress from, List<MailAddress> to, object viewModel, bool isBodyHtml)
+            private static SimpleEmail _getInstance(string template, string subject, MailAddress from, List<MailAddress> to, object model, bool isBodyHtml)
             {
                 from = from ?? new MailAddress(ConfigurationManager.AppSettings["SMTPDefaultFrom"]);
 
@@ -624,7 +619,7 @@ Dentro de ``~/Core`` creo ``SimpleEmail.cs``
                     _subject = subject,
                     _from = from,
                     _to = to,
-                    _viewModel = viewModel
+                    _model = model
                 };
                 email._isBodyHtml = isBodyHtml;
                 email._render();
@@ -671,17 +666,7 @@ Dentro de ``~/Core`` creo ``SimpleEmail.cs``
             /// </summary>
             private string _render()
             {
-                string templatepath = $"{TEMPLATE_DIR}{_template}";
-                var ext = Path.GetExtension(templatepath);
-                if (ext == null || !templatepath.Contains(".cshtml"))
-                {
-                    templatepath += ".cshtml";
-                }
-                else
-                {
-                    throw new Exception($"{_template} requiere de una extension .cshtml");
-                }
-                _body = ViewRenderer.RenderView(templatepath, _viewModel);
+                _body = ViewRenderer.RenderView(_template, _model);
                 return _body;
             }
 
