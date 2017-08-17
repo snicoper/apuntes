@@ -474,12 +474,13 @@ Dentro de ``~/Core`` creo ``SimpleEmail.cs``
         ///
         /// Web.config en appSettings
         ///
-        /// <add key="SMTPDefaultFrom" value="default@example.com"/>
+        /// <add key="SMTPDefaultFromName" value="My Company"/>
+        /// <add key="SMTPDefaultFromEmail" value="default@example.com"/>
         /// <add key="SMTPHost" value="smtp.gmail.com"/>
         /// <add key="SMTPEnableSsl" value="true"/>
-        /// <add key="SMTPUserName" value="user@gmail.com"/>
-        /// <add key="SMTPPassword" value="PASSWORD"/>
-        /// <add key="SMTPPort" value="587"/>
+        /// <add key="SMTPUserName" value="username@gmail.com"/>
+        /// <add key="SMTPPassword" value="MI_PASSWORD"/>
+        /// <add key="SMTPPort" value="587" />
         /// </summary>
         public class SimpleEmail : IDisposable
         {
@@ -611,7 +612,10 @@ Dentro de ``~/Core`` creo ``SimpleEmail.cs``
             /// </summary>
             private static SimpleEmail _getInstance(string template, string subject, MailAddress from, List<MailAddress> to, object model, bool isBodyHtml)
             {
-                from = from ?? new MailAddress(ConfigurationManager.AppSettings["SMTPDefaultFrom"]);
+                from = from ?? new MailAddress(
+                    ConfigurationManager.AppSettings["SMTPDefaultFromEmail"],
+                    ConfigurationManager.AppSettings["SMTPDefaultFromName"]
+                );
 
                 SimpleEmail email = new SimpleEmail
                 {
@@ -666,7 +670,8 @@ En el archivo ``Web.config``
 
     <appSettings>
         <!-- ... --->
-        <add key="SMTPDefaultFrom" value="default@example.com"/>
+        <add key="SMTPDefaultFromName" value="My Company"/>
+        <add key="SMTPDefaultFromEmail" value="default@example.com"/>
         <add key="SMTPHost" value="smtp.gmail.com"/>
         <add key="SMTPEnableSsl" value="true"/>
         <add key="SMTPUserName" value="username@gmail.com"/>
