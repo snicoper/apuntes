@@ -14,6 +14,7 @@ ASP.net MVC
     asp_mvc_secrets
     comprobar_if_debug_en_views
     connectionstring
+    default_trim_models
     ef_revertir_migracion
     lower_case_route_asp_net_mvc
     mandar_email_con_template_cshtml
