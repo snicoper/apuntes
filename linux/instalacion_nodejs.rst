@@ -10,7 +10,6 @@ Instalación
 .. code-block:: bash
 
     sudo dnf -y install nodejs
-    sudo dnf -y install npm
 
 Si después se actualiza **npm** con ``sudo npm install npm -g`` a la hora de actualizar el paquete
 **nodejs** podra dar problemas.
@@ -33,15 +32,15 @@ Los linters, se instalan a nivel local.
 .. code-block:: bash
 
     # Comunes
-    sudo npm i -g bower
+    # Con yarn sudo yarn global add nombre_package
     sudo npm i -g gulp
     sudo npm i -g node-sass
 
     # Linters
-    # sudo npm i -g eslint
-    # sudo npm i -g htmlhint
-    # sudo npm i -g stylelint
-    # sudo npm i -g stylelint-config-standard
+    sudo npm i -g eslint
+    sudo npm i -g htmlhint
+    sudo npm i -g stylelint
+    sudo npm i -g stylelint-config-standard
 
 Algunos comandos utiles
 ***********************

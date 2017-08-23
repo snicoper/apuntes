@@ -111,6 +111,40 @@ WebStrom
     Categories=GNOME;Application;Development;
     StartupNotify=true
 
+Rider
+*****
+
+.. code-block:: bash
+
+    su -
+    # Si no existe /opt/jetbrains
+    mkdir /opt/jetbrains
+    gzip -d JetBrains.Rider-2017.1.1.tar.gz
+    tar -xvf JetBrains.Rider-2017.1.1.tar
+    mv Rider-2017.1.1/ /opt/jetbrains/rider
+    chmod +x /opt/jetbrains/rider/bin/rider.sh
+
+.. code-block:: bash
+
+    ln -s /opt/jetbrains/rider/bin/rider.sh /usr/local/bin/rider
+
+.. code-block:: bash
+
+    vim /usr/share/applications/rider.desktop
+
+.. code-block:: bash
+
+    [Desktop Entry]
+    Encoding=UTF-8
+    Name=Rider
+    Comment=IDE for Web
+    Exec=rider %U
+    Icon=/opt/jetbrains/rider/bin/rider.png
+    Terminal=false
+    Type=Application
+    Categories=GNOME;Application;Development;
+    StartupNotify=true
+
 Discord
 *******
 
