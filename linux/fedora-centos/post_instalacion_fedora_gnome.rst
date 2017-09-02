@@ -82,6 +82,7 @@ Programas básicos
 .. code-block:: bash
 
     dnf -y install \
+        arc-theme \
         dconf-editor \
         geary \
         gnome-tweak-tool \

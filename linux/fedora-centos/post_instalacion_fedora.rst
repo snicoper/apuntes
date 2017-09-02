@@ -83,15 +83,15 @@ Opcionales
 .. code-block:: bash
 
     dnf -y install chromium
-    dnf -y install gedit-plugins
     dnf -y install gimp
-    dnf -y install gitg
-    dnf -y install gnome-todo
-    dnf -y install meld
     dnf -y install zsh
 
+    dnf -y install meld
+    dnf -y install gitg
+    dnf -y install gedit-plugins
     dnf -y install breeze-icon-theme
     dnf -y install dia
+    dnf -y install gnome-todo
     dnf -y install gnome-builder
     dnf -y install gnome-calendar
     dnf -y install gnome-music
