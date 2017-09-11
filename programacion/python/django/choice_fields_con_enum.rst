@@ -40,3 +40,24 @@ Choice fields con class Enum
     >>> chocolate = IceCreamOrder.FLAVORS.get_value('chocolate')
     >>> IceCreamOrder.objects.filter(flavor=chocolate)
     [<icecreamorder: 35>, <icecreamorder: 42>, <icecreamorder: 49>]
+
+Incluso con un **mixin**
+
+.. code-block:: python
+
+    class EnumMixin(object):
+
+        @classmethod
+        def get_value(cls, member):
+            return cls[member].value[0]
+
+        # Otros methods...
+
+
+    class IceCreamOrder(models.Model):
+
+        class FLAVORS(EnumMixin, Enum):
+            chocolate = ('ch', 'Chocolate')
+            vanilla = ('vn', 'Vanilla')
+            strawberry = ('st', 'Strawberry')
+            chunky_munky = ('cm', 'Chunky Munky')
