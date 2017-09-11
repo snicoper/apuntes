@@ -9,7 +9,6 @@ Apps:
 .. toctree::
     :maxdepth: 1
 
-    apps/index
     unittest/index
 
 Categorias:
@@ -21,6 +20,7 @@ Categorias:
     cambiar_nombre_cabecera_admin
     cbv_login_required
     check_field_model_has_change_value
+    choice_fields_con_enum
     concatenar_un_valor_en_settings
     crear_database_en_tests
     django_markdown
