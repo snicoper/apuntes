@@ -11,9 +11,6 @@ Instalación
 
     sudo dnf -y install nodejs
 
-Si después se actualiza **npm** con ``sudo npm install npm -g`` a la hora de actualizar el paquete
-**nodejs** podra dar problemas.
-
 Yarn
 ****
 
@@ -24,15 +21,20 @@ Yarn
     sudo wget https://dl.yarnpkg.com/rpm/yarn.repo -O /etc/yum.repos.d/yarn.repo
     sudo dnf install -y yarn
 
+Añdir ``~/.yarn/bin`` al **PATH**
+
+.. code-block:: bash
+
+    # ~/.bashrc
+    export PATH=$PATH:~/.yarn/bin
+
 Paquetes que instalo
 ********************
-
-Los linters, se instalan a nivel local.
 
 .. code-block:: bash
 
     # Comunes
-    # Con yarn sudo yarn global add nombre_package
+    # Con yarn, sin sudo: yarn global add gulp node-sass eslint htmlhint stylelint stylelint-config-standard
     sudo npm i -g gulp
     sudo npm i -g node-sass
 
@@ -42,8 +44,8 @@ Los linters, se instalan a nivel local.
     sudo npm i -g stylelint
     sudo npm i -g stylelint-config-standard
 
-Algunos comandos utiles
-***********************
+Algunos comandos utiles npm
+***************************
 
 .. code-block:: bash
 
