@@ -4,37 +4,6 @@
 Instalación Nginx
 #################
 
-Ubuntu
-******
-
-Instalación
-
-.. code-block:: bash
-
-    sudo apt install nginx
-    sudo service nginx start
-
-Si se quiere permitir que puedan verse las paginas desde fuera del localhost
-añadir regla en ufw
-
-.. code-block:: bash
-
-    sudo ufw allow 80
-
-Ubuntu PPA
-**********
-
-* https://launchpad.net/~nginx/+archive/ubuntu/development
-* http://wiki.nginx.org/Install
-
-.. code-block:: bash
-
-    sudo -s
-    nginx=stable # use nginx=development for latest development version
-    sudo add-apt-repository ppa:nginx/$nginx
-    sudo apt-get update
-    sudo apt-get install nginx
-
 Fedora
 ******
 
