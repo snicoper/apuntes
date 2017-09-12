@@ -6,7 +6,7 @@ Chromium español Linux
 
 .. code-block:: bash
 
-    vim /usr/bin/chromium-browser
+    sudo vim /usr/bin/chromium-browser
 
 Añadir al inicio, después de ``#!/bin/bash``
 
