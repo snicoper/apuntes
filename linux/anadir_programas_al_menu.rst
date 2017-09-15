@@ -10,39 +10,6 @@ Añadir programas al menu
     Prácticamente todos son iguales, solo cambian las rutas, pero las pongo separadas
     para ir mas rápido si algún día tengo que instalar alguno.
 
-Sublime 3
-*********
-
-Descomprimir como usuario
-
-.. code-block:: bash
-
-    su -
-    mv sublime_text_3 /opt/sublime_text_3
-    chmod +x /opt/sublime_text_3/sublime_text
-
-.. code-block:: bash
-
-    ln -s /opt/sublime_text_3/sublime_text /usr/local/bin/subl
-
-.. code-block:: bash
-
-    vim /usr/share/applications/sublime.desktop
-
-.. code-block:: bash
-
-    [Desktop Entry]
-    Encoding=UTF-8
-    Name=Sublime Text 3
-    Comment=Sublime Text Editor
-    Exec=subl %U
-    # Icon=/home/snicoper/.local/share/icons/Paper/48x48/apps/sublime-text.png
-    Icon=/opt/sublime_text_3/Icon/48x48/sublime-text.png
-    Terminal=false
-    Type=Application
-    Categories=GNOME;Application;Development;
-    StartupNotify=true
-
 PyCharm
 *******
 
@@ -51,9 +18,9 @@ PyCharm
     su -
     # Si no existe /opt/jetbrains
     mkdir /opt/jetbrains
-    gzip -d pycharm-professional-2017.1.tar.gz
-    tar -xvf pycharm-professional-2017.1.tar
-    mv pycharm-2017.1/ /opt/jetbrains/pycharm
+    gzip -d pycharm-professional-2017.2.3.tar.gz
+    tar -xvf pycharm-professional-2017.2.3.tar
+    mv pycharm-2017.2.3/ /opt/jetbrains/pycharm
     chmod +x /opt/jetbrains/pycharm/bin/pycharm.sh
 
 .. code-block:: bash
