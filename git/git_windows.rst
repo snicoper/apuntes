@@ -10,7 +10,9 @@ Añadir al path
 
 .. code-block:: bash
 
-    C:\Program Files (x86)\Git\bin;C:\Program Files (x86)\Git\cmd;
+    C:\Program Files\Git\bin
+    C:\Program Files\Git\cmd
+    C:\Program Files\Git\usr\bin
 
 Gitconfig con kdiff3
 ====================
@@ -48,7 +50,9 @@ Gitconfig con kdiff3
         default = simple
 
 Gitconfig con Meld
-====================
+==================
+
+`Descargar Meld <http://meldmerge.org/>`_
 
 .. code-block:: bash
 
@@ -59,6 +63,8 @@ Gitconfig con Meld
         ui = true
     [core]
         editor = vim
+        autocrlf = input
+	    eol = lf
     [alias]
         lg = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr %an)%Creset' --abbrev-commit --date=relative
         co = checkout
