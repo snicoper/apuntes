@@ -16,20 +16,20 @@ Virtualenvwrapper
 
 .. code-block:: bash
 
-    pip3 install virtualenvwrapper
-    # dnf install -y python3-virtualenvwrapper
+    # Como usuario
+    pip3 install --user virtualenvwrapper
+    export PATH=$PATH:~/.local/bin # (¿Opcional?)
 
 Editar ``.bashrc``
 
 .. code-block:: bash
 
-    # Como usuario normal
     vim ~/.bashrc
 
     # Virtualenvwrapper
     export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
     export WORKON_HOME=$HOME/.virtualenvs
-    source /usr/bin/virtualenvwrapper.sh
+    source ~/.local/bin/virtualenvwrapper.sh
 
 En ``source`` el valor de ``which virtualenvwrapper.sh``
 

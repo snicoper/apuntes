@@ -89,7 +89,7 @@ Programas básicos
         gparted \
         gpick \
         transmission-gtk \
-        yumex-dnf
+        dnfdragora-gui # yumex-dnf
 
 Firewalld
 *********
