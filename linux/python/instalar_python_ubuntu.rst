@@ -16,31 +16,51 @@ Virtualenvwrapper
 
 .. code-block:: bash
 
-    sudo pip3 install virtualenvwrapper
+    # Como usuario
+    pip3 install --user virtualenvwrapper
 
-    mkdir ~/.virtualenvs
+Editar ``.bashrc``
 
-Editar .bashrc
+.. code-block:: bash
+
+    which python3
+    which virtualenvwrapper.sh
 
 .. code-block:: bash
 
     vim ~/.bashrc
 
-Añadir
+    # Virtualenvwrapper
+    export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+    export WORKON_HOME=$HOME/.virtualenvs
+    source ~/.local/bin/virtualenvwrapper.sh
 
 .. code-block:: bash
 
-    export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-    export WORKON_HOME=$HOME/.virtualenvs
-    source /usr/local/bin/virtualenvwrapper.sh
+    source ~/.bashrc
 
-En ``source`` el valor de ``which virtualenvwrapper.sh``
+Entorno virtual **default**
 
-Comandos
+.. code-block:: bash
+
+    mkvirtualenv default
+
+    (default) pip install -U \
+        autopep8 \
+        Django \
+        flake8 \
+        isort \
+        livereload \
+        pycodestyle \
+        pydocstyle \
+        Sphinx \
+        sphinx-autobuild \
+        sphinx-rtd-theme
+
+**Comandos**
 
 * mkvirtualenv // Crea un nuevo virtualenv
 * rmvirtualenv // Elimina un virtualenv existente
-* workon // Cambia el actual virtualenv
+* workon nombre_env // Activar entorno virtual, si se omite nombre_env, mostrara todos los disponibles
 * deactivate // Desactivar virtualenv
 * lsvirtualenv // Listar virtualenvs
-

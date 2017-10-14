@@ -1,7 +1,7 @@
 .. _reference-linux-python-compilar_python_34_centos:
 
 #################################
-Compilar Python 3.6.0 en Centos 7
+Compilar Python 3.6.3 en Centos 7
 #################################
 
 .. note::
@@ -32,9 +32,9 @@ Compilación
 
 .. code-block:: bash
 
-    wget https://www.python.org/ftp/python/3.6.0/Python-3.6.0.tgz
-    tar -zxvf Python-3.6.0.tgz
-    cd Python-3.6.0
+    wget https://www.python.org/ftp/python/3.6.3/Python-3.6.3.tgz
+    tar -zxvf Python-3.6.3.tgz
+    cd Python-3.6.3
 
     ./configure --prefix=/usr/local --enable-shared LDFLAGS="-Wl,-rpath /usr/local/lib"
     make
@@ -45,29 +45,32 @@ Usar pip con ``pip3.6``
 Virtualenvwrapper
 *****************
 
-.. code-block:: bash
-
-    su
-    pip3.6 install virtualenvwrapper
-    exit
-
 Como usuario:
 
 .. code-block:: bash
 
-    mkdir ~/.virtualenvs
+    # Como usuario
+    pip3.6 install --user virtualenvwrapper
+    exit
 
-Añadir a ``~/.bashrc``
+Editar ``.bashrc``
+
+.. code-block:: bash
+
+    which python3.6
+    which virtualenvwrapper.sh
 
 .. code-block:: bash
 
     vim ~/.bashrc
 
-    export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3.6
+    # Virtualenvwrapper
+    export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
     export WORKON_HOME=$HOME/.virtualenvs
-    source /usr/local/bin/virtualenvwrapper.sh
+    source ~/.local/bin/virtualenvwrapper.sh
 
-    # Guardar y salir
+.. code-block:: bash
+
     source ~/.bashrc
 
 Comandos
