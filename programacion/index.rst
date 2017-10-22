@@ -11,6 +11,7 @@ Categorias:
 
     apuntes_sin_clasificar/index
     csharp/index
+    javascript/index
     mariadb/index
     pcre/index
     postgresql/index
