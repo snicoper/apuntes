@@ -10,7 +10,7 @@ Vue-Multiselect non spa
 
 * https://github.com/monterail/vue-multiselect/issues/226
 
----
+--------
 
 **HTML**
 
@@ -22,7 +22,6 @@ Vue-Multiselect non spa
             <!-- Vue component -->
             <template>
               <div>
-                asd
                 <multiselect v-model="value" :options="options"></multiselect>
               </div>
             </template>
