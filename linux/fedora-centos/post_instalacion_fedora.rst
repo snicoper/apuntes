@@ -68,6 +68,7 @@ Programas básicos
         p7zip \
         p7zip-plugins \
         pwgen \
+        sqlite \
         tilix \
         tilix-nautilus \
         unrar \
