@@ -128,6 +128,8 @@ Idiomas
 vscode
 ******
 
+* https://code.visualstudio.com/docs/setup/linux
+
 .. code-block:: bash
 
     sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
