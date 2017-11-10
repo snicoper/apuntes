@@ -46,3 +46,4 @@ Archivos de configuración
     vim /var/lib/pgsql/9.6/data/postgresql.conf
     vim /var/lib/pgsql/9.6/data/pg_hba.conf
 
+:ref:`reference-linux-postgresql-instalacion_postgresql`
