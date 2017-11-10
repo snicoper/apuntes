@@ -84,3 +84,10 @@ Programas básicos
         vim \
         wget \
         yum-utils
+
+Útiles
+******
+
+* ``PostgreSQL`` :ref:`reference-linux-postgresql-postgres_last_version_centos7`
+* ``Python 3.6`` :ref:`reference-linux-python-python_last_centos`
+* ``Nginx`` :ref:`reference-linux-nginx-instalacion_nginx`

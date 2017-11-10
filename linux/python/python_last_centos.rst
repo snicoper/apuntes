@@ -1,9 +1,5 @@
 .. _reference-linux-python-python_last_centos:
 
-.. |br| raw:: html
-
-    <br>
-
 ###################
 Python 3.6 Centos 7
 ###################
@@ -129,8 +125,8 @@ Editar ``.bashrc``
 Comandos virtualenvwrapper
 ==========================
 
-``mkvirtualenv`` Crea un nuevo virtualenv |br|
-``rmvirtualenv`` Elimina un virtualenv existente |br|
-``workon`` Cambia el actual virtualenv |br|
-``deactivate`` Desactivar virtualenv |br|
-``lsvirtualenv`` Listar virtualenvs |br|
+* ``mkvirtualenv`` Crea un nuevo virtualenv
+* ``rmvirtualenv`` Elimina un virtualenv existente
+* ``workon`` Cambia el actual virtualenv
+* ``deactivate`` Desactivar virtualenv
+* ``lsvirtualenv`` Listar virtualenvs
