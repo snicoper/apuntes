@@ -4,7 +4,7 @@
 Git Config Linux
 ###################
 
-Nota, ahora al usar los `dotfiles` estos lo mismo estan obsoletos pero los dejo
+Nota, ahora al usar los `dotfiles` estos lo mismo están obsoletos pero los dejo
 por **Kdiff3**
 
 .. code-block:: bash
@@ -41,7 +41,7 @@ Configuración con Meld
     [push]
         default = simple
 
-Configuracion con Kdiff3
+Configuración con Kdiff3
 ************************
 
 .. code-block:: bash
@@ -70,3 +70,22 @@ Configuracion con Kdiff3
         keepTemporaries = false
     [push]
         default = simple
+
+Centos 7
+========
+
+.. code-block:: bash
+
+    [user]
+      name = Salvador Nicolas
+      email = snicoper@gmail.com
+    [color]
+      ui = true
+    [core]
+      editor = vim
+    [alias]
+      lg = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr %an)%Creset' --abbrev-commit --date=relative
+      co = checkout
+      cm = commit
+      st = status
+      br = branch

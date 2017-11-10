@@ -88,6 +88,12 @@ Programas básicos
 Útiles
 ******
 
-* ``PostgreSQL`` :ref:`reference-linux-postgresql-postgres_last_version_centos7`
-* ``Python 3.6`` :ref:`reference-linux-python-python_last_centos`
-* ``Nginx`` :ref:`reference-linux-nginx-instalacion_nginx`
+* :ref:`reference-editors-vim-mi_vimrc`
+* :ref:`reference-git-gitconfig_linux`
+* :ref:`reference-linux-mi_bashrc`
+* :ref:`reference-linux-postgresql-postgres_last_version_centos7`
+* :ref:`reference-linux-python-python_last_centos`
+* :ref:`reference-linux-nginx-instalacion_nginx`
+* :ref:`reference-linux-fedora-centos-certificado_lets_encrypt`
+* :ref:`reference-linux-fedora-centos-postfix`
+* :ref:`reference-linux-fedora-centos-bind_fedora`
