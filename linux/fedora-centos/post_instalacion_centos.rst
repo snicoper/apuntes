@@ -88,6 +88,7 @@ Programas básicos
 Útiles
 ******
 
+* :ref:`reference-linux-fedora-centos-configurar_ssh`
 * :ref:`reference-editors-vim-mi_vimrc`
 * :ref:`reference-git-gitconfig_linux`
 * :ref:`reference-linux-mi_bashrc`
