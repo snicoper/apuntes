@@ -85,6 +85,14 @@ Programas básicos
         wget \
         yum-utils
 
+Enable Firewalld
+================
+
+.. code-block:: bash
+
+    systemctl start firewalld.service
+    systemctl enable firewalld.service
+
 Útiles
 ******
 

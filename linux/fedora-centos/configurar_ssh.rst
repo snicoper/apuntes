@@ -8,9 +8,9 @@ Configurar SSH
 
 * http://www.snicoper.com/blog/article/configuracion-ssh-en-centos-7/
 
----
+----
 
-Configuración basica de ``SSH``
+Configuración básica de ``SSH``
 
 .. code-block:: bash
 
@@ -25,7 +25,7 @@ Editamos el archivo de configuración de ssh.
 
     vim /etc/ssh/sshd_config
 
-Las lineas entre (parentesis) Centos, normal para Fedora.
+Las lineas entre (paréntesis) Centos, normal para Fedora.
 
 .. code-block:: bash
 
