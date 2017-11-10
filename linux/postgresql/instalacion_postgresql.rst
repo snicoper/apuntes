@@ -85,6 +85,8 @@ Ver :ref:`reference-linux-fedora-centos-reglas_selinux`
 Ubuntu
 ******
 
+.. warning:: Hace mucho que no lo pruebo.
+
 Instalación
 
 .. code-block:: bash

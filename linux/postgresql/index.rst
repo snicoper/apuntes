@@ -12,3 +12,4 @@ Categorias:
    instalacion_postgis
    instalacion_postgresql
    pgadmin4_virtualenv
+   postgres_last_version_centos7

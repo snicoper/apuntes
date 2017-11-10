@@ -1,5 +1,9 @@
 .. _reference-linux-python-instalacion_python_fedora:
 
+.. |br| raw:: html
+
+    <br>
+
 ############################
 Instalación Python en Fedora
 ############################
@@ -53,32 +57,16 @@ Entorno virtual **default**
         livereload \
         pycodestyle \
         pydocstyle \
+        restructuredtext-lint \
         Sphinx \
         sphinx-autobuild \
         sphinx-rtd-theme
 
-**Comandos**
+Comandos virtualenvwrapper
+==========================
 
-* mkvirtualenv // Crea un nuevo virtualenv
-* rmvirtualenv // Elimina un virtualenv existente
-* workon nombre_env // Activar entorno virtual, si se omite nombre_env, mostrara todos los disponibles
-* deactivate // Desactivar virtualenv
-* lsvirtualenv // Listar virtualenvs
-
-Python 3.4 en Centos 7
-######################
-
-.. code-block:: bash
-
-    yum install epel-release
-
-    yum install python34 python34-setuptools python34-devel redhat-rpm-config
-
-    curl https://bootstrap.pypa.io/get-pip.py | python3.4
-
-Python 3.6 en Centos 7
-######################
-
-**No lo he probado**
-
-* https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-local-programming-environment-on-centos-7
+``mkvirtualenv`` Crea un nuevo virtualenv |br|
+``rmvirtualenv`` Elimina un virtualenv existente |br|
+``workon`` Cambia el actual virtualenv |br|
+``deactivate`` Desactivar virtualenv |br|
+``lsvirtualenv`` Listar virtualenvs |br|
