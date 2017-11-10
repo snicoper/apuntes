@@ -50,10 +50,10 @@ REMI y EPEL RHEL/CentOS 7
 .. code-block:: bash
 
     # epel
-    yum install epel-release
+    yum install -y epel-release
 
     # remi
-    yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
+    yum install -y http://rpms.remirepo.net/enterprise/remi-release-7.rpm
 
 Actualizar el sistema
 *********************
@@ -92,6 +92,23 @@ Enable Firewalld
 
     systemctl start firewalld.service
     systemctl enable firewalld.service
+
+bash-git-prompt
+===============
+
+* https://github.com/magicmonty/bash-git-prompt
+
+.. code-block:: bash
+
+    cd ~
+    git clone https://github.com/magicmonty/bash-git-prompt.git .bash-git-prompt --depth=1
+
+.. code-block:: bash
+
+    vim ~/.bashrc
+
+    GIT_PROMPT_ONLY_IN_REPO=0
+    source ~/.bash-git-prompt/gitprompt.sh
 
 Útiles
 ******
