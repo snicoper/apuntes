@@ -16,9 +16,12 @@ Elegir la versión en `repopackages`_
 
     yum install https://download.postgresql.org/pub/repos/yum/9.6/redhat/rhel-7-x86_64/pgdg-centos96-9.6-3.noarch.rpm
 
-    yum install postgresql96 postgresql96-server postgresql96-devel postgresql96-contrib postgis2_96
+    yum install postgresql96 postgresql96-server postgresql96-devel postgresql96-contrib
 
-Si es la única version de PostgreSQL, añadir al **PATH**.
+    # Postgis
+    yum install postgis2_96
+
+Añadir al **PATH**.
 
 .. code-block:: bash
 
@@ -47,3 +50,7 @@ Archivos de configuración
     vim /var/lib/pgsql/9.6/data/pg_hba.conf
 
 :ref:`reference-linux-postgresql-instalacion_postgresql`
+
+.. code-block:: bash
+
+    systemctl restart postgresql-9.6

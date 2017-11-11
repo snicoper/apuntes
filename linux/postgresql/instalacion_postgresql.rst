@@ -12,6 +12,8 @@ Fuentes
 Fedora y Centos
 ***************
 
+:ref:`reference-linux-postgresql-postgres_last_version_centos7`
+
 Instalación
 
 .. code-block:: bash

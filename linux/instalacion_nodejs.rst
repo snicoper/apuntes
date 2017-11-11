@@ -7,6 +7,19 @@ Instalación NodeJS
 Instalación
 ***********
 
+De **nodesource**
+
+* https://nodejs.org/es/download/package-manager/#enterprise-linux-y-fedora
+
+.. code-block:: bash
+
+    curl -sL https://rpm.nodesource.com/setup_8.x | bash -
+    dnf install -y nodejs
+
+Donde ``setup_8.x``, poner la versión estable.
+
+De los repositorios de la distro.
+
 .. code-block:: bash
 
     sudo dnf -y install nodejs
@@ -21,7 +34,7 @@ Yarn
     sudo wget https://dl.yarnpkg.com/rpm/yarn.repo -O /etc/yum.repos.d/yarn.repo
     sudo dnf install -y yarn
 
-Añdir ``~/.yarn/bin`` al **PATH**
+Añadir ``~/.yarn/bin`` al **PATH**
 
 .. code-block:: bash
 

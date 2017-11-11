@@ -159,6 +159,8 @@ Dovecot
     smtpd_tls_cert_file = /etc/pki/tls/certs/snicoper.crt
     smtpd_tls_key_file = /etc/pki/tls/certs/snicoper.key
     smtpd_tls_session_cache_database = btree:/etc/postfix/smtpd_scache
+    # Centos 7
+    #smtpd_tls_session_cache_database = btree:/var/lib/postfix/smtpd_scache
 
 .. code-block:: bash
 
