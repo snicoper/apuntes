@@ -104,8 +104,7 @@ Si deseas permitir que cada usuario individual especifique el idioma que ella o 
 en la petición. Personaliza el contenido para cada usuario.
 
 Para usar ``LocaleMiddleware``, agrega ``django.middleware.locale.LocaleMiddleware`` a tu
-variable de configuración ``MIDDLEWARE_CLASSES``. Debido a que el orden de los middlewares es rele-
-vante, deberías seguir las siguientes guías:
+variable de configuración ``MIDDLEWARE_CLASSES``. Debido a que el orden de los middlewares es relevante, deberías seguir las siguientes guías:
 
 * Asegúrate de que se encuentre entre las primeras clases middleware instaladas.
 * Debe estar ubicado después de SessionMiddleware, esto es debido a que LocaleMiddleware usa datos de la sesión.

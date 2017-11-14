@@ -77,7 +77,8 @@ Limpiar migraciones
 
 Hacer primero un backup de la base de datos y un ``commit`` en **Git** **MUY RECOMENDABLE**
 
-Si se han echo muchos cambios en el modelo, sobre todo en las primeras etapas del proyecto, quizá sea bueno limpiar tanto las tabla ``django_migrations`` como el directorio ``app/migrations/``
+Si se han echo muchos cambios en el modelo, sobre todo en las primeras etapas del proyecto, quizá
+sea bueno limpiar tanto las tabla ``django_migrations`` como el directorio ``app/migrations/``
 
 Eliminar la tabla ``django_migrations``
 

@@ -8,7 +8,7 @@ EF revertir migración
 
     Update-Database -TargetMigration: $NombreMigracion
 
-Ejecutaras todos los metodos ``Down`` de los archivos de migracion, excepto ``NombreMigracion``.
+Ejecutaras todos los métodos ``Down`` de los archivos de migración, excepto ``NombreMigracion``.
 
 Para vaciar todas las migraciones:
 

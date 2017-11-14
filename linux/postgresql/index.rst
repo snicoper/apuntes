@@ -4,7 +4,7 @@
 PostgreSQL
 ##########
 
-Categorias:
+Categorías:
 
 .. toctree::
    :maxdepth: 1

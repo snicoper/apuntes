@@ -24,7 +24,7 @@ Bind
     # Linea 17
     allow-query     { localhost; 192.168.1.0/24; };
 
-Añadir despues de ``logging { #.... }``
+Añadir después de ``logging { #.... }``
 
 .. code-block:: bash
 

@@ -15,5 +15,7 @@ Para hacer unstaging de un archivo o directorio
 .. code-block:: bash
 
     git rm --cached ruta/file/or/dir
-    
-``git rm --cached`` se utiliza para eliminar un archivo del índice. En el caso de que el archivo ya está en el repositorio, ``git rm --cached`` eliminará el archivo del índice, dejándolo en el directorio de trabajo.
+
+``git rm --cached`` se utiliza para eliminar un archivo del índice. En el caso de que el archivo ya
+está en el repositorio, ``git rm --cached`` eliminará el archivo del índice, dejándolo en el
+directorio de trabajo.

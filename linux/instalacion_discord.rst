@@ -18,7 +18,8 @@ Requisitos
 Instalación
 ***********
 
-Descargar de `GitHub <https://github.com/crmarsh/discord-linux-bugs>`_ el ``.tar.gz`` y descomprimir, por ultimo ir al path donde este el descomprimido y como súper usuario:
+Descargar de `GitHub <https://github.com/crmarsh/discord-linux-bugs>`_ el ``.tar.gz`` y descomprimir,
+por ultimo ir al path donde este el descomprimido y como súper usuario:
 
 
 .. code-block:: bash

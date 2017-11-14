@@ -28,7 +28,9 @@ Escritura       200             020     002
 Ejecución       100             010     001
 ==========      ===========     =====   =====
 
-Es decir un archivo con permisos 700 seria que al propietario puede leer, escribir y ejecutar, pero el resto no podrían hacer ninguna de las cosas (-rwx------).
+Es decir un archivo con permisos 700 seria que al propietario puede leer, escribir y ejecutar, pero
+el resto no podrían hacer ninguna de las cosas (-rwx------).
+
 Se suman los valores en cada columna y se obtiene los permisos, 777 es el máximo
 
 Para mas información leer el libro PHP y MySQL Practico para diseñadores y programadores web pagina 469

@@ -1,7 +1,7 @@
 .. _reference-programacion-uml-relaciones_composicion_agregacion:
 
 ###############################
-Relacion composicion agregacion
+Relación composición agregación
 ###############################
 
 Fuentes

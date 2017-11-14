@@ -35,7 +35,7 @@ Si existe, y lo que queremos hacer es escribir en el:
 
     }
 
-Con FileMode, decimos el modo de abrir el archivo, ejeplo, Append, OpenOrCreate, etc.
+Con FileMode, decimos el modo de abrir el archivo, ejemplo, Append, OpenOrCreate, etc.
 
 http://msdn.microsoft.com/es-es/library/system.io.filemode%28v=vs.110%29.aspx
 
@@ -62,7 +62,7 @@ El compilador generará los bloques try-finally anidados apropiados.
 Leer de un archivo
 ******************
 
-También es posible abrirlo con FileStream, pero como solo se trata de leerlo, tambien
+También es posible abrirlo con FileStream, pero como solo se trata de leerlo, también
 lo puedo hacer con StreamReader.
 
 Primero, seria comprobar si el archivo existe y en caso de existir, abrirlo

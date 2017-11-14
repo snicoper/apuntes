@@ -59,9 +59,9 @@ Editar ``~/Global.asax.cs/`` y en el metodo ``Application_Start`` añadir:
     ).ToArray();
 
 Para el ejemplo creo el directorio ``~/Core`` y dentro creo el archivo ``ViewRenderer.cs`` con el
-siguiente codigo de https://gist.github.com/HarveyWilliams/0405edd6719c16171329
+siguiente código de https://gist.github.com/HarveyWilliams/0405edd6719c16171329
 
-.. code-block:: language
+.. code-block:: csharp
 
     using System;
     using System.Web;

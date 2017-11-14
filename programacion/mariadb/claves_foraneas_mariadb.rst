@@ -64,7 +64,7 @@ foreign key, o bien dentro de la creación de la tabla
 
 Donde CASCADE hay 4 tipos:
 
-.. code-block:: none
+.. code-block:: bash
 
     [ON DELETE {RESTRICT | CASCADE | SET NULL | NO ACTION}]
     [ON UPDATE {RESTRICT | CASCADE | SET NULL | NO ACTION}]

@@ -4,7 +4,7 @@
 Javascript
 ##########
 
-Categorias:
+Categorías:
 
 .. toctree::
     :maxdepth: 2

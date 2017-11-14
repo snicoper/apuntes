@@ -4,7 +4,7 @@
 UML
 ###
 
-Categorias:
+Categorías:
 
 .. toctree::
     :maxdepth: 1

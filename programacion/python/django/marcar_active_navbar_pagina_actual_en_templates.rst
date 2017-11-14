@@ -4,7 +4,8 @@
 Marcar active pagina actual en templates
 ########################################
 
-Crear en la app **core** un directorio ``template_tags`` con su ``__init__.py``. Crear el archivo ``core_tags.py`` y añadir:
+Crear en la app **core** un directorio ``template_tags`` con su ``__init__.py``. Crear el archivo
+``core_tags.py`` y añadir:
 
 .. code-block:: python
 
@@ -32,4 +33,5 @@ Para usarlo en el template, en el link que se quiere comprobar:
       <a href="{% url 'home_page' %}">Home</a>
     </li>
 
-Nombre de la **tag** ``active_link``, el objeto ``request`` y el nombre en ``URLConf`` completo, igual que se hace en un link ``{% url 'home:index' %}``.
+Nombre de la **tag** ``active_link``, el objeto ``request`` y el nombre en ``URLConf`` completo,
+igual que se hace en un link ``{% url 'home:index' %}``.

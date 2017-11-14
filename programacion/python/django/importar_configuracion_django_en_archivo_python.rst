@@ -1,7 +1,7 @@
 .. _reference-programacion-python-django-importar_configuracion_django_en_archivo_python:
 
 ###############################################
-Importar configuracion django en archivo python
+Importar configuración django en archivo python
 ###############################################
 
 .. code-block:: python

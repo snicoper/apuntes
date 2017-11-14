@@ -42,7 +42,7 @@ También se puede crear un archivo ``pip-upgrade-all``
       rm -f $PATH_BACKUP
     fi
 
-Dar permisos de ejecución y moverlo a ``/usr/bin/``
+Dar permisos de ejecución y mover a ``/usr/bin/``
 
 .. code-block:: bash
 

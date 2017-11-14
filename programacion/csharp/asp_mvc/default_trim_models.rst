@@ -40,7 +40,7 @@ Crear ``TrimModelBinder.cs``, en ``Core`` y añadir:
         }
     }
 
-Ponerlo por defecto en ``Global.asax`` en el metodo ``Application_Start``
+Ponerlo por defecto en ``Global.asax`` en el método ``Application_Start``
 
 .. code-block:: csharp
 

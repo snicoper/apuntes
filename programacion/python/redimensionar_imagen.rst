@@ -19,10 +19,10 @@ Redimensionar imagen
 
         args:
             image_path<str>: Path de la imagen a redimensionar.
-            base_width<float|int>: Ancho maximo.
-            base_height<float|int>: Alto maximo.
-            scale<bool>: ¿Mantener proporcion?.
-            prefix_name<str>: Prefijo en el nombre de la imagen, no añadir el caracter '_'.
+            base_width<float|int>: Ancho máximo.
+            base_height<float|int>: Alto máximo.
+            scale<bool>: ¿Mantener proporción?.
+            prefix_name<str>: Prefijo en el nombre de la imagen, no añadir el carácter '_'.
         raises:
             FileNotFoundError: Si no existe image_path.
         @return:

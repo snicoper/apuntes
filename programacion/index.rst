@@ -1,10 +1,10 @@
 .. _reference-programacion-index:
 
 ############
-Programacion
+Programación
 ############
 
-Categorias:
+Categorías:
 
 .. toctree::
     :maxdepth: 2

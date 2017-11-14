@@ -45,7 +45,7 @@ archivo.
 .. code-block:: python
 
     # accounts/models.py
-    # Importar los modulos necesarios al principio.
+    # Importar los módulos necesarios al principio.
     from django.db.models.signals import post_save
     from django.dispatch import receiver
     from django.conf import settings

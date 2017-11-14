@@ -4,7 +4,7 @@
 Redis
 #####
 
-Categorias:
+Categorías:
 
 .. toctree::
    :maxdepth: 2

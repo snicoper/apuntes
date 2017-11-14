@@ -1,7 +1,7 @@
 .. _reference-linux-python-instalar_python:
 
 ############################
-Instalacion Python en Ubuntu
+Instalación Python en Ubuntu
 ############################
 
 Python3

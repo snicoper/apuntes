@@ -12,7 +12,7 @@ pgAdmin4 virtualenvwrapper
 
 Para ver las versiones https://www.pgadmin.org/download/pip4.php
 
-Descargar el archivo segun version.
+Descargar el archivo según version.
 
 .. code-block:: bash
 

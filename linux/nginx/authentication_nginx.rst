@@ -17,7 +17,7 @@ Authentication HTTP Nginx
 
     cd /etc/nginx/
 
-    # Donde el nginx es el nombre que despues pedira
+    # Donde el nginx es el nombre que después pedirá
     # y .htpasswd el archivo que generara.
     htpasswd -c /etc/nginx/.htpasswd nginx
 

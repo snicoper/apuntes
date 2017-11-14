@@ -73,7 +73,7 @@ Gestionar archivos y directorios
     ls -F → listar el contenido de un directorio (distinguiendo los directorios con una barra)
     ls -l → listar el contenido de un directorio, mostrando los detalles.
     ls -lh → listar el contenido de un directorio, mostrando los detalles (y el tamaño en un formato “humanizado”).
-    ls -a → listar el contenido de un directorio, incluendo los ficheros ocultos.
+    ls -a → listar el contenido de un directorio, incluyendo los ficheros ocultos.
     ls *[0-9] → listar los ficheros y carpetas que contienen números.
     ls -laR | less → listar recursivamente el contenido del directorio actual y todos los subdirectorios y archivos, incluyendo los ocultos, separados por página.
     tree → mostrar los ficheros y carpetas en forma de árbol comenzando por la raíz.(1)

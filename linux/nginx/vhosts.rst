@@ -79,7 +79,8 @@ Todo como root
 
 .. note::
 
-    Si se crea un host virtual en el home del usuario, es necesario dar permisos ``711`` al directorio del usuario.
+    Si se crea un host virtual en el home del usuario, es necesario dar permisos ``711`` al
+    directorio del usuario.
 
 .. code-block:: bash
 

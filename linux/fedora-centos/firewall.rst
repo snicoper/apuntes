@@ -100,9 +100,9 @@ Referencias
 
     firewall-cmd --permanent --zone=public --add-service=http
 
-Para eliminar cabiar --add-x por --remove-x
+Para eliminar cambiar --add-x por --remove-x
 
-**Permitir conexion a la red local.**
+**Permitir conexión a la red local.**
 
 .. code-block:: bash
 

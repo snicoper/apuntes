@@ -32,7 +32,7 @@ Crear en la raíz (donde Web.config) ``secrets.config`` y añadir lo parámetros
 
 Por ultimo, añadirlo a ``.gitignore``
 
-.. code-block:: txt
+.. code-block:: bash
 
     secrets.config
 

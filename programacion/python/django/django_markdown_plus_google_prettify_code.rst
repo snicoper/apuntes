@@ -18,7 +18,7 @@ Una manera rápida para añadir entradas con ``markdown`` y/o resaltar bloques
 de código.
 
 Mientras que ``django-pagedown`` lo uso para mostrar el <textarea> con algunos
-botones de ayuda para formatear el codigo markdown, ``django-markdown-deux``
+botones de ayuda para formatear el código markdown, ``django-markdown-deux``
 lo utilizo la presentación (formateado).
 
 Y por ultimo, utilizo ``google-code-prettify`` para el resaltado de sintaxis.

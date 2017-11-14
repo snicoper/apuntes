@@ -62,7 +62,7 @@ Ahora ya tendrás un nuevo archivo iso que podrás montar como se explica más a
 Montar imágenes NRG (imágenes de Nero Burning Rom):
 ***************************************************
 
-Las imagenes NRG pueden ser montadas directamente sin necesidad de convertirlas:
+Las imágenes NRG pueden ser montadas directamente sin necesidad de convertirlas:
 
 .. code-block:: bash
 
@@ -119,7 +119,7 @@ intentases instalarlo por apt-get así:
 Si de este modo no puedes instalarlo puedes seguir las instrucciones de
 esta página para bajar el paquete deb de
 `ccd2iso <http://www.ubuntu-es.org/index.php?q=node/31266>`_
-e instalarlo facilmente.
+e instalarlo fácilmente.
 
 Si por cualquier motivo no pudieses conseguir el programa por esos dos métodos
 siempre puedes descargarlo desde su página:
@@ -157,7 +157,7 @@ Montar imágenes DAA
 *******************
 
 El formato DAA es un formato que utiliza el programa Poweriso. Durante algún
-tiempo este formato resultaba muy dificil de utilizar en Linux (no había versión
+tiempo este formato resultaba muy difícil de utilizar en Linux (no había versión
 de Poweriso para linux y la emulación con wine no funcionaba). Finalmente los
 creadores del programa sacaron una versión gratuita de su programa para Linux que
 además nos sirve para convertir otros formatos.

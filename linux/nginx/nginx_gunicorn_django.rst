@@ -69,7 +69,7 @@ Nginx
 :ref:`reference-linux-nginx-instalacion_nginx`
 
 .. note::
-    En Fedora/Centos si se sirven las paginas en el ``home`` hay que dar pemisos
+    En Fedora/Centos si se sirven las paginas en el ``home`` hay que dar permisos
     al home del usuario ``chmod 711 /home/usuario``
 
 .. code-block:: bash

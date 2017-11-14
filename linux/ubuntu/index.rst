@@ -4,7 +4,7 @@
 Ubuntu
 ######
 
-Categorias:
+Categorías:
 
 .. toctree::
     :maxdepth: 1

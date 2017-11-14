@@ -4,7 +4,7 @@
 Redimensionar Imagen en MVC
 ###########################
 
-**Refereces**
+**References**
 
 * Libro ASP.NET MVC with Entity Framework and CSS (Chapter 5)
 

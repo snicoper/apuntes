@@ -83,7 +83,7 @@ Restaurar db:
     $ sudo su - postgres
     $ psql -f /var/lib/pgsql/backups/dumpall.sql mydb
 
-Tambien:
+También:
 
 .. code-block:: bash
 
@@ -124,7 +124,7 @@ Show users:
 .. code-block:: bash
 
     select * from "pg_user";
-    # tambien
+    # también
     \du
 
 Escribir las consultas en tu editor favorito:
@@ -165,7 +165,7 @@ Create a superuser user:
     # or even better
     ALTER USER mysuper WITH SUPERUSER CREATEDB CREATEROLE INHERIT LOGIN REPLICATION
 
-Sabar el tamaño usado las tablas en una base de datos:
+Saber el tamaño usado las tablas en una base de datos:
 
 Ver mas:
 http://www.niwi.be/2013/02/17/postgresql-database-table-indexes-size/

@@ -4,7 +4,7 @@
 Pasar request en un Form o ModelForm desde generic.*View
 ########################################################
 
-En el ``FormView`` o lo que sea ``*View`` crear metodo:
+En el ``FormView`` o lo que sea ``*View`` crear método:
 
 .. code-block:: python
 
@@ -15,7 +15,7 @@ En el ``FormView`` o lo que sea ``*View`` crear metodo:
             kwargs['request'] = self.request
             return kwargs
 
-Ahora estara accesible en el ``Form`` desde el metodo ``__init__()``.
+Ahora estará accesible en el ``Form`` desde el método ``__init__()``.
 
 .. code-block:: python
 

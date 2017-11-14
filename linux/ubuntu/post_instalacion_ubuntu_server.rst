@@ -56,7 +56,7 @@ Cambiar editor.
 
     sudo update-alternatives --config editor
 
-Recordar ultima posicion.
+Recordar ultima posición.
 
 .. code-block:: bash
 
@@ -69,8 +69,8 @@ Recordar ultima posicion.
       au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
     endif
 
-Habiliar ufw (firewall)
-***********************
+Habilitar ufw (firewall)
+************************
 
 .. code-block:: bash
 

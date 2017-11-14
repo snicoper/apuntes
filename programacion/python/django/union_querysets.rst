@@ -41,4 +41,4 @@ Con el operados de union ``|`` (siguiendo con ``c1``, ``c2`` y ``c3``)
 
 El "problema" es que han ser del mismo modelo.
 
-En el comentario tambien habla de ``QuerySetChain`` en
+En el comentario también habla de ``QuerySetChain`` en

@@ -4,7 +4,9 @@
 Nginx Gunicorn Django Socket
 ############################
 
-Servir un sitio Web Django con gunicorn y Nginx es algo que tarde o temprano todos hacemos, aunque solo sea para ver como responde nuestro sitio antes de ponerlo en producción y lidiar con los problemas que nos podemos encontrar cuando de verdad lo subamos a un servidor.
+Servir un sitio Web Django con gunicorn y Nginx es algo que tarde o temprano todos hacemos, aunque
+solo sea para ver como responde nuestro sitio antes de ponerlo en producción y lidiar con los
+problemas que nos podemos encontrar cuando de verdad lo subamos a un servidor.
 
 Esta es una configuración básica que funciona muy bien.
 
@@ -29,7 +31,8 @@ Instalar Django y Gunicorn con ``pip``.
     pip install django
     pip install gunicorn
 
-Creamos un directorio para todo el proyecto en ``~/webapps/`` yo para los ejemplos, uso mi usuario ``snicoper``, tu siempre pon tu usuario!.
+Creamos un directorio para todo el proyecto en ``~/webapps/`` yo para los ejemplos, uso mi usuario
+``snicoper``, tu siempre pon tu usuario!.
 
 .. code-block:: bash
 
@@ -81,7 +84,7 @@ y añadimos las siguientes lineas
     DJANGODIR=/home/snicoper/webapps/example.com/example # Django project directory
     LOGFILE=/var/log/gunicorn/gunicorn.log
     LOGDIR=$(dirname $LOGFILE)
-    SOCKFILE=/home/snicoper/webapps/example.com/run/gunicorn.sock # we will communicte using this unix socket
+    SOCKFILE=/home/snicoper/webapps/example.com/run/gunicorn.sock # we will communicate using this unix socket
     USER=snicoper # the user to run as
     GROUP=snicoper # the group to run as
     NUM_WORKERS=3 # how many worker processes should Gunicorn spawn
@@ -123,7 +126,8 @@ Crear directorio ``/var/log/gunicorn`` y dentro, el archivo ``gunicorn.log``
     sudo chown snicoper:snicoper /var/log/gunicorn
     touch /var/log/gunicorn/gunicorn.log
 
-Y por ultimo, configurar un servidor virtual de nginx, para ello, creamos un archivo en ``etc/nginx/conf.d/example.com.conf``
+Y por ultimo, configurar un servidor virtual de nginx, para ello, creamos un archivo en
+``etc/nginx/conf.d/example.com.conf``
 
 .. code-block:: bash
 
@@ -214,7 +218,8 @@ Abrir el puesto 80
     sudo firewall-cmd --permanent --zone=public --add-service=http
     sudo firewall-cmd --reload
 
-Para la practica, el puerto no es necesario, pero hay queda :), y ahora le en ``/etc/hosts`` le decimos que ``example.com`` apunte a ``127.0.0.1``
+Para la practica, el puerto no es necesario, pero hay queda :), y ahora le en ``/etc/hosts`` le
+decimos que ``example.com`` apunte a ``127.0.0.1``
 
 .. code-block:: bash
 
@@ -243,9 +248,11 @@ Yo, para solucionar eso hice lo siguiente:
     sudo grep nginx /var/log/audit/audit.log | audit2allow -M nginx
     sudo semodule -i nginx.pp
 
-Ya con eso, me funciono bien. Ahora, ya solo nos falta poner que ``gunicorn_start.sh`` se inicie al reiniciar la maquina y poderlo reiniciar de una manera rápida.
+Ya con eso, me funciono bien. Ahora, ya solo nos falta poner que ``gunicorn_start.sh`` se inicie al
+reiniciar la maquina y poderlo reiniciar de una manera rápida.
 
-Casi todo el mundo lo hace con ``supervisor``, pero yo probé creando un servicio systemd y me funciona muy bien, así que es como lo voy a poner.
+Casi todo el mundo lo hace con ``supervisor``, pero yo probé creando un servicio systemd y me funciona
+muy bien, así que es como lo voy a poner.
 
 .. code-block:: bash
 
@@ -282,7 +289,8 @@ Para reiniciar, etc, se usa los típicos comandos de systemd
     sudo systemctl restart gunicorn.service
     sudo systemctl enable gunicorn.service
 
-Esta configuración ha sido por socket entre gunicorn y nginx, pero tambien es posible hacerlo por IP, tengo unos [apuntes sobre el tema](http://apuntes-snicoper.readthedocs.org/es/latest/linux/nginx/nginx_gunicorn_django.html).
+Esta configuración ha sido por socket entre gunicorn y nginx, pero también es posible hacerlo por IP,
+tengo unos [apuntes sobre el tema](http://apuntes-snicoper.readthedocs.org/es/latest/linux/nginx/nginx_gunicorn_django.html).
 
 ---
 

@@ -1,7 +1,7 @@
 .. _reference-linux-ubuntu-post_instalacion_ubuntu:
 
 #######################
-Post instalacion Ubuntu
+Post instalación Ubuntu
 #######################
 
 **Probado en Ubuntu 14.04**

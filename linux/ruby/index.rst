@@ -4,7 +4,7 @@
 Ruby
 #####
 
-Categorias:
+Categorías:
 
 .. toctree::
    :maxdepth: 1

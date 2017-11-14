@@ -11,7 +11,7 @@ Redis Cache
     pip install django-redis
 
 
-Configuracion en ``settings.py``
+Configuración en ``settings.py``
 
 .. code-block:: python
 

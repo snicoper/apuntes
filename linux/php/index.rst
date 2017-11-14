@@ -8,7 +8,7 @@ PHP
 
     Todo esto puede estar muy desactualizado.
 
-Categorias:
+Categorías:
 
 .. toctree::
    :maxdepth: 1

@@ -4,11 +4,14 @@
 Login con username o email
 ##########################
 
-Con este pequeño tip, vamos a permitir que un usuario pueda loguearse poniendo el email y/o username y contraseña.
+Con este pequeño tip, vamos a permitir que un usuario pueda loguearse poniendo el email y/o username
+y contraseña.
 
-En el archivo de configuración ``settings.py`` vamos a crear una variable ``AUTH_AUTHENTICATION_TYPE`` con uno de los siguientes valores: ``both``, ``email``, ``username``.
+En el archivo de configuración ``settings.py`` vamos a crear una variable ``AUTH_AUTHENTICATION_TYPE``
+con uno de los siguientes valores: ``both``, ``email``, ``username``.
 
-Ademas, tenemos que cambiar el valor de ``AUTHENTICATION_BACKENDS``. El valor es una lista o tupla con los backends de autenticación, valga la redundancia.
+Ademas, tenemos que cambiar el valor de ``AUTHENTICATION_BACKENDS``. El valor es una lista o tupla
+con los backends de autenticación, valga la redundancia.
 
 ``settings.py``
 

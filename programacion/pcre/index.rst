@@ -4,7 +4,7 @@
 PCRE - Perl Compatible Regular Expressions
 ##########################################
 
-Categorias:
+Categorías:
 
 .. toctree::
     :maxdepth: 1

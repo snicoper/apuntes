@@ -107,7 +107,7 @@ Si es un puerto distinto al 22
 
     semanage port -a -t ssh_port_t -p tcp PUERTO_NUEVO
 
-Si se ha cambiado el puerto, para entrar por ``ssh``
+Si se ha cambiado el puerto, para entrar con ``ssh``
 
 .. code-block:: bash
 

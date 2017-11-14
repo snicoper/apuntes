@@ -13,7 +13,7 @@ Fuentes
 
 Estos son comandos muy básicos, para mas info en Fuentes
 
-Habiliar
+Habilitar
 
 .. code-block:: bash
 

@@ -4,7 +4,7 @@
 Post instalación Fedora Gnome
 #############################
 
-**Fedora 26 Workstation**
+**Fedora 27 Workstation**
 
 :ref:`reference-linux-fedora-centos-post_instalacion_fedora`
 
@@ -89,7 +89,8 @@ Programas básicos
         gparted \
         gpick \
         transmission-gtk \
-        dnfdragora-gui # yumex-dnf
+        dnfdragora \
+        dnfdragora-gui
 
 Firewalld
 *********

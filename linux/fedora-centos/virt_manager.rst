@@ -85,7 +85,7 @@ Forzar apagado
     virsh destroy Name
     virsh destroy Id
 
-Optener información sobre un Guest
+Obtener información sobre un Guest
 ==================================
 
 .. code-block:: bash

@@ -50,7 +50,7 @@ Mi problema fue con un código como el siguiente
 
 Resultado
 
-.. code-block:: none
+.. code-block:: bash
 
     1
     3
@@ -77,7 +77,7 @@ lo destruyera.
 
 Ahora el resultado es
 
-.. code-block:: none
+.. code-block:: bash
 
     1
     2

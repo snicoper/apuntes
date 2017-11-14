@@ -1,7 +1,7 @@
 .. _reference-programacion-asp_mvc-upload_images:
 
 ##################################
-Subir imagenes desde un formulario
+Subir imágenes desde un formulario
 ##################################
 
 El modelo

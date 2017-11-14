@@ -17,7 +17,7 @@ Como administrador e ir a donde están los archivos de red.
     su
     cd /etc/sysconfig/network-scripts/
 
-Editar segun la interface que use.
+Editar según la interface que use.
 
 .. code-block:: bash
 

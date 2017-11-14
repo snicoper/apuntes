@@ -1,7 +1,7 @@
 .. _reference-programacion-csharp-descripcion_accesibilidad:
 
 #########################
-Descripcion Accesibilidad
+Descripción Accesibilidad
 #########################
 
 ==============      =======================

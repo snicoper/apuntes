@@ -38,8 +38,6 @@ Centos PHP 5
 
     yum install --enablerepo=remi,remi-php55 php-pecl-xdebug
 
-.. code-block:: bash
-
 Fedora y Centos PHP 5
 =====================
 

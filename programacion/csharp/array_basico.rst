@@ -45,7 +45,7 @@ Para declarar una se usa la siguiente sintaxis:
 
 Esto crea una "tabla mas o menos así"
 
-.. code-block:: none
+.. code-block:: bash
 
     x x
     x x
@@ -60,7 +60,7 @@ Una manera rápida seria:
 
 Donde:
 
-.. code-block:: none
+.. code-block:: bash
 
     1 1
     2 2
@@ -75,7 +75,7 @@ Arrays de Arrays
 
 También llamadas arrays escalonada, ya que cada fila puede tener un numero x de elementos.
 
-Un ejemplo rapido:
+Un ejemplo rápido:
 
 .. code-block:: c#
 
@@ -87,7 +87,7 @@ Un ejemplo rapido:
     matrix[1][1] = 8;
     matrix[2][0] = 5;
 
-.. code-block:: none
+.. code-block:: bash
 
     0 0 0 4 0
     0 8 0 0

@@ -10,9 +10,7 @@ https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-
 
 ----------
 
-.. note::
-
-    En Fedora aunque no lo he probado, supongo que sera idéntico.
+Probado en **Fedora** y **Centos**
 
 .. code-block:: bash
 
@@ -34,7 +32,7 @@ https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-
 
     certbot certonly -a webroot --webroot-path=/usr/share/nginx/html -d MIDOMINIO.com -d www.MIDOMINIO.com -d mail.MIDOMINIO.com
 
-Pide un email, cuando todo haya salido bien...
+Pide un email, cuando todo haya salido bien.
 
 .. code-block:: bash
 
@@ -48,6 +46,10 @@ Actualizar el certificado, dura 3 meses.
 
 Cron
 ****
+
+.. code-block:: bash
+
+    sudo crontab -e
 
 .. code-block:: bash
 
@@ -66,7 +68,7 @@ Quitar de ``/etc/nginx/nginx.conf`` ``default_server`` o dará error.
 Postfix
 *******
 
-Para la configuracion de :ref:`reference-linux-fedora-centos-postfix`
+Para la configuración de :ref:`reference-linux-fedora-centos-postfix`
 
 En ``vim /etc/postfix/main.cf``
 

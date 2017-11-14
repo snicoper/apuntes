@@ -74,7 +74,7 @@ Modificar php.ini y cli/php.ini
 * short_open_tag Off
 * timezone Europe/Madrid
 
-Configuracion php-opcache
+Configuración php-opcache
 =========================
 
 En la linea 1877 mas o menos:

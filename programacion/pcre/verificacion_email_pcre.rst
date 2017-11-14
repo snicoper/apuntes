@@ -1,7 +1,7 @@
 .. _reference-programacion-pcre-verificacion_email_pcre:
 
 ##############################
-Verificacion de Email con PCRE
+Verificación de Email con PCRE
 ##############################
 
 PHP

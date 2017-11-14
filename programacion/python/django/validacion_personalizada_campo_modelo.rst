@@ -13,7 +13,7 @@ Validación campo de un modelo
 
     def titulo_validation(value):
         if not len(value) > 4:
-            raise ValidationError('Minimo 4 caracteres')
+            raise ValidationError('Mínimo 4 caracteres')
 
 .. code-block:: python
 

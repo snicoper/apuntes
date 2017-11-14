@@ -4,7 +4,7 @@
 Linux
 #####
 
-Categorias:
+Categorías:
 
 .. toctree::
    :maxdepth: 2

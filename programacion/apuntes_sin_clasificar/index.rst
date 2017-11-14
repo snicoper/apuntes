@@ -4,7 +4,7 @@
 Apuntes sin clasificar
 ######################
 
-Categorias:
+Categorías:
 
 .. toctree::
     :maxdepth: 2

@@ -4,7 +4,7 @@
 Vue.js
 ######
 
-Categorias:
+Categorías:
 
 .. toctree::
     :maxdepth: 2

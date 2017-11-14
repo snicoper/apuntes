@@ -60,7 +60,7 @@ Aquí hay algunas opciones mas que se pueden poner **(sacado de man logrotate)**
 * **create (mode owner group)**:  Se crea el archivo de registro (con el mismo nombre del  archivo de  registro  que  se acaba de rotar) inmediatamente después del cambio (antes de que se  ejecute  el  script  postrotate).  mode especifica  el  modo  del archivo de registro en octal (al igual que chmod (2)), owner especifica el nombre del  usuario  al  que pertenecerá  el archivo de registro, y group especifica el grupo al que pertenecerá el archivo. Se puede omitir cualquiera de los atributos  del  archivo  de  registro,  en  cuyo  caso, el nuevo archivo usará los valores  del  archivo  antiguo  para  aquellos atributos  que  se  hayan  omitido.  Esta opción se puede anular usando la opción nocreate.
 * **postrotate/endscript**: Las líneas entre postrotate y endscript (ambas deben aparecer en líneas por separado) se ejecutan  una  vez  que  el  archivo  de registro  ha  sido rotado. Estas directivas sólo pueden aparecer dentro de una definición de archivo de registro.
 
----
+----
 
 **Fuentes**
 

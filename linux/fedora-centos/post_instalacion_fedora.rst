@@ -4,7 +4,7 @@
 Post instalación Fedora
 #######################
 
-**Fedora 26**
+**Fedora 27**
 
 Actualizar
 **********
@@ -86,9 +86,9 @@ Opcionales
     dnf -y install chromium
     dnf -y install gimp
     dnf -y install zsh
-
     dnf -y install meld
     dnf -y install gitg
+
     dnf -y install gedit-plugins
     dnf -y install breeze-icon-theme
     dnf -y install dia
@@ -137,7 +137,7 @@ vscode
 
     sudo dnf install -y code
 
-Post post instalación
+Otras configuraciones
 *********************
 
 * :ref:`reference-linux-fedora-centos-post_instalacion_fedora_gnome`

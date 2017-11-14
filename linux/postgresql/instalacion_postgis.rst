@@ -14,7 +14,7 @@ Instalación de Postgis
 
     dnf -y install postgis
 
-Es necesaio habilitar cada base de datos
+Es necesario habilitar cada base de datos
 
 .. code-block:: bash
 
