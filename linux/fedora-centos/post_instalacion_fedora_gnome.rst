@@ -85,13 +85,14 @@ Programas básicos
     dnf -y install \
         arc-theme \
         dconf-editor \
+        dnfdragora \
+        dnfdragora-gui \
         geary \
+        gnome-shell-extension-topicons-plus \
         gnome-tweak-tool \
         gparted \
         gpick \
-        transmission-gtk \
-        dnfdragora \
-        dnfdragora-gui
+        transmission-gtk
 
 Firewalld
 *********

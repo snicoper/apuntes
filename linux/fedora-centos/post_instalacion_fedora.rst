@@ -78,8 +78,8 @@ Programas básicos
 
 Para pwgen ``pwgen -sy 16``
 
-Opcionales
-**********
+Otros
+*****
 
 .. code-block:: bash
 
@@ -88,6 +88,8 @@ Opcionales
     dnf -y install zsh
     dnf -y install meld
     dnf -y install gitg
+
+    dnf -y install telegram-desktop
 
     dnf -y install gedit-plugins
     dnf -y install breeze-icon-theme
