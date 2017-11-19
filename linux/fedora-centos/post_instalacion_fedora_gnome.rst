@@ -17,7 +17,7 @@ Gnome Settings
 
     # General
     gsettings set org.gnome.desktop.interface clock-show-date true
-    gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita'
+    gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
     gsettings set org.gnome.desktop.screensaver lock-enabled false
     gsettings set org.gnome.desktop.session idle-delay 900
     gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,close'
@@ -48,6 +48,7 @@ Gnome Settings
     gsettings set org.gnome.nautilus.list-view use-tree-view true
     gsettings set org.gnome.nautilus.preferences default-folder-viewer 'icon-view'
     gsettings set org.gtk.Settings.FileChooser sort-directories-first true
+    # gsettings set org.gnome.nautilus.preferences use-experimental-views true
 
     # Fuentes
     gsettings set org.gnome.desktop.interface monospace-font-name 'Dejavu Sans Mono 11'

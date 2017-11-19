@@ -17,31 +17,44 @@ Estos son los plugins que instalo, sobre todo para **Python/Django**
     code --install-extension minhthai.vscode-todo-parser
     code --install-extension pflannery.vscode-versionlens
     code --install-extension sandy081.todotasks
+    code --install-extension Tyriar.lorem-ipsum
+
+    # Spell
     code --install-extension streetsidesoftware.code-spell-checker
+    code --install-extension streetsidesoftware.code-spell-checker-spanish
 
     # Html css
-    code --install-extension bibhasdn.django-html
+    code --install-extension mrmlnc.vscode-scss
+    code --install-extension formulahendry.auto-rename-tag
     code --install-extension Zignd.html-css-class-completion
 
     # Python
-    code --install-extension donjayamanne.python
+    code --install-extension bibhasdn.django-html
+    code --install-extension donjayamanne.python-extension-pack
+    code --install-extension ms-python.python
 
     # Linters
+    code --install-extension DavidAnson.vscode-markdownlint
     code --install-extension dbaeumer.vscode-eslint
     code --install-extension mkaufman.HTMLHint
     code --install-extension shinnn.stylelint
+
+    # Git
+    code --install-extension donjayamanne.githistory
+    # code --install-extension eamodio.gitlens
+
+    # Rest
+    code --install-extension humao.rest-client
 
     # Vim
     code --install-extension fallenwood.vimL
     code --install-extension vscodevim.vim
 
-    # Git
-    code --install-extension donjayamanne.githistory
-
     # RestructuredText
     code --install-extension lextudio.restructuredtext
 
     # Theme Icons
-    code --install-extension emmanuelbeziat.vscode-great-icons
-    code --install-extension file-icons.file-icons
-    code --install-extension robertohuertasm.vscode-icons
+    code --install-extension PKief.material-icon-theme
+
+    # Theme Schema
+    code --install-extension  akamud.vscode-theme-onedark
