@@ -162,7 +162,7 @@ Comprobar actualizaciones e instalar, editar ``~/.bashrc`` o ``~/.zshrc``.
 
         if [[ $ATOM_INSTALLED_VERSION < $ATOM_LATEST_VERSION ]]
         then
-            sudo dnf install -y https://github.com/atom/atom/releases/download/v${ATOM_LATEST_VERSION}/atom.x86_64.rpm
+            sudo dnf update -y https://github.com/atom/atom/releases/download/v${ATOM_LATEST_VERSION}/atom.x86_64.rpm
         else
             echo "Atom esta en la ultima versión"
         fi
