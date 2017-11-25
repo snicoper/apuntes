@@ -136,8 +136,39 @@ vscode
 
     sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
     sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
-
     sudo dnf install -y code
+
+Atom
+****
+
+* https://fedoraproject.org/wiki/Atom
+
+Instalar Atom
+
+.. code-block:: bash
+
+    wget $(curl -sL "https://api.github.com/repos/atom/atom/releases/latest" | grep "https.*atom.x86_64.rpm" | cut -d '"' -f 4)
+    sudo dnf -y install ./atom.x86_64.rpm
+    rm -f ./atom.x86_64.rpm
+
+Comprobar actualizaciones e instalar, editar ``~/.bashrc`` o ``~/.zshrc``.
+
+.. code-block:: bash
+
+    # Comprueba si Atom tiene la ultima version y la actualiza en caso necesario.
+    function atom_update() {
+        ATOM_INSTALLED_VERSION=$(rpm -qi atom | grep "Version" |  cut -d ':' -f 2 | cut -d ' ' -f 2)
+        ATOM_LATEST_VERSION=$(curl -sL "https://api.github.com/repos/atom/atom/releases/latest" | grep -E "https.*atom-amd64.tar.gz" | cut -d '"' -f 4 | cut -d '/' -f 8 | sed 's/v//g')
+
+        if [[ $ATOM_INSTALLED_VERSION < $ATOM_LATEST_VERSION ]]
+        then
+            sudo dnf install -y https://github.com/atom/atom/releases/download/v${ATOM_LATEST_VERSION}/atom.x86_64.rpm
+        else
+            echo "Atom esta en la ultima versión"
+        fi
+    }
+
+    alias atom_update="atom_update"
 
 Otras configuraciones
 *********************
