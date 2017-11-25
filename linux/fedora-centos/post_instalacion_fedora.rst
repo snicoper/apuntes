@@ -143,26 +143,29 @@ Atom
 
 * https://fedoraproject.org/wiki/Atom
 
-Instalar Atom
+Instalar o Actualizar Atom
 
-.. code-block:: bash
-
-    wget $(curl -sL "https://api.github.com/repos/atom/atom/releases/latest" | grep "https.*atom.x86_64.rpm" | cut -d '"' -f 4)
-    sudo dnf -y install ./atom.x86_64.rpm
-    rm -f ./atom.x86_64.rpm
-
-Comprobar actualizaciones e instalar, editar ``~/.bashrc`` o ``~/.zshrc``.
+Editar ``~/.bashrc`` o ``~/.zshrc``.
 
 .. code-block:: bash
 
     # Comprueba si Atom tiene la ultima version y la actualiza en caso necesario.
+    # Si no esta instalado, lo instala.
     function atom_update() {
+        ATOM_RPM="atom.x86_64.rpm"
         ATOM_INSTALLED_VERSION=$(rpm -qi atom | grep "Version" |  cut -d ':' -f 2 | cut -d ' ' -f 2)
         ATOM_LATEST_VERSION=$(curl -sL "https://api.github.com/repos/atom/atom/releases/latest" | grep -E "https.*atom-amd64.tar.gz" | cut -d '"' -f 4 | cut -d '/' -f 8 | sed 's/v//g')
 
-        if [[ $ATOM_INSTALLED_VERSION < $ATOM_LATEST_VERSION ]]
+        if [[ ! $ATOM_INSTALLED_VERSION ]]
         then
-            sudo dnf update -y https://github.com/atom/atom/releases/download/v${ATOM_LATEST_VERSION}/atom.x86_64.rpm
+            wget https://github.com/atom/atom/releases/download/v${ATOM_LATEST_VERSION}/${ATOM_RPM}
+            sudo dnf install -y $ATOM_RPM
+            rm -rf $ATOM_RPM
+        elif [[ $ATOM_INSTALLED_VERSION < $ATOM_LATEST_VERSION ]]
+        then
+            wget https://github.com/atom/atom/releases/download/v${ATOM_LATEST_VERSION}/${ATOM_RPM}
+            sudo dnf install -y $ATOM_RPM
+            rm -rf $ATOM_RPM
         else
             echo "Atom esta en la ultima versión"
         fi
