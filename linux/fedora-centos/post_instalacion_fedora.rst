@@ -69,8 +69,6 @@ Programas básicos
         p7zip-plugins \
         pwgen \
         sqlite \
-        tilix \
-        tilix-nautilus \
         unrar \
         util-linux-user \
         vim \
@@ -90,7 +88,6 @@ Otros
     dnf -y install gitg
 
     dnf -y install telegram-desktop
-
     dnf -y install gedit-plugins
     dnf -y install breeze-icon-theme
     dnf -y install dia
@@ -99,7 +96,6 @@ Otros
     dnf -y install gnome-calendar
     dnf -y install gnome-music
     dnf -y install gnome-photos
-    dnf -y install gnome-terminal-nautilus # Si no se instala tilix.
     dnf -y install inkscape
     dnf -y install java-1.8.0-openjdk-devel
     dnf -y install krita

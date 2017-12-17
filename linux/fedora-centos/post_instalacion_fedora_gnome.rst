@@ -83,7 +83,6 @@ Programas básicos
 .. code-block:: bash
 
     dnf -y install \
-        arc-theme \
         dconf-editor \
         dnfdragora \
         dnfdragora-gui \
@@ -92,7 +91,16 @@ Programas básicos
         gnome-tweak-tool \
         gparted \
         gpick \
+        tilix \
+        tilix-nautilus \
         transmission-gtk
+
+Otros
+*****
+
+.. code-block:: bash
+
+    dnf install -y arc-theme
 
 Firewalld
 *********
