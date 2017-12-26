@@ -4,35 +4,6 @@
 Apuntes PIP
 ###########
 
-psycopg2
-********
-
-.. code-block:: bash
-
-    dnf install postgresql-devel
-
-    (virtualenv) pip install psycopg2
-
-Pillow
-******
-
-    | **Fuente**
-    | http://pillow.readthedocs.org/en/latest/installation.html
-
-.. code-block:: bash
-
-    dnf install -y \
-        libtiff-devel \
-        libjpeg-devel \
-        zlib-devel \
-        freetype-devel \
-        lcms2-devel \
-        libwebp-devel \
-        tcl-devel \
-        tk-devel
-
-    (virtualenv) pip install Pillow
-
 pygraphviz
 **********
 
