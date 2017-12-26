@@ -86,6 +86,7 @@ Otros
     dnf -y install zsh
     dnf -y install meld
     dnf -y install gitg
+    dnf -y install mediawriter
 
     dnf -y install telegram-desktop
     dnf -y install gedit-plugins
