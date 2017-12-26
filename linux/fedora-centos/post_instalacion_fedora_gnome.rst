@@ -87,7 +87,6 @@ Programas básicos
         dnfdragora \
         dnfdragora-gui \
         geary \
-        gnome-shell-extension-topicons-plus \
         gnome-tweak-tool \
         gparted \
         gpick \
