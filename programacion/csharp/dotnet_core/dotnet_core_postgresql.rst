@@ -17,7 +17,7 @@ Creación del proyecto
 Packages
 ========
 
-Editar ``CustomerCenter.csproj``
+Editar ``MySite.csproj``
 
 .. code-block:: xml
 
@@ -107,7 +107,7 @@ Dentro de ``Models`` crear ``Persona.cs`` con el siguiente código.
 
 .. code-block:: csharp
 
-    namespace CustomerCenter.Models
+    namespace MySite.Models
     {
         public class Persona
         {
