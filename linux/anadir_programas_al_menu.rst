@@ -86,9 +86,9 @@ Rider
     su -
     # Si no existe /opt/jetbrains
     mkdir /opt/jetbrains
-    gzip -d JetBrains.Rider-2017.1.1.tar.gz
-    tar -xvf JetBrains.Rider-2017.1.1.tar
-    mv Rider-2017.1.1/ /opt/jetbrains/rider
+    gzip -d JetBrains.Rider-2017.3.tar.gz
+    tar -xvf JetBrains.Rider-2017.3.tar
+    mv JetBrains\ Rider-2017.3/ /opt/jetbrains/rider
     chmod +x /opt/jetbrains/rider/bin/rider.sh
 
 .. code-block:: bash

@@ -1,39 +1,53 @@
 .. _reference-linux-postgresql-postgres_last_version_centos7:
 
-
-########################################
-Ultima version de PostgreSQL en Centos 7
-########################################
-
-.. warning:: Solo he probado con **PostgreSQL 9.6.X**
-
+############################
+Ultima version de PostgreSQL
+############################
 
 Elegir la versión en `repopackages`_
 
 .. _repopackages: https://yum.postgresql.org/repopackages.php
 
+Versión para los apuntes **PostgreSQL 10**
+
+Fedora
+======
+
 .. code-block:: bash
 
-    yum install https://download.postgresql.org/pub/repos/yum/9.6/redhat/rhel-7-x86_64/pgdg-centos96-9.6-3.noarch.rpm
+    dnf install https://download.postgresql.org/pub/repos/yum/10/fedora/fedora-27-x86_64/pgdg-fedora10-10-3.noarch.rpm
 
-    yum install postgresql96 postgresql96-server postgresql96-devel postgresql96-contrib
+    dnf install postgresql10 postgresql10-server postgresql10-devel postgresql10-contrib pgadmin4-v2
 
     # Postgis
-    yum install postgis2_96
+    dnf install postgis2_10
 
-Añadir al **PATH**.
+Centos
+======
+
+.. code-block:: bash
+
+    yum install https://download.postgresql.org/pub/repos/yum/10/redhat/rhel-7-x86_64/pgdg-centos10-10-2.noarch.rpm
+
+    yum install postgresql10 postgresql10-server postgresql10-devel postgresql10-contrib
+
+    # Postgis
+    yum install postgis2_10
+
+Añadir al PATH
+==============
 
 .. code-block:: bash
 
     vim /etc/profile
 
-    export PATH="$PATH:/usr/pgsql-9.6/bin/"
+    export PATH="$PATH:/usr/pgsql-10/bin/"
 
-    # Reiniciar
+    # Requiere reiniciar
 
-    postgresql96-setup initdb
-    systemctl start postgresql-9.6
-    systemctl enable postgresql-9.6
+    postgresql-10-setup initdb
+    systemctl start postgresql-10
+    systemctl enable postgresql-10
 
     # Añadir contraseña a postgres.
     su - postgres
@@ -46,11 +60,11 @@ Archivos de configuración
 
 .. code-block:: bash
 
-    vim /var/lib/pgsql/9.6/data/postgresql.conf
-    vim /var/lib/pgsql/9.6/data/pg_hba.conf
+    vim /var/lib/pgsql/10/data/postgresql.conf
+    vim /var/lib/pgsql/10/data/pg_hba.conf
 
 :ref:`reference-linux-postgresql-instalacion_postgresql`
 
 .. code-block:: bash
 
-    systemctl restart postgresql-9.6
+    systemctl restart postgresql-10
