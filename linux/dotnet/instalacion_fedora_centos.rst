@@ -28,7 +28,7 @@ Instalar **.NET SDK**
 
     sudo dnf update
     sudo dnf install libunwind libicu compat-openssl10
-    sudo dnf install dotnet-sdk-2.0.3
+    sudo dnf install dotnet-sdk-2.1.3
 
 Centos 7
 ========
@@ -46,7 +46,7 @@ Instalar **.NET SDK**
 
     sudo yum update
     sudo yum install libunwind libicu
-    sudo yum install dotnet-sdk-2.0.2
+    sudo yum install dotnet-sdk-2.1.3
 
 Creación app
 ============
