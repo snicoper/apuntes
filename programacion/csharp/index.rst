@@ -31,7 +31,7 @@ C#
     up_down_cast
     virtual
 
-**ASP.net MVC**
+**DotNet Core**
 
 ----------------
 
