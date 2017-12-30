@@ -1,4 +1,4 @@
-.. _reference-programacion-csharp-dotnet_core-index:
+.. _reference-programacion-csharp-dotnet_core-dotnet_watch:
 
 ###########
 DotNet Core
@@ -9,3 +9,4 @@ DotNet Core
 
     acceder_desde_dispositivo_en_dev
     dotnet_core_postgresql
+    dotnet_watch

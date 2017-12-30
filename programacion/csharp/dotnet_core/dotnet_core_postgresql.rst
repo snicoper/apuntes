@@ -17,24 +17,18 @@ Creación del proyecto
 Packages
 ========
 
+.. code-block:: bash
+
+    dotnet add package Microsoft.EntityFrameworkCore.Tools
+    dotnet add package Microsoft.EntityFrameworkCore.Design
+    dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
+
 Editar ``MySite.csproj``
 
 .. code-block:: xml
 
     <Project Sdk="Microsoft.NET.Sdk.Web">
-      <PropertyGroup>
-        <TargetFramework>netcoreapp2.0</TargetFramework>
-      </PropertyGroup>
-
-      <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
-
-        <!-- Añadir -->
-        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.0.0" />
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.1" />
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.0.1" />
-      </ItemGroup>
-
+      <!-- #... -->
       <ItemGroup>
         <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.1" />
 
