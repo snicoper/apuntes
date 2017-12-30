@@ -11,4 +11,4 @@ Categorías:
 
    instalacion_postgis
    instalacion_postgresql
-   postgres_last_version_centos7
+   postgres_last_version
