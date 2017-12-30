@@ -10,6 +10,7 @@ Categorías:
    :maxdepth: 2
 
    apache/index
+   dotnet/index
    fedora-centos/index
    mariadb/index
    mysql/index
