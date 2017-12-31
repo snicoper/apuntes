@@ -69,6 +69,7 @@ Programas básicos
         p7zip-plugins \
         pwgen \
         sqlite \
+        sqlitebrowser \
         unrar \
         util-linux-user \
         vim \
