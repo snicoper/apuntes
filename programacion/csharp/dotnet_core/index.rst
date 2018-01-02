@@ -8,6 +8,7 @@ DotNet Core
     :maxdepth: 2
 
     acceder_desde_dispositivo_en_dev
+    bootstrap_is_error
     dotnet_core_postgresql
     ef_m2m
     dotnet_watch
