@@ -69,7 +69,7 @@ Editar el método ``ConfigureServices``
     {
         services.AddMvc();
         services.AddEntityFrameworkNpgsql().AddDbContext<AppDbContext>(opt =>
-                opt.UseNpgsql(Configuration.GetConnectionString("AppDbContext"))
+            opt.UseNpgsql(Configuration.GetConnectionString("AppDbContext"))
         );
     }
 
