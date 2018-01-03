@@ -8,7 +8,8 @@ DotNet Core
     :maxdepth: 2
 
     acceder_desde_dispositivo_en_dev
-    bootstrap_is_error
+    css_fields_error
+    create_template_dotnet_core
     dotnet_core_postgresql
     ef_m2m
     dotnet_watch

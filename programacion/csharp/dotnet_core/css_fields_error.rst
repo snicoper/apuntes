@@ -1,8 +1,8 @@
-.. _reference-programacion-csharp-dotnet_core-bootstrap_is_error:
+.. _reference-programacion-csharp-dotnet_core-css_fields_error:
 
-#######################################################
-Bootstrap 4 is-error si un campo de form tiene un error
-#######################################################
+###########################
+Campos formulario error css
+###########################
 
 Típico campo de formulario.
 

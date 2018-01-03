@@ -41,10 +41,10 @@ Editar ``MySite.csproj``
 
     dotnet restore
 
-ApplicationDbContext
+AppDbContext
 ====================
 
-Crear ``ApplicationDbContext.cs`` dentro del directorio ``Models``
+Crear ``AppDbContext.cs`` dentro del directorio ``Models``
 
 .. code-block:: csharp
 
@@ -52,9 +52,9 @@ Crear ``ApplicationDbContext.cs`` dentro del directorio ``Models``
 
     namespace MySite.Models
     {
-        public class ApplicationDbContext : DbContext
+        public class AppDbContext : DbContext
         {
-            public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) {}
+            public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) {}
         }
     }
 
@@ -68,8 +68,8 @@ Editar el método ``ConfigureServices``
     public void ConfigureServices(IServiceCollection services)
     {
         services.AddMvc();
-        services.AddEntityFrameworkNpgsql().AddDbContext<ApplicationDbContext>(opt =>
-                opt.UseNpgsql(Configuration.GetConnectionString("ApplicationDbContext"))
+        services.AddEntityFrameworkNpgsql().AddDbContext<AppDbContext>(opt =>
+                opt.UseNpgsql(Configuration.GetConnectionString("AppDbContext"))
         );
     }
 
@@ -82,7 +82,7 @@ Editar ``appsettings.Development.json``, añadiendo ``ConnectionString``
 
     {
       "ConnectionStrings": {
-        "ApplicationDbContext": "User Id=snicoper;Password=123456;Server=localhost;Port=5432;Database=practicas;Integrated Security=true;Pooling=true;"
+        "AppDbContext": "User Id=snicoper;Password=123456;Server=localhost;Port=5432;Database=practicas;Integrated Security=true;Pooling=true;"
       },
       "Logging": {
         "IncludeScopes": false,
@@ -110,7 +110,7 @@ Dentro de ``Models`` crear ``Persona.cs`` con el siguiente código.
         }
     }
 
-Editar ``Models/ApplicationDbContext.cs`` y añadir la propiedad:
+Editar ``Models/AppDbContext.cs`` y añadir la propiedad:
 
 .. code-block:: csharp
 
