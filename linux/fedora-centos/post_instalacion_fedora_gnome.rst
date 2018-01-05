@@ -17,7 +17,7 @@ Gnome Settings
 
     # General
     gsettings set org.gnome.desktop.interface clock-show-date true
-    gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
+    gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita'
     gsettings set org.gnome.desktop.screensaver lock-enabled false
     gsettings set org.gnome.desktop.session idle-delay 900
     gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,close'
@@ -31,13 +31,6 @@ Gnome Settings
     gsettings set org.gnome.gedit.preferences.editor tabs-size 4
     gsettings set org.gnome.gedit.preferences.editor wrap-last-split-mode 'word'
     gsettings set org.gnome.gedit.preferences.editor wrap-mode 'none'
-
-    # Desktop
-    gsettings set org.gnome.desktop.background show-desktop-icons true
-    gsettings set org.gnome.nautilus.desktop home-icon-visible true
-    gsettings set org.gnome.nautilus.desktop network-icon-visible false
-    gsettings set org.gnome.nautilus.desktop trash-icon-visible false
-    gsettings set org.gnome.nautilus.desktop volumes-visible false
 
     # Extension Logo Fedora
     gsettings set org.fedorahosted.background-logo-extension logo-always-visible true
