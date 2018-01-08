@@ -18,9 +18,9 @@ PyCharm
     su -
     # Si no existe /opt/jetbrains
     mkdir /opt/jetbrains
-    gzip -d pycharm-professional-2017.2.3.tar.gz
-    tar -xvf pycharm-professional-2017.2.3.tar
-    mv pycharm-2017.2.3/ /opt/jetbrains/pycharm
+    gzip -d pycharm-professional-2017.3.2.tar.gz
+    tar -xvf pycharm-professional-2017.3.2.tar
+    mv pycharm-2017.3.2/ /opt/jetbrains/pycharm
     chmod +x /opt/jetbrains/pycharm/bin/pycharm.sh
 
 .. code-block:: bash
@@ -147,4 +147,36 @@ Descargar y descomprimir de `GitHub <https://github.com/crmarsh/discord-linux-bu
     Icon=/opt/discord/discord.png
     Terminal=false
     Type=Application
+    StartupNotify=true
+
+Dbeaver
+*******
+
+.. code-block:: bash
+
+    su -
+    gzip -d dbeaver-ce-4.3.2-linux.gtk.x86_64.tar.gz
+    tar -xvf dbeaver-ce-4.3.2-linux.gtk.x86_64.tar
+    mv dbeaver /opt/dbeaver
+    chmod +x /opt/dbeaver/dbeaver
+
+.. code-block:: bash
+
+    ln -s /opt/dbeaver/dbeaver /usr/local/bin/dbeaver
+
+.. code-block:: bash
+
+    vim /usr/share/applications/dbeaver.desktop
+
+.. code-block:: bash
+
+    [Desktop Entry]
+    Encoding=UTF-8
+    Name=Dbeaver
+    Comment=Universal SQL Client
+    Exec=dbeaver %U
+    Icon=/opt/dbeaver/icon.xpm
+    Terminal=false
+    Type=Application
+    Categories=GNOME;Application;Development;
     StartupNotify=true
