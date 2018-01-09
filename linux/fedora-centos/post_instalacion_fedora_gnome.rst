@@ -67,6 +67,7 @@ Desinstalar
 
     dnf remove -y \
         evolution \
+        gnome-terminal-nautilus \ # Si se instala tilix-nautilus
         rhythmbox \
         shotwell
 
@@ -86,6 +87,13 @@ Programas básicos
         tilix \
         tilix-nautilus \
         transmission-gtk
+
+Si nautilus no muestra ``Open Tilix Here``
+
+.. code-block:: bash
+
+    dnf -y install python2-gobject
+    nautilus -q
 
 Otros
 *****
