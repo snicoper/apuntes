@@ -180,3 +180,35 @@ Dbeaver
     Type=Application
     Categories=GNOME;Application;Development;
     StartupNotify=true
+
+Eclipse
+*******
+
+.. code-block:: bash
+
+    su -
+    gzip -d eclipse-javascript-oxygen-2-linux-gtk-x86_64.tar.gz
+    tar -xvf eclipse-javascript-oxygen-2-linux-gtk-x86_64.tar
+    mv eclipse /opt/eclipse
+    chmod +x /opt/eclipse/eclipse
+
+.. code-block:: bash
+
+    ln -s /opt/eclipse/eclipse /usr/local/bin/eclipse
+
+.. code-block:: bash
+
+    vim /usr/share/applications/eclipse.desktop
+
+.. code-block:: bash
+
+    [Desktop Entry]
+    Encoding=UTF-8
+    Name=Eclipse
+    Comment=Ide
+    Exec=eclipse %U
+    Icon=/opt/eclipse/icon.xpm
+    Terminal=false
+    Type=Application
+    Categories=GNOME;Application;Development;
+    StartupNotify=true
