@@ -14,4 +14,5 @@ DotNet Core
     dotnet_core_postgresql
     ef_m2m
     dotnet_watch
+    generar_slug
     router_lowercase_and_slash
