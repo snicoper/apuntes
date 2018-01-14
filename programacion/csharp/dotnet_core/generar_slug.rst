@@ -56,3 +56,34 @@ Antes de guardar el **Article**, generar un ``Slug``
         _context.Articles.Add(model);
         _context.SaveChanges();
     }
+
+Crear un ``Constraint``
+
+.. code-block:: csharp
+
+    public class SlugConstraint : IRouteConstraint
+    {
+
+        public bool Match(HttpContext httpContext,
+            IRouter route,
+            string routeKey,
+            RouteValueDictionary values,
+            RouteDirection routeDirection)
+        {
+            var pattern = @"[a-z0-9\-]*";
+            var regex = new Regex(pattern);
+            var result = regex.IsMatch(values[routeKey]?.ToString());
+            return result;
+        }
+    }
+
+En ``Startup.cs`` añadir un ``MapRoute``
+
+.. code-block:: csharp
+
+    routes.MapRoute(
+        name: "",
+        template: "{controller}/{action}/{slug}",
+        defaults: new { controller = "Article", action = "Details" },
+        constraints: new { slug = new SlugConstraint() }
+    );
