@@ -17,7 +17,8 @@ Desinstalar
         akregator \
         amarok \
         kwrite \
-        kdegames-minimal \
+        kmines \
+        kmahjongg \
         kget \
         knode \
         konqueror \
