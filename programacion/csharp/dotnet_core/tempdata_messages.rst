@@ -13,7 +13,7 @@ bootstrap4_
 
 .. _bootstrap4: https://getbootstrap.com/
 
-Primero se crea una **clase de extension** de `Controller`
+Primero se crea una **clase de extension** de ``Controller``
 
 .. code-block:: csharp
 
@@ -50,11 +50,11 @@ Primero se crea una **clase de extension** de `Controller`
         }
     }
 
-Desde un controlador ahora se podrán crear mensajes, el método `AddMessage` añadirá uno para `toastr`
-y `AddMessageFixed` para Bootstrap4 (aunque cambiando las vistas podrá mostrar de la forma que cada
+Desde un controlador ahora se podrán crear mensajes, el método ``AddMessage`` añadirá uno para ``toastr``
+y ``AddMessageFixed`` para Bootstrap4 (aunque cambiando las vistas podrá mostrar de la forma que cada
 uno quiera.
 
-Creamos ahora 2 views en `Views/Shared/`, `_Messages.cshtml` y `_MessagesFixed.cshtml`
+Creamos ahora 2 views en ``Views/Shared/``, ``_Messages.cshtml`` y ``_MessagesFixed.cshtml``
 
 .. code-block:: html
 
@@ -93,7 +93,7 @@ Creamos ahora 2 views en `Views/Shared/`, `_Messages.cshtml` y `_MessagesFixed.c
       </div>
     }
 
-Editar `_Layout.cshtml`
+Editar ``_Layout.cshtml``
 
 .. code-block:: html
 
