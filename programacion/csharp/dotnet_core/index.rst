@@ -16,3 +16,4 @@ DotNet Core
     dotnet_watch
     generar_slug
     router_lowercase_and_slash
+    tempdata_messages
