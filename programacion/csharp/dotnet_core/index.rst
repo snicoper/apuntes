@@ -16,5 +16,6 @@ DotNet Core
     dotnet_watch
     generar_slug
     manage_global_exceptions
+    renderizar_view_a_string
     router_lowercase_and_slash
     tempdata_messages
