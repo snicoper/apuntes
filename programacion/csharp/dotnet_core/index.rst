@@ -15,5 +15,6 @@ DotNet Core
     ef_m2m
     dotnet_watch
     generar_slug
+    manage_global_exceptions
     router_lowercase_and_slash
     tempdata_messages
