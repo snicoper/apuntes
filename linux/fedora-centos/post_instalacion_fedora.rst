@@ -51,7 +51,6 @@ Programas básicos
 .. code-block:: bash
 
     dnf -y install \
-        adobe-source-code-pro-fonts \
         cloc \
         cpp \
         ctags \
@@ -67,6 +66,8 @@ Programas básicos
         mutt \
         p7zip \
         p7zip-plugins \
+        powerline \
+        powerline-fonts \
         pwgen \
         sqlite \
         sqlitebrowser \
@@ -83,12 +84,14 @@ Otros
 .. code-block:: bash
 
     dnf -y install chromium
-    dnf -y install gimp
     dnf -y install zsh
+    dnf -y install mediawriter
+    dnf -y install umbrello
+
+    dnf -y install gimp
     dnf -y install meld
     dnf -y install gitg
-    dnf -y install mediawriter
-
+    dnf -y install adobe-source-code-pro-fonts
     dnf -y install telegram-desktop
     dnf -y install gedit-plugins
     dnf -y install breeze-icon-theme
@@ -102,7 +105,6 @@ Otros
     dnf -y install java-1.8.0-openjdk-devel
     dnf -y install krita
     dnf -y install levien-inconsolata-fonts
-    dnf -y install umbrello
 
 Idiomas
 *******
