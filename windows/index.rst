@@ -14,3 +14,4 @@ No tengo Windows y esto puede estar desactualizado.
    eliminar_un_servicio
    instalacion_python_windows
    instalar_cygwin
+   pgpass_windows
