@@ -83,3 +83,32 @@ Gitconfig con Meld
         keepTemporaries = false
     [push]
         default = simple
+
+VSCode
+======
+
+.. code-block:: bash
+
+    [user]
+        name = Salvador Nicolas
+        email = snicoper@gmail.com
+    [color]
+        ui = true
+    [core]
+        editor = vim
+        autocrlf = input
+        eol = lf
+    [alias]
+        lg = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr %an)%Creset' --abbrev-commit --date=relative
+        co = checkout
+        cm = commit
+        st = status
+        br = branch
+    [difftool]
+        prompt = false
+    [push]
+        default = simple
+    [diff]
+        tool = vscode
+    [difftool "vscode"]
+        cmd = code --wait --diff $LOCAL $REMOTE
