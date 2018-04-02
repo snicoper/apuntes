@@ -15,3 +15,4 @@ No tengo Windows y esto puede estar desactualizado.
    instalacion_python_windows
    instalar_cygwin
    pgpass_windows
+   sqlexpress_conection_ip
