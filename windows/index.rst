@@ -14,5 +14,6 @@ No tengo Windows y esto puede estar desactualizado.
    eliminar_un_servicio
    instalacion_python_windows
    instalar_cygwin
+   install_posh_git
    pgpass_windows
    sqlexpress_conection_ip
