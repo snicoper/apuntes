@@ -4,7 +4,7 @@
 Post instalación Fedora
 #######################
 
-**Fedora 27**
+**Fedora 28**
 
 Actualizar
 **********

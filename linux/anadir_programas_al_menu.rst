@@ -44,6 +44,40 @@ PyCharm
     Categories=GNOME;Application;Development;
     StartupNotify=true
 
+PyCharm
+*******
+
+.. code-block:: bash
+
+    su -
+    # Si no existe /opt/jetbrains
+    mkdir /opt/jetbrains
+    gzip -d JetBrains.Rider-2018.1-EAP8-181.4379.974.Checked.tar.gz
+    tar -xvf JetBrains.Rider-2018.1-EAP8-181.4379.974.Checked.tar
+    mv JetBrains\ Rider-181.4379.974 /opt/jetbrains/rider
+    chmod +x /opt/jetbrains/rider/bin/rider.sh
+
+.. code-block:: bash
+
+    ln -s /opt/jetbrains/rider/bin/rider.sh /usr/local/bin/rider
+
+.. code-block:: bash
+
+    vim /usr/share/applications/rider.desktop
+
+.. code-block:: bash
+
+    [Desktop Entry]
+    Encoding=UTF-8
+    Name=Rider
+    Comment=IDE for DotNet Core
+    Exec=rider %U
+    Icon=/opt/jetbrains/rider/bin/rider.png
+    Terminal=false
+    Type=Application
+    Categories=GNOME;Application;Development;
+    StartupNotify=true
+
 WebStrom
 ********
 

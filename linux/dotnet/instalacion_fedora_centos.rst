@@ -30,6 +30,8 @@ Instalar **.NET SDK**
     sudo dnf install libunwind libicu compat-openssl10
     sudo dnf install dotnet-sdk-2.1.4
 
+.. note:: La ultima version probada, ``dotnet xxx`` daba un problema ``error MSB1025: An internal failure occurred while running MSBuild.``, lo he solucionado añadiendo en ``.zshrc`` o ``.bashrc`` ``alias dotnet="TERM=xterm dotnet"`` https://github.com/dotnet/corefx/issues/26966
+
 Centos 7
 ========
 
