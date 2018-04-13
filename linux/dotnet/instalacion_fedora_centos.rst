@@ -4,7 +4,7 @@
 Instalación dotnet core en Fedora/Centos
 ########################################
 
-**Fuentes**
+Fuentes
 
 * https://www.microsoft.com/net/learn/get-started/linuxredhat
 
@@ -12,25 +12,30 @@ Instalación dotnet core en Fedora/Centos
 
 Básicamente la instalación es la misma.
 
-Fedora > 25
+Fedora > 26
 ===========
 
 Añadir repos de **dotnet**
 
 .. code-block:: bash
 
-    sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-    sudo sh -c 'echo -e "[packages-microsoft-com-prod]\nname=packages-microsoft-com-prod \nbaseurl=https://packages.microsoft.com/yumrepos/microsoft-rhel7.3-prod\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/dotnetdev.repo'
+    rpm --import https://packages.microsoft.com/keys/microsoft.asc
+    sh -c 'echo -e "[packages-microsoft-com-prod]\nname=packages-microsoft-com-prod \nbaseurl=https://packages.microsoft.com/yumrepos/microsoft-rhel7.3-prod\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/dotnetdev.repo'
+
 
 Instalar **.NET SDK**
 
 .. code-block:: bash
 
-    sudo dnf update
-    sudo dnf install libunwind libicu compat-openssl10
-    sudo dnf install dotnet-sdk-2.1.4
+    dnf update
+    dnf install libunwind libicu compat-openssl10
 
-.. note:: La ultima version probada, ``dotnet xxx`` daba un problema ``error MSB1025: An internal failure occurred while running MSBuild.``, lo he solucionado añadiendo en ``.zshrc`` o ``.bashrc`` ``alias dotnet="TERM=xterm dotnet"`` https://github.com/dotnet/corefx/issues/26966
+    # Instalar SDK 2.1.4 y 2.1.300
+    dnf install dotnet-sdk-2.1.4 dotnet-sdk-2.1.300-preview2-008530
+
+    dotnet --info
+
+.. note:: La ultima version probada de 2.1.4 en fedora 28 beta, ``dotnet xxx`` daba un problema ``error MSB1025: An internal failure occurred while running MSBuild.``, lo he solucionado añadiendo en ``.zshrc`` o ``.bashrc`` ``alias dotnet="TERM=xterm dotnet"`` https://github.com/dotnet/corefx/issues/26966
 
 Centos 7
 ========
@@ -48,7 +53,10 @@ Instalar **.NET SDK**
 
     sudo yum update
     sudo yum install libunwind libicu
+
+    # Instalar version según se necesite
     sudo yum install dotnet-sdk-2.1.4
+    sudo yum install dotnet-sdk-2.1.300-preview2-008530
 
 Creación app
 ============

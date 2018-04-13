@@ -4,11 +4,6 @@
 Instalación de PostgreSQL
 #########################
 
-Fuentes
-*******
-
-* https://help.ubuntu.com/community/PostgreSQL
-
 Fedora y Centos
 ***************
 
@@ -42,7 +37,7 @@ Establecer contraseña de postgres
     psql
     \password postgres
 
-    CREATE USER snicoper WITH PASSWORD '123456';
+    CREATE USER snicoper WITH PASSWORD '123456' CREATEDB;
     CREATE DATABASE practicas WITH OWNER snicoper;
     \q
     exit
@@ -83,57 +78,3 @@ Remplazar toda la parte siguiente al final del archivo
     systemctl restart postgresql.service
 
 Ver :ref:`reference-linux-fedora-centos-reglas_selinux`
-
-Ubuntu
-******
-
-.. warning:: Hace mucho que no lo pruebo.
-
-Instalación
-
-.. code-block:: bash
-
-    sudo apt install -y postgresql postgresql-contrib libpq-dev
-
-    # Opcional
-    sudo apt install -y pgAdmin3
-
-Establecer contraseña de postgres
-
-.. code-block:: bash
-
-    su - postgres
-    psql
-    \password postgres
-
-    CREATE USER snicoper WITH PASSWORD '123456' NOCREATEDB NOCREATEUSER;
-    CREATE DATABASE practicas WITH OWNER snicoper;
-    \q
-    exit
-
-Configuración PostgreSQL
-
-.. code-block:: bash
-
-    sudo vim /etc/postgresql/9.5/main/postgresql.conf
-
-.. code-block:: bash
-
-    # Descomentar, linea 59
-    listen_addresses = 'localhost'
-
-    # Descomentar, linea 89
-    password_encryption = on
-
-.. code-block:: bash
-
-    sudo vim /etc/postgresql/9.5/main/pg_hba.conf
-
-.. code-block:: bash
-
-    # "local" is for Unix domain socket connections only
-    local   all         all                               md5
-
-.. code-block:: bash
-
-    sudo service postgresql restart

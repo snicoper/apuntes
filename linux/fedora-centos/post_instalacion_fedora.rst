@@ -4,7 +4,7 @@
 Post instalación Fedora
 #######################
 
-**Fedora 28**
+**Fedora 28 Beta**
 
 Actualizar
 **********
@@ -12,6 +12,13 @@ Actualizar
 .. code-block:: bash
 
     dnf update -y
+
+.. code-block:: bash
+
+    sudo su -
+    passwd root
+
+    hostnamectl --static set-hostname ns1.snicoper.local
 
 RPM Fusion
 **********
@@ -84,27 +91,27 @@ Otros
 .. code-block:: bash
 
     dnf -y install chromium
-    dnf -y install zsh
-    dnf -y install mediawriter
-    dnf -y install umbrello
-
     dnf -y install gimp
+    dnf -y install mediawriter
     dnf -y install meld
-    dnf -y install gitg
+    dnf -y install umbrello
+    dnf -y install zsh
+
     dnf -y install adobe-source-code-pro-fonts
-    dnf -y install telegram-desktop
-    dnf -y install gedit-plugins
     dnf -y install breeze-icon-theme
     dnf -y install dia
-    dnf -y install gnome-todo
+    dnf -y install gedit-plugins
+    dnf -y install gitg
     dnf -y install gnome-builder
     dnf -y install gnome-calendar
     dnf -y install gnome-music
     dnf -y install gnome-photos
+    dnf -y install gnome-todo
     dnf -y install inkscape
     dnf -y install java-1.8.0-openjdk-devel
     dnf -y install krita
     dnf -y install levien-inconsolata-fonts
+    dnf -y install telegram-desktop
 
 Idiomas
 *******
@@ -138,53 +145,18 @@ vscode
     sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
     sudo dnf install -y code
 
-Atom
-****
-
-* https://fedoraproject.org/wiki/Atom
-
-Instalar o Actualizar Atom
-
-Editar ``~/.bashrc`` o ``~/.zshrc``.
-
-.. code-block:: bash
-
-    # Comprueba si Atom tiene la ultima version y la actualiza en caso necesario.
-    # Si no esta instalado, lo instala.
-    function atom_update() {
-        ATOM_RPM="atom.x86_64.rpm"
-        ATOM_INSTALLED_VERSION=$(rpm -qi atom | grep "Version" |  cut -d ':' -f 2 | cut -d ' ' -f 2)
-        ATOM_LATEST_VERSION=$(curl -sL "https://api.github.com/repos/atom/atom/releases/latest" | grep -E "https.*atom-amd64.tar.gz" | cut -d '"' -f 4 | cut -d '/' -f 8 | sed 's/v//g')
-
-        if [[ ! $ATOM_INSTALLED_VERSION ]]
-        then
-            wget https://github.com/atom/atom/releases/download/v${ATOM_LATEST_VERSION}/${ATOM_RPM}
-            sudo dnf install -y $ATOM_RPM
-            rm -rf $ATOM_RPM
-        elif [[ $ATOM_INSTALLED_VERSION < $ATOM_LATEST_VERSION ]]
-        then
-            wget https://github.com/atom/atom/releases/download/v${ATOM_LATEST_VERSION}/${ATOM_RPM}
-            sudo dnf install -y $ATOM_RPM
-            rm -rf $ATOM_RPM
-        else
-            echo "Atom esta en la ultima versión"
-        fi
-    }
-
-    alias atom_update="atom_update"
-
 Otras configuraciones
 *********************
 
-* :ref:`reference-linux-fedora-centos-post_instalacion_fedora_gnome`
-* :ref:`reference-linux-fedora-centos-post_instalacion_fedora_kde`
-* :ref:`reference-linux-python-instalacion_python_fedora`
-* :ref:`reference-linux-postgresql-instalacion_postgresql`
-* :ref:`reference-linux-postgresql-instalacion_postgis`
-* :ref:`reference-programacion-python-apuntes_pip`
-* :ref:`reference-linux-dotnet-instalacion_fedora_centos`
-* :ref:`reference-linux-fedora-centos-postfix`
-* :ref:`reference-linux-instalacion_nodejs`
-* :ref:`reference-linux-python-pip_upgrade_all_packages`
-* :ref:`reference-linux-contar_lineas_proyecto`
-* :ref:`reference-linux-chromium-espanol`
+* :ref:`linux-fedora-centos-post_instalacion_fedora_gnome`
+* :ref:`linux-fedora-centos-post_instalacion_fedora_kde`
+* :ref:`linux-python-instalacion_python_fedora`
+* :ref:`linux-postgresql-instalacion_postgresql`
+* :ref:`linux-postgresql-instalacion_postgis`
+* :ref:`programacion-python-apuntes_pip`
+* :ref:`linux-dotnet-instalacion_fedora_centos`
+* :ref:`linux-fedora-centos-postfix`
+* :ref:`linux-instalacion_nodejs`
+* :ref:`linux-python-pip_upgrade_all_packages`
+* :ref:`linux-contar_lineas_proyecto`
+* :ref:`linux-chromium-espanol`

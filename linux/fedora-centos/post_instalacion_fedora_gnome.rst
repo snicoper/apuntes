@@ -67,7 +67,7 @@ Desinstalar
 
     dnf remove -y \
         evolution \
-        gnome-terminal-nautilus \ # Si se instala tilix-nautilus
+        gnome-terminal-nautilus \
         rhythmbox \
         shotwell
 

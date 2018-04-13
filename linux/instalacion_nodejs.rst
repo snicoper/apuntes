@@ -22,7 +22,7 @@ De los repositorios de la distro.
 
 .. code-block:: bash
 
-    sudo dnf -y install nodejs
+    dnf -y install nodejs
 
 Yarn
 ****
@@ -31,8 +31,8 @@ Yarn
 
 .. code-block:: bash
 
-    sudo wget https://dl.yarnpkg.com/rpm/yarn.repo -O /etc/yum.repos.d/yarn.repo
-    sudo dnf install -y yarn
+    wget https://dl.yarnpkg.com/rpm/yarn.repo -O /etc/yum.repos.d/yarn.repo
+    dnf install -y yarn
 
 Añadir ``~/.yarn/bin`` al **PATH**
 
@@ -47,7 +47,10 @@ Paquetes que instalo
 .. code-block:: bash
 
     # Comunes
-    # Con yarn, sin sudo: yarn global add gulp node-sass eslint htmlhint stylelint stylelint-config-standard
+    # Con yarn, como usuario:
+    yarn global add gulp node-sass eslint htmlhint stylelint stylelint-config-standard
+
+    # NPM con sudo
     sudo npm i -g gulp
     sudo npm i -g node-sass
 
@@ -56,14 +59,3 @@ Paquetes que instalo
     sudo npm i -g htmlhint
     sudo npm i -g stylelint
     sudo npm i -g stylelint-config-standard
-
-Algunos comandos utiles npm
-***************************
-
-.. code-block:: bash
-
-    # Muestra los paquetes para actualizar (no actualizar npm)
-    npm outdated -g --depth=0
-
-    # Listar todos los paquetes
-    npm list -g --depth=0
