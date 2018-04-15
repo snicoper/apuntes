@@ -4,46 +4,23 @@
 Acceder desde otro dispositivo en desarrollo
 ############################################
 
-**Fuentes**
-
-* https://stackoverflow.com/a/37365198
-
 -----
+
+Probado en **ASPNET Core 2.1**
 
 A veces es util acceder desde una tablet o movil para ver como esta quedando la cosa.
 
-Editar ``Program.cs`` el método ``Main``
+Editar ``Program.cs`` el método ``CreateWebHostBuilder``
 
 .. code-block:: csharp
 
-    public static void Main(string[] args)
+    public static IWebHostBuilder CreateWebHostBuilder(string[] args)
     {
-        // use this to allow command line parameters in the config
-        var configuration = new ConfigurationBuilder()
-            .AddCommandLine(args)
-            .Build();
-
-        var hostUrl = configuration["hosturl"];
-        if (string.IsNullOrEmpty(hostUrl))
-        {
-            hostUrl = "http://0.0.0.0:5000";
-        }
-
-        var host = new WebHostBuilder()
-            .UseKestrel()
-            .UseUrls(hostUrl)
-            .UseContentRoot(Directory.GetCurrentDirectory())
-            .UseIISIntegration()
-            .UseStartup<Startup>()
-            .UseConfiguration(configuration)
-            .Build();
-
-        host.Run();
+        return WebHost.CreateDefaultBuilder(args)
+            .UseUrls(
+                "http://192.168.1.107:50000", # Ip local
+                "http://localhost:50000")
+            .UseStartup<Startup>();
     }
-
-.. code-block:: bash
-
-    dotnet run                                       // default on port 5000
-    dotnet run --hosturl http://192.168.1.101:5000   // explicit
 
 Tener puertos abiertos.
