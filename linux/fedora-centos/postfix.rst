@@ -7,6 +7,8 @@ Postfix
 .. note::
     Probado en Fedora 28, Centos 7
 
+    Actualmente me da un problema con SELinux https://bugzilla.redhat.com/show_bug.cgi?id=1513153
+
     Las lineas entre paréntesis '(x)', son las de Centos.
 
 -------------------

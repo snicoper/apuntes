@@ -16,14 +16,15 @@ Desinstalar
     dnf remove -y \
         akregator \
         amarok \
-        kwrite \
-        kmines \
-        kmahjongg \
+        calligra* \
         kget \
+        kmahjongg \
+        kmines \
         knode \
         konqueror \
+        kpat \
         ktorrent \
-        qupzilla
+        kwrite
 
 Programas básicos
 *****************
@@ -34,6 +35,8 @@ Programas básicos
         ffmpegthumbs \
         gvfs \
         kate \
+        libreoffice \
+        setroubleshoot \
         transmission-qt
 
 * ``ffmpegthumbs`` Previews para los videos en Dolphin, se ha de activar igual que las imágenes.
