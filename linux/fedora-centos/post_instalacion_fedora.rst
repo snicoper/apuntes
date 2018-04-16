@@ -148,15 +148,15 @@ vscode
 Otras configuraciones
 *********************
 
-* :ref:`linux-fedora-centos-post_instalacion_fedora_gnome`
-* :ref:`linux-fedora-centos-post_instalacion_fedora_kde`
-* :ref:`linux-python-instalacion_python_fedora`
-* :ref:`linux-postgresql-instalacion_postgresql`
-* :ref:`linux-postgresql-instalacion_postgis`
-* :ref:`programacion-python-apuntes_pip`
-* :ref:`linux-dotnet-instalacion_fedora_centos`
-* :ref:`linux-fedora-centos-postfix`
-* :ref:`linux-instalacion_nodejs`
-* :ref:`linux-python-pip_upgrade_all_packages`
-* :ref:`linux-contar_lineas_proyecto`
-* :ref:`linux-chromium-espanol`
+* :ref:`reference-linux-fedora-centos-post_instalacion_fedora_gnome`
+* :ref:`reference-linux-fedora-centos-post_instalacion_fedora_kde`
+* :ref:`reference-linux-python-instalacion_python_fedora`
+* :ref:`reference-linux-postgresql-instalacion_postgresql`
+* :ref:`reference-linux-postgresql-instalacion_postgis`
+* :ref:`reference-programacion-python-apuntes_pip`
+* :ref:`reference-linux-dotnet-instalacion_fedora_centos`
+* :ref:`reference-linux-fedora-centos-postfix`
+* :ref:`reference-linux-instalacion_nodejs`
+* :ref:`reference-linux-python-pip_upgrade_all_packages`
+* :ref:`reference-linux-contar_lineas_proyecto`
+* :ref:`reference-linux-chromium-espanol`
