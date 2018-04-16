@@ -44,8 +44,8 @@ PyCharm
     Categories=GNOME;Application;Development;
     StartupNotify=true
 
-PyCharm
-*******
+Rider
+*****
 
 .. code-block:: bash
 
@@ -189,8 +189,8 @@ Dbeaver
 .. code-block:: bash
 
     su -
-    gzip -d dbeaver-ce-4.3.2-linux.gtk.x86_64.tar.gz
-    tar -xvf dbeaver-ce-4.3.2-linux.gtk.x86_64.tar
+    gzip -d dbeaver-ce-5.0.3-linux.gtk.x86_64.tar.gz
+    tar -xvf dbeaver-ce-5.0.3-linux.gtk.x86_64.tar
     mv dbeaver /opt/dbeaver
     chmod +x /opt/dbeaver/dbeaver
 
