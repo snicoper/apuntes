@@ -37,6 +37,7 @@ Codecs
 .. code-block:: bash
 
     dnf -y install \
+        compat-ffmpeg28 \
         gstreamer-plugins-bad \
         gstreamer-plugins-bad-free-extras \
         gstreamer-plugins-bad-nonfree gstreamer-plugins-ugly \
