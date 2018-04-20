@@ -35,6 +35,7 @@ Programas básicos
         ffmpegthumbs \
         gvfs \
         kate \
+        keepassxc \
         libreoffice \
         setroubleshoot \
         transmission-qt

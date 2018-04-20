@@ -25,23 +25,21 @@ Editamos el archivo de configuración de ssh.
 
     vim /etc/ssh/sshd_config
 
-Las lineas entre (paréntesis) Centos, normal para Fedora.
-
 .. code-block:: bash
 
     # Puerto
-    # Linea 17 (17), descomentar y cambiar puerto por defecto
+    # Linea 17, descomentar y cambiar puerto por defecto
     Port 50022
 
     # Permitir login con root?
-    # line 38 (49): uncomment and change 'no'
+    # line 38: uncomment and change 'no'
     PermitRootLogin no
 
-    # line 64 (79): uncomment
+    # line 64: uncomment
     PermitEmptyPasswords no
 
     # Disable password authentication forcing use of keys
-    # line 65 (78):
+    # line 65:
     PasswordAuthentication yes
 
     # Usuarios a los que se les permite conectarse

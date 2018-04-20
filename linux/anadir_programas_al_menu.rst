@@ -18,9 +18,9 @@ PyCharm
     su -
     # Si no existe /opt/jetbrains
     mkdir /opt/jetbrains
-    gzip -d pycharm-professional-2017.3.2.tar.gz
-    tar -xvf pycharm-professional-2017.3.2.tar
-    mv pycharm-2017.3.2/ /opt/jetbrains/pycharm
+    gzip -d pycharm-professional-2018.1.1.tar.gz
+    tar -xvf pycharm-professional-2018.1.1.tar
+    mv pycharm-2018.1.1/ /opt/jetbrains/pycharm
     chmod +x /opt/jetbrains/pycharm/bin/pycharm.sh
 
 .. code-block:: bash
@@ -52,9 +52,9 @@ Rider
     su -
     # Si no existe /opt/jetbrains
     mkdir /opt/jetbrains
-    gzip -d JetBrains.Rider-2018.1-EAP8-181.4379.974.Checked.tar.gz
-    tar -xvf JetBrains.Rider-2018.1-EAP8-181.4379.974.Checked.tar
-    mv JetBrains\ Rider-181.4379.974 /opt/jetbrains/rider
+    gzip -d JetBrains.Rider-2018.1.tar.gz
+    tar -xvf JetBrains.Rider-2018.1.tar
+    mv JetBrains\ Rider-2018.1 /opt/jetbrains/rider
     chmod +x /opt/jetbrains/rider/bin/rider.sh
 
 .. code-block:: bash
