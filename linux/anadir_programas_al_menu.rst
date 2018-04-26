@@ -10,6 +10,8 @@ Añadir programas al menu
     Prácticamente todos son iguales, solo cambian las rutas, pero las pongo separadas
     para ir mas rápido si algún día tengo que instalar alguno.
 
+    Si da problemas de permisos, ver https://askubuntu.com/a/169317
+
 PyCharm
 *******
 
@@ -107,40 +109,6 @@ WebStrom
     Comment=IDE for Web
     Exec=webstorm %U
     Icon=/opt/jetbrains/webstorm/bin/webstorm.svg
-    Terminal=false
-    Type=Application
-    Categories=GNOME;Application;Development;
-    StartupNotify=true
-
-Rider
-*****
-
-.. code-block:: bash
-
-    su -
-    # Si no existe /opt/jetbrains
-    mkdir /opt/jetbrains
-    gzip -d JetBrains.Rider-2017.3.tar.gz
-    tar -xvf JetBrains.Rider-2017.3.tar
-    mv JetBrains\ Rider-2017.3/ /opt/jetbrains/rider
-    chmod +x /opt/jetbrains/rider/bin/rider.sh
-
-.. code-block:: bash
-
-    ln -s /opt/jetbrains/rider/bin/rider.sh /usr/local/bin/rider
-
-.. code-block:: bash
-
-    vim /usr/share/applications/rider.desktop
-
-.. code-block:: bash
-
-    [Desktop Entry]
-    Encoding=UTF-8
-    Name=Rider
-    Comment=IDE for Web
-    Exec=rider %U
-    Icon=/opt/jetbrains/rider/bin/rider.png
     Terminal=false
     Type=Application
     Categories=GNOME;Application;Development;

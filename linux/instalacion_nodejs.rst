@@ -13,10 +13,10 @@ De **nodesource**
 
 .. code-block:: bash
 
-    curl --silent --location https://rpm.nodesource.com/setup_9.x | bash -
+    curl --silent --location https://rpm.nodesource.com/setup_10.x | bash -
     dnf install -y nodejs
 
-Donde ``setup_9.x``, poner la versión estable.
+Donde ``setup_10.x``, poner la versión estable.
 
 De los repositorios de la distro.
 
@@ -48,7 +48,13 @@ Paquetes que instalo
 
     # Comunes
     # Con yarn, como usuario:
-    yarn global add gulp node-sass eslint htmlhint stylelint stylelint-config-standard
+    yarn global add \
+        gulp \
+        node-sass \
+        eslint \
+        htmlhint \
+        stylelint \
+        stylelint-config-standard
 
     # NPM con sudo
     sudo npm i -g gulp
