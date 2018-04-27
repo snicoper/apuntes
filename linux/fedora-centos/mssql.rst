@@ -22,6 +22,15 @@ Instalar MSSQL Server Centos 7
     systemctl start mssql-server
     systemctl enabled mssql-server
 
+En mi caso lo instalo en una maquina virtual y solo abro puertos para lan
+
+.. code-block:: bash
+
+    firewall-cmd --permanent --zone=trusted --add-source=192.168.122.0/24
+    firewall-cmd --reload
+
+Si no, abrir puerto ``1433``
+
 .. code-block:: bash
 
     firewall-cmd --zone=public --add-port=1433/tcp --permanent
@@ -32,3 +41,10 @@ Instalar MSSQL Server Centos 7
     # Como usuario
     echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc
     source ~/.bashrc
+
+Por ultimo me creo un usuario `snicoper` con un password fácil,
+
+.. code-block:: bash
+
+    CREATE LOGIN snicoper WITH PASSWORD = '123456', CHECK_POLICY = OFF;
+    EXEC sp_addsrvrolemember 'snicoper', 'sysadmin';
