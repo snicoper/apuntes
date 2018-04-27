@@ -33,8 +33,6 @@ Instalar **.NET SDK**
 
     dotnet --info
 
-.. note:: La ultima version probada de 2.1.4 en fedora 28 beta, ``dotnet xxx`` daba un problema ``error MSB1025: An internal failure occurred while running MSBuild.``, lo he solucionado añadiendo en ``.zshrc`` o ``.bashrc`` ``alias dotnet="TERM=xterm dotnet"`` https://github.com/dotnet/corefx/issues/26966
-
 Centos 7
 ========
 

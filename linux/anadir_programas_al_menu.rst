@@ -4,12 +4,89 @@
 Añadir programas al menu
 ########################
 
+A nivel local
+=============
+
+Añadir ~/.local/bin al `PATH`
+
+.. code-block:: bash
+
+    export PATH=$PATH:~/.local/bin
+
+Si no existen crear directorios `~/.local/bin`, `~/.local/apps` y `~/.local/share/applications`
+
+.. code-block:: bash
+
+    mkdir ~/.local/bin
+    mkdir ~/.local/apps
+    mkdir ~/.local/share/applications
+
+Rider
+*****
+
+.. code-block:: bash
+
+    gzip -d JetBrains.Rider-2018.1.tar.gz
+    tar -xvf JetBrains.Rider-2018.1.tar
+    mv JetBrains\ Rider-2018.1 ~/.local/apps/rider
+    chmod +x ~/.local/apps/rider/bin/rider.sh
+
+.. code-block:: bash
+
+    ln -s ~/.local/apps/rider/bin/rider.sh ~/.local/bin/rider
+
+.. code-block:: bash
+
+    vim ~/.local/share/applications/rider.desktop
+
+.. code-block:: bash
+
+    [Desktop Entry]
+    Encoding=UTF-8
+    Name=Rider
+    Comment=IDE for DotNet Core
+    Exec=rider %U
+    Icon=/home/snicoper/.local/apps/rider/bin/rider.png
+    Terminal=false
+    Type=Application
+    Categories=GNOME;Application;Development;
+    StartupNotify=true
+
+Dbeaver
+*******
+
+.. code-block:: bash
+
+    gzip -d dbeaver-ce-5.0.3-linux.gtk.x86_64.tar.gz
+    tar -xvf dbeaver-ce-5.0.3-linux.gtk.x86_64.tar
+    mv dbeaver ~/.local/apps/dbeaver
+    chmod +x ~/.local/apps/dbeaver/dbeaver
+
+.. code-block:: bash
+
+    ln -s ~/.local/apps/dbeaver/dbeaver ~/.local/bin/dbeaver
+
+.. code-block:: bash
+
+    vim ~/.local/share/applications/dbeaver.desktop
+
+.. code-block:: bash
+
+    [Desktop Entry]
+    Encoding=UTF-8
+    Name=Dbeaver
+    Comment=Universal SQL Client
+    Exec=dbeaver %U
+    Icon=/home/snicoper/.local/apps/dbeaver/icon.xpm
+    Terminal=false
+    Type=Application
+    Categories=GNOME;Application;Development;
+    StartupNotify=true
+
+A nivel global
+==============
+
 .. note::
-    Todos los pongo en ``/opt``
-
-    Prácticamente todos son iguales, solo cambian las rutas, pero las pongo separadas
-    para ir mas rápido si algún día tengo que instalar alguno.
-
     Si da problemas de permisos, ver https://askubuntu.com/a/169317
 
 PyCharm
