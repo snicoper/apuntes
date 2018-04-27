@@ -7,13 +7,13 @@ Añadir programas al menu
 A nivel local
 =============
 
-Añadir ~/.local/bin al `PATH`
+Añadir ~/.local/bin al ``PATH``
 
 .. code-block:: bash
 
     export PATH=$PATH:~/.local/bin
 
-Si no existen crear directorios `~/.local/bin`, `~/.local/apps` y `~/.local/share/applications`
+Si no existen crear directorios ``~/.local/bin``, ``~/.local/apps`` y ``~/.local/share/applications``
 
 .. code-block:: bash
 
@@ -47,6 +47,37 @@ Rider
     Comment=IDE for DotNet Core
     Exec=rider %U
     Icon=/home/snicoper/.local/apps/rider/bin/rider.png
+    Terminal=false
+    Type=Application
+    Categories=GNOME;Application;Development;
+    StartupNotify=true
+
+PyCharm
+*******
+
+.. code-block:: bash
+
+    gzip -d pycharm-professional-2018.1.2.tar.gz
+    tar -xvf pycharm-professional-2018.1.2.tar
+    mv pycharm-2018.1.2 ~/.local/apps/pycharm
+    chmod +x ~/.local/apps/pycharm/bin/pycharm.sh
+
+.. code-block:: bash
+
+    ln -s ~/.local/apps/pycharm/bin/pycharm.sh ~/.local/bin/pycharm
+
+.. code-block:: bash
+
+    vim ~/.local/share/applications/pycharm.desktop
+
+.. code-block:: bash
+
+    [Desktop Entry]
+    Encoding=UTF-8
+    Name=PyCharm
+    Comment=IDE for Python
+    Exec=pycharm %U
+    Icon=/home/snicoper/.local/apps/pycharm/bin/pycharm.png
     Terminal=false
     Type=Application
     Categories=GNOME;Application;Development;
