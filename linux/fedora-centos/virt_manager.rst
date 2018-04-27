@@ -15,8 +15,7 @@ Fuentes
 
 .. code-block:: bash
 
-    yum install @virtualization
-    yum install libvirt-daemon-kvm
+    dnf install @virtualization
 
 Ver :ref:`reference-linux-fedora-centos-reglas_selinux`
 

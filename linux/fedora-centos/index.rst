@@ -23,6 +23,7 @@ Contents:
    fuente_ubuntu
    gnome_folder_colors
    instalar_golang
+   mssql
    post_instalacion_centos
    post_instalacion_fedora_gnome
    post_instalacion_fedora_kde
