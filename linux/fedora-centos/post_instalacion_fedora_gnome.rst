@@ -32,10 +32,6 @@ Gnome Settings
     gsettings set org.gnome.gedit.preferences.editor wrap-last-split-mode 'word'
     gsettings set org.gnome.gedit.preferences.editor wrap-mode 'none'
 
-    # Extension Logo Fedora
-    gsettings set org.fedorahosted.background-logo-extension logo-always-visible true
-    gsettings set org.fedorahosted.background-logo-extension logo-opacity 170
-
     # Files
     gsettings set org.gnome.nautilus.icon-view default-zoom-level 'standard'
     gsettings set org.gnome.nautilus.list-view use-tree-view true
@@ -94,13 +90,6 @@ Si nautilus no muestra ``Open Tilix Here``
 
     dnf -y install python2-gobject
     nautilus -q
-
-Otros
-*****
-
-.. code-block:: bash
-
-    dnf install -y arc-theme
 
 Firewalld
 *********

@@ -71,6 +71,38 @@ Rider
     Categories=GNOME;Application;Development;
     StartupNotify=true
 
+WebStorm
+********
+
+.. code-block:: bash
+
+    su -
+    gzip -d WebStorm-2018.1.2.tar.gz
+    tar -xvf WebStorm-2018.1.2.tar
+    mv WebStorm-2018.1.2 /opt/webstorm
+    chmod +x /opt/webstorm/bin/webstorm.sh
+
+.. code-block:: bash
+
+    ln -s /opt/webstorm/bin/webstorm.sh /usr/local/bin/webstorm
+
+.. code-block:: bash
+
+    vim /usr/share/applications/webstorm.desktop
+
+.. code-block:: bash
+
+    [Desktop Entry]
+    Encoding=UTF-8
+    Name=WebStorm
+    Comment=IDE for Web
+    Exec=webstorm %U
+    Icon=/opt/webstorm/bin/webstorm.png
+    Terminal=false
+    Type=Application
+    Categories=GNOME;Application;Development;
+    StartupNotify=true
+
 Discord
 *******
 

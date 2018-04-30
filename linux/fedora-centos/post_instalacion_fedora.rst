@@ -4,7 +4,7 @@
 Post instalación Fedora
 #######################
 
-**Fedora 28 Beta**
+**Fedora 28**
 
 Actualizar
 **********
@@ -39,7 +39,7 @@ https://pkgs.org/download/compat-ffmpeg28
 .. code-block:: bash
 
     dnf -y install \
-        # compat-ffmpeg28 \
+        compat-ffmpeg28 \
         gstreamer-plugins-bad \
         gstreamer-plugins-bad-free-extras \
         gstreamer-plugins-bad-nonfree gstreamer-plugins-ugly \
