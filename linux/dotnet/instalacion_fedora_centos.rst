@@ -6,30 +6,31 @@ Instalación dotnet core en Fedora/Centos
 
 Fuentes
 
-* https://www.microsoft.com/net/learn/get-started/linuxredhat
+* https://www.microsoft.com/net/learn/get-started
 
 ----
 
 Básicamente la instalación es la misma.
 
-Fedora > 26
+Fedora > 27
 ===========
 
 Añadir repos de **dotnet**
 
 .. code-block:: bash
 
-    rpm --import https://packages.microsoft.com/keys/microsoft.asc
-    sh -c 'echo -e "[packages-microsoft-com-prod]\nname=packages-microsoft-com-prod \nbaseurl=https://packages.microsoft.com/yumrepos/microsoft-rhel7.3-prod\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/dotnetdev.repo'
+    sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+    wget -q https://packages.microsoft.com/config/fedora/27/prod.repo
+    sudo mv prod.repo /etc/yum.repos.d/microsoft-prod.repo
+    sudo chown root:root /etc/yum.repos/microsoft-prod.repo
 
 
 Instalar **.NET SDK**
 
 .. code-block:: bash
 
-    dnf update
-    dnf install libunwind libicu compat-openssl10
-    dnf install dotnet-sdk-2.1.105-2.1.105-1.x86_64
+    sudo dnf update
+    sudo dnf install dotnet-sdk-2.1
 
     dotnet --info
 
@@ -40,16 +41,14 @@ Añadir repos de **dotnet**
 
 .. code-block:: bash
 
-    rpm --import https://packages.microsoft.com/keys/microsoft.asc
-    sh -c 'echo -e "[packages-microsoft-com-prod]\nname=packages-microsoft-com-prod \nbaseurl= https://packages.microsoft.com/yumrepos/microsoft-rhel7.3-prod\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/dotnetdev.repo'
+    sudo rpm -Uvh https://packages.microsoft.com/config/rhel/7/packages-microsoft-prod.rpm
 
 Instalar **.NET SDK**
 
 .. code-block:: bash
 
-    yum update
-    yum install libunwind libicu
-    yum install dotnet-sdk-2.1.105-2.1.105-1.x86_64
+    sudo yum update
+    sudo yum install dotnet-sdk-2.1
 
 Creación app
 ============
