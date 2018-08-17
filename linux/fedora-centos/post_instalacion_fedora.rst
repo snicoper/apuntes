@@ -93,7 +93,7 @@ Otros
 
 .. code-block:: bash
 
-    dnf -y install chromium
+    dnf -y install chromium chromium-libs-media-freeworld
     dnf -y install gimp
     dnf -y install mediawriter
     dnf -y install meld
@@ -115,6 +115,25 @@ Otros
     dnf -y install krita
     dnf -y install levien-inconsolata-fonts
     dnf -y install telegram-desktop
+
+Spotify
+*******
+
+* https://docs.fedoraproject.org/en-US/quick-docs/installing-spotify/
+
+**RPM Fusion repository**
+
+.. code-block:: bash
+
+    sudo dnf install lpf-spotify-client
+    lpf approve spotify-client
+    sudo -u pkg-build lpf build spotify-client # It can take up to 5 minutes
+    sudo dnf install /var/lib/lpf/rpms/spotify-client/spotify-client-*.rpm
+
+Slack para Linux
+****************
+
+* https://slack.com/intl/es-es/downloads/linux
 
 Idiomas
 *******
