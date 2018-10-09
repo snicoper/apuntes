@@ -103,6 +103,37 @@ WebStorm
     Categories=GNOME;Application;Development;
     StartupNotify=true
 
+DataGrip
+********
+
+.. code-block:: bash
+
+    su -
+    gzip -d datagrip-2018.2.4.tar.gz
+    tar -xvf datagrip-2018.2.4.tar
+    mv DataGrip-2018.2.4 /opt/datagrip
+    chmod +x /opt/datagrip/bin/datagrip.sh
+
+.. code-block:: bash
+
+    ln -s /opt/datagrip/bin/datagrip.sh /usr/local/bin/datagrip
+
+.. code-block:: bash
+    vim /usr/share/applications/datagrip.desktop
+
+.. code-block:: bash
+
+    [Desktop Entry]
+    Encoding=UTF-8
+    Name=DataGrip
+    Comment=Database tools
+    Exec=datagrip %U
+    Icon=/opt/datagrip/bin/datagrip.png
+    Terminal=false
+    Type=Application
+    Categories=GNOME;Application;Development;
+    StartupNotify=true
+
 Discord
 *******
 
