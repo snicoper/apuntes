@@ -49,19 +49,11 @@ Paquetes que instalo
     # Comunes
     # Con yarn, como usuario:
     yarn global add \
+        @angular/cli \
+        @vue/cli \
         gulp \
-        node-sass \
-        eslint \
-        htmlhint \
-        stylelint \
-        stylelint-config-standard
+        node-sass 
 
     # NPM con sudo
     sudo npm i -g gulp
     sudo npm i -g node-sass
-
-    # Linters
-    sudo npm i -g eslint
-    sudo npm i -g htmlhint
-    sudo npm i -g stylelint
-    sudo npm i -g stylelint-config-standard
