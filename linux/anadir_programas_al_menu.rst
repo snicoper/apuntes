@@ -202,3 +202,36 @@ Dbeaver
     Type=Application
     Categories=GNOME;Application;Development;
     StartupNotify=true
+
+
+Postman
+*******
+
+.. code-block:: bash
+
+    su -
+    gzip -d Postman-linux-x64-6.4.4.tar.gz
+    tar -xvf Postman-linux-x64-6.4.4.tar
+    mv Postman/ /opt/postman
+    chmod +x /opt/postman/Postman
+
+.. code-block:: bash
+
+    ln -s /opt/postman/Postman /usr/local/bin/postman
+
+.. code-block:: bash
+
+    vim /usr/share/applications/postman.desktop
+
+.. code-block:: bash
+
+    [Desktop Entry]
+    Encoding=UTF-8
+    Name=Postman
+    Comment=Postman
+    Exec=postman %U
+    Icon=/opt/postman/app/resources/app/assets/icon.png
+    Terminal=false
+    Type=Application
+    Categories=GNOME;Application;Development;
+    StartupNotify=true
