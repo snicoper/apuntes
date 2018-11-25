@@ -13,9 +13,9 @@ PyCharm
 .. code-block:: bash
 
     su -
-    gzip -d pycharm-professional-2018.1.1.tar.gz
-    tar -xvf pycharm-professional-2018.1.1.tar
-    mv pycharm-2018.1.1/ /opt/pycharm
+    gzip -d pycharm-professional-2018.3.tar.gz
+    tar -xvf pycharm-professional-2018.3.tar
+    mv pycharm-2018.3/ /opt/pycharm
     chmod +x /opt/pycharm/bin/pycharm.sh
 
 .. code-block:: bash
