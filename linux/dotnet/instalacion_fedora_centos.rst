@@ -30,7 +30,7 @@ Instalar **.NET SDK**
 .. code-block:: bash
 
     sudo dnf update
-    sudo dnf install dotnet-sdk-2.1
+    sudo dnf install dotnet-sdk-2.2
 
     dotnet --info
 
@@ -48,7 +48,7 @@ Instalar **.NET SDK**
 .. code-block:: bash
 
     sudo yum update
-    sudo yum install dotnet-sdk-2.1
+    sudo yum install dotnet-sdk-2.2
 
 Creación app
 ============

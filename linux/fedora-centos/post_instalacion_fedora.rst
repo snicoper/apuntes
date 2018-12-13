@@ -97,9 +97,10 @@ Otros
     dnf -y install gimp
     dnf -y install mediawriter
     dnf -y install meld
-    dnf -y install umbrello
     dnf -y install zsh
+    dnf -y install java-1.8.0-openjdk java-1.8.0-openjdk-devel // Requerido para dbeaver
 
+    dnf -y install umbrello
     dnf -y install adobe-source-code-pro-fonts
     dnf -y install breeze-icon-theme
     dnf -y install dia
@@ -111,7 +112,6 @@ Otros
     dnf -y install gnome-photos
     dnf -y install gnome-todo
     dnf -y install inkscape
-    dnf -y install java-1.8.0-openjdk-devel
     dnf -y install krita
     dnf -y install levien-inconsolata-fonts
     dnf -y install telegram-desktop
