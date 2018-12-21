@@ -119,6 +119,7 @@ DataGrip
     ln -s /opt/datagrip/bin/datagrip.sh /usr/local/bin/datagrip
 
 .. code-block:: bash
+
     vim /usr/share/applications/datagrip.desktop
 
 .. code-block:: bash
