@@ -31,7 +31,7 @@ Yarn
 
 .. code-block:: bash
 
-    wget https://dl.yarnpkg.com/rpm/yarn.repo -O /etc/yum.repos.d/yarn.repo
+    curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
     dnf install -y yarn
 
 Añadir ``~/.yarn/bin`` al **PATH**
@@ -52,8 +52,14 @@ Paquetes que instalo
         @angular/cli \
         @vue/cli \
         gulp \
-        node-sass 
+        node-sass
 
     # NPM con sudo
     sudo npm i -g gulp
     sudo npm i -g node-sass
+
+Establecer yarn predeterminado con ``ng``
+
+.. code-block:: bash
+
+    ng config -g cli.packageManager yarn
