@@ -68,6 +68,7 @@ Programas básicos
         gcc \
         gcc-c++ \
         git \
+        gitflow \
         htop \
         hunspell-es \
         kernel-devel \

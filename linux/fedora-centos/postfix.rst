@@ -5,7 +5,7 @@ Postfix
 #######
 
 .. note::
-    Probado en Fedora 28, Centos 7
+    Probado en Fedora 29, Centos 7
 
     Actualmente me da un problema con SELinux https://bugzilla.redhat.com/show_bug.cgi?id=1513153
 
@@ -91,7 +91,7 @@ Dovecot
 .. code-block:: bash
 
     # line 24: uncomment
-    protocols = imap pop3 lmtp
+    protocols = imap pop3 lmtp submission
 
 .. code-block:: bash
 
@@ -122,7 +122,7 @@ Dovecot
 
 .. code-block:: bash
 
-    # line 96: uncomment and add
+    # line 107: uncomment and add
 
     # Postfix smtp-auth
     unix_listener /var/spool/postfix/private/auth {
