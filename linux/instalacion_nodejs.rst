@@ -58,7 +58,7 @@ Paquetes que instalo
     sudo npm i -g gulp
     sudo npm i -g node-sass
 
-Establecer yarn predeterminado con ``ng``
+Establecer **yarn** predeterminado con ``ng``
 
 .. code-block:: bash
 
@@ -68,4 +68,8 @@ Para aumentar el tamaño de monitoreo de **inotify**
 
 .. code-block:: bash
 
+    # Limite temporal
+    sudo sysctl fs.inotify.max_user_watches=524288
+
+    # Limite permanente
     echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf
