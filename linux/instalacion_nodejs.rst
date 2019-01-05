@@ -63,3 +63,9 @@ Establecer yarn predeterminado con ``ng``
 .. code-block:: bash
 
     ng config -g cli.packageManager yarn
+
+Para aumentar el tamaño de monitoreo de **inotify**
+
+.. code-block:: bash
+
+    echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf
