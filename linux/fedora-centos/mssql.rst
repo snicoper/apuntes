@@ -4,7 +4,10 @@
 Instalar MSSQL Server Fedora/Centos 7
 #####################################
 
-* Fuentes: https://docs.microsoft.com/es-es/sql/linux/quickstart-install-connect-red-hat?view=sql-server-2017
+Fuentes:
+
+* https://docs.microsoft.com/es-es/sql/linux/quickstart-install-connect-red-hat?view=sql-server-2017
+* https://computingforgeeks.com/how-to-install-microsoft-sql-2019-on-centos-7-fedora/
 
 Fedora 29
 =========
