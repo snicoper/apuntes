@@ -1,17 +1,33 @@
 .. _reference-linux-fedora-centos-mssql:
 
-##############################
-Instalar MSSQL Server Centos 7
-##############################
+#####################################
+Instalar MSSQL Server Fedora/Centos 7
+#####################################
+
+* Fuentes: https://docs.microsoft.com/es-es/sql/linux/quickstart-install-connect-red-hat?view=sql-server-2017
+
+Fedora 29
+=========
+
+Requiere de la preview 2019
+
+.. code-block:: bash
+
+    sudo curl -o /etc/yum.repos.d/mssql-server.repo https://packages.microsoft.com/config/rhel/7/mssql-server-preview.repo
+
+Centos 7
+========
 
 .. code-block:: bash
 
     su -
 
-    curl https://packages.microsoft.com/config/rhel/7/mssql-server-2017.repo -o /etc/yum.repos.d/mssql-server-2017.repo
-    curl https://packages.microsoft.com/config/rhel/7/prod.repo -o /etc/yum.repos.d/msprod.repo
+    sudo curl -o /etc/yum.repos.d/mssql-server.repo https://packages.microsoft.com/config/rhel/7/mssql-server-2017.repo
 
     yum install mssql-server mssql-tools unixODBC-devel
+
+Fedora y Centos
+===============
 
 .. code-block:: bash
 
@@ -42,7 +58,7 @@ Si no, abrir puerto ``1433``
     echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc
     source ~/.bashrc
 
-Por ultimo me creo un usuario `snicoper` con un password fácil,
+Por ultimo me creo un usuario ``snicoper`` con un password fácil,
 
 .. code-block:: bash
 
