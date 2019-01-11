@@ -204,6 +204,37 @@ Dbeaver
     Categories=GNOME;Application;Development;
     StartupNotify=true
 
+SmartGit
+********
+
+.. code-block:: bash
+
+    su -
+    gzip -d smartgit-linux-18_2_3.tar.gz
+    tar -xvf smartgit-linux-18_2_3.tar
+    mv smartgit /opt/smartgit
+    chmod +x /opt/smartgit/bin/smartgit.sh
+
+.. code-block:: bash
+
+    ln -s /opt/smartgit/bin/smartgit.sh /usr/local/bin/smartgit
+
+.. code-block:: bash
+
+    vim /usr/share/applications/smartgit.desktop
+
+.. code-block:: bash
+
+    [Desktop Entry]
+    Encoding=UTF-8
+    Name=SmartGit
+    Comment=Graphical Git client
+    Exec=smartgit %U
+    Icon=/opt/smartgit/bin/smartgit-32.png
+    Terminal=false
+    Type=Application
+    Categories=GNOME;Application;Development;
+    StartupNotify=true
 
 Postman
 *******
