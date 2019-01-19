@@ -48,6 +48,7 @@ Contents:
    instalacion_nodejs
    instalar_libsass_sassc
    instalar_mono_monodevelop
+   instalar_oh-my-zsh
    logrotate
    mi_bashrc
    montar_imagenes_bin_iso_etc
