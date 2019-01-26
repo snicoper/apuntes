@@ -40,6 +40,9 @@ Añade todos los archivos para que sea incluido en el próximo commit.
 
     git add --all
 
+    # También
+    git add .
+
 Eliminar un archivo o directorio de manera recursiva.
 
 .. code-block:: bash
@@ -153,11 +156,19 @@ Lista las ramas locales.
 
     git branch
 
-Eliminar un brach.
+Lista las ramas remotas.
 
 .. code-block:: bash
 
-    git brach -d brach
+    git branch -r
+
+Eliminar un branch.
+
+.. code-block:: bash
+
+    git branch -d branch
+
+Eliminar un branch
 
 Sobre-escribe la rama existente y comienza desde la revisión.
 
@@ -171,9 +182,47 @@ Guarda los cambios desde la rama.
 
     git merge rama
 
-untacker files
+un tracker files
 
 .. code-block:: bash
 
     git rm -r --cached <your directory>
 
+git flow
+********
+
+Inicializar git flow
+
+.. code-block:: bash
+
+    git flow init
+
+Crear una feature
+
+.. code-block:: bash
+
+    git flow feature start nombre_feature
+
+Subir feature
+
+.. code-block:: bash
+
+    git push origin feature/nombre_feature
+
+Obtener feature
+
+.. code-block:: bash
+
+    git pull origin feature/nombre_feature
+
+Finalizar feature
+
+.. code-block:: bash
+
+    git flow feature finish nombre_feature
+
+Eliminar branch remota
+
+.. code-block:: bash
+
+    git push origin --delete feature/nombre_feature
