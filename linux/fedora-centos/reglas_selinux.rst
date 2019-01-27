@@ -27,6 +27,7 @@ Para permitir a Apache poder enviar correo electrónico desde alguna aplicación
 
     setsebool -P httpd_can_sendmail 1
     setsebool -P httpd_read_user_content 1
+    setsebool -P httpd_can_network_connect 1
 
 Postgresql
 **********
