@@ -50,19 +50,11 @@ Paquetes que instalo
     # Con yarn, como usuario:
     yarn global add \
         @angular/cli \
-        @vue/cli \
-        gulp \
-        node-sass
+        @vue/cli
 
     # NPM con sudo
     sudo npm i -g gulp
     sudo npm i -g node-sass
-
-Establecer **yarn** predeterminado con ``ng``
-
-.. code-block:: bash
-
-    ng config -g cli.packageManager yarn
 
 Para aumentar el tamaño de monitoreo de **inotify**
 

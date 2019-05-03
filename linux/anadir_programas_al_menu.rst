@@ -17,9 +17,6 @@ PyCharm
     tar -xvf pycharm-professional-2018.3.tar
     mv pycharm-2018.3/ /opt/pycharm
     chmod +x /opt/pycharm/bin/pycharm.sh
-
-.. code-block:: bash
-
     ln -s /opt/pycharm/bin/pycharm.sh /usr/local/bin/pycharm
 
 .. code-block:: bash
@@ -49,9 +46,6 @@ Rider
     tar -xvf JetBrains.Rider-2018.1.tar
     mv JetBrains\ Rider-2018.1 /opt/rider
     chmod +x /opt/rider/bin/rider.sh
-
-.. code-block:: bash
-
     ln -s /opt/rider/bin/rider.sh /usr/local/bin/rider
 
 .. code-block:: bash
@@ -81,9 +75,6 @@ WebStorm
     tar -xvf WebStorm-2018.1.2.tar
     mv WebStorm-2018.1.2 /opt/webstorm
     chmod +x /opt/webstorm/bin/webstorm.sh
-
-.. code-block:: bash
-
     ln -s /opt/webstorm/bin/webstorm.sh /usr/local/bin/webstorm
 
 .. code-block:: bash
@@ -113,9 +104,6 @@ DataGrip
     tar -xvf datagrip-2018.2.4.tar
     mv DataGrip-2018.2.4 /opt/datagrip
     chmod +x /opt/datagrip/bin/datagrip.sh
-
-.. code-block:: bash
-
     ln -s /opt/datagrip/bin/datagrip.sh /usr/local/bin/datagrip
 
 .. code-block:: bash
@@ -151,9 +139,6 @@ Descargar y descomprimir de `GitHub <https://github.com/crmarsh/discord-linux-bu
     su -
     mv DiscordCanary /opt/discord
     chmod +x /opt/discord/DiscordCanary
-
-.. code-block:: bash
-
     ln -s /opt/discord/DiscordCanary /usr/local/bin/discord
 
 .. code-block:: bash
@@ -182,9 +167,6 @@ Dbeaver
     tar -xvf dbeaver-ce-5.0.3-linux.gtk.x86_64.tar
     mv dbeaver /opt/dbeaver
     chmod +x /opt/dbeaver/dbeaver
-
-.. code-block:: bash
-
     ln -s /opt/dbeaver/dbeaver /usr/local/bin/dbeaver
 
 .. code-block:: bash
@@ -214,9 +196,6 @@ SmartGit
     tar -xvf smartgit-linux-18_2_3.tar
     mv smartgit /opt/smartgit
     chmod +x /opt/smartgit/bin/smartgit.sh
-
-.. code-block:: bash
-
     ln -s /opt/smartgit/bin/smartgit.sh /usr/local/bin/smartgit
 
 .. code-block:: bash
@@ -246,9 +225,6 @@ Postman
     tar -xvf Postman-linux-x64-6.4.4.tar
     mv Postman/ /opt/postman
     chmod +x /opt/postman/Postman
-
-.. code-block:: bash
-
     ln -s /opt/postman/Postman /usr/local/bin/postman
 
 .. code-block:: bash
