@@ -95,12 +95,12 @@ Otros
 .. code-block:: bash
 
     dnf -y install chromium chromium-libs-media-freeworld
-    dnf -y install gimp
     dnf -y install mediawriter
-    dnf -y install meld
     dnf -y install zsh
-    dnf -y install java-1.8.0-openjdk java-1.8.0-openjdk-devel // Requerido para dbeaver
 
+    dnf -y install gimp
+    dnf -y install meld
+    dnf -y install java-1.8.0-openjdk java-1.8.0-openjdk-devel
     dnf -y install umbrello
     dnf -y install adobe-source-code-pro-fonts
     dnf -y install breeze-icon-theme
