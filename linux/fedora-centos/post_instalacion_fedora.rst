@@ -4,7 +4,7 @@
 Post instalación Fedora
 #######################
 
-**Fedora 29**
+**Fedora 30**
 
 Actualizar
 **********
@@ -163,4 +163,3 @@ Otras configuraciones
 * :ref:`reference-linux-instalacion_nodejs`
 * :ref:`reference-linux-python-pip_upgrade_all_packages`
 * :ref:`reference-linux-contar_lineas_proyecto`
-* :ref:`reference-linux-chromium-espanol`

@@ -15,9 +15,6 @@ Instalación
 
     dnf install -y postgresql postgresql-server postgresql-devel postgresql-contrib
 
-    # Opcional
-    dnf install -y pgadmin3
-
 .. code-block:: bash
 
     # Centos

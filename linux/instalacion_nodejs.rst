@@ -13,10 +13,8 @@ De **nodesource**
 
 .. code-block:: bash
 
-    curl --silent --location https://rpm.nodesource.com/setup_10.x | bash -
+    curl -sL https://rpm.nodesource.com/setup_12.x | bash -
     dnf install -y nodejs
-
-Donde ``setup_10.x``, poner la versión estable.
 
 De los repositorios de la distro.
 
@@ -51,10 +49,6 @@ Paquetes que instalo
     yarn global add \
         @angular/cli \
         @vue/cli
-
-    # NPM con sudo
-    sudo npm i -g gulp
-    sudo npm i -g node-sass
 
 Para aumentar el tamaño de monitoreo de **inotify**
 
