@@ -6,31 +6,24 @@ Instalación dotnet core en Fedora/Centos
 
 Fuentes
 
-* https://www.microsoft.com/net/learn/get-started
+https://dotnet.microsoft.com/download/linux-package-manager/rhel7/sdk-3.0.100
 
 ----
 
 Básicamente la instalación es la misma.
 
-Fedora > 27
-===========
+Fedora 30
+=========
 
 Añadir repos de **dotnet**
 
 .. code-block:: bash
 
     sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-    wget -q https://packages.microsoft.com/config/fedora/27/prod.repo
-    sudo mv prod.repo /etc/yum.repos.d/microsoft-prod.repo
-    sudo chown root:root /etc/yum.repos.d/microsoft-prod.repo
-
-
-Instalar **.NET SDK**
-
-.. code-block:: bash
+    sudo wget -q -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/30/prod.repo
 
     sudo dnf update
-    sudo dnf install dotnet-sdk-2.2
+    sudo dnf install dotnet-sdk-3.0
 
     dotnet --info
 
@@ -41,14 +34,14 @@ Añadir repos de **dotnet**
 
 .. code-block:: bash
 
-    sudo rpm -Uvh https://packages.microsoft.com/config/rhel/7/packages-microsoft-prod.rpm
+    sudo rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-prod.rpm
 
 Instalar **.NET SDK**
 
 .. code-block:: bash
 
     sudo yum update
-    sudo yum install dotnet-sdk-2.2
+    sudo yum install dotnet-sdk-3.0
 
 Creación app
 ============
