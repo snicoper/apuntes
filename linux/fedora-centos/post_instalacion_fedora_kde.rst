@@ -42,3 +42,12 @@ Programas básicos
 
 * ``ffmpegthumbs`` Previews para los videos en Dolphin, se ha de activar igual que las imágenes.
 * ``gvfs`` En Atom y VSCode, sin ``gvfs`` no moverá los archivos a la papelera cuando se quieran borrar.
+
+KDEConnect
+**********
+
+.. code-block:: bash
+
+    sudo firewall-cmd --zone=public --permanent --add-port=1714-1764/tcp
+    sudo firewall-cmd --zone=public --permanent --add-port=1714-1764/udp
+    sudo systemctl restart firewalld.service
