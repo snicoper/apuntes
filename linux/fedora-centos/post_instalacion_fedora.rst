@@ -65,6 +65,7 @@ Programas básicos
         cpp \
         ctags \
         ctags-etags \
+        flameshot \
         gcc \
         gcc-c++ \
         git \
