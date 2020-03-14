@@ -18,6 +18,7 @@ Contents:
    copr
    crear_ssl
    dnf_exclude_package
+   docker
    escanear_redes_conectadas_en_lan
    firewall
    fuente_ubuntu
