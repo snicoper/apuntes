@@ -20,10 +20,10 @@ Añadir repos de **dotnet**
 .. code-block:: bash
 
     sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-    sudo wget -q -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/30/prod.repo
+    sudo wget -q -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/31/prod.repo
 
     sudo dnf update
-    sudo dnf install dotnet-sdk-3.0
+    sudo dnf install dotnet-sdk-3.1
 
     dotnet --info
 

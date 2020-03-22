@@ -4,7 +4,7 @@
 Post instalación Fedora KDE
 ###########################
 
-**Fedora 27 KDE**
+**Fedora 31 KDE**
 
 :ref:`reference-linux-fedora-centos-post_instalacion_fedora`
 
@@ -48,6 +48,6 @@ KDEConnect
 
 .. code-block:: bash
 
-    sudo firewall-cmd --zone=public --permanent --add-port=1714-1764/tcp
-    sudo firewall-cmd --zone=public --permanent --add-port=1714-1764/udp
-    sudo systemctl restart firewalld.service
+    firewall-cmd --zone=public --permanent --add-port=1714-1764/tcp
+    firewall-cmd --zone=public --permanent --add-port=1714-1764/udp
+    systemctl restart firewalld.service

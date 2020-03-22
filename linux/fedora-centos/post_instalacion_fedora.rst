@@ -4,7 +4,7 @@
 Post instalación Fedora
 #######################
 
-**Fedora 30**
+**Fedora 31**
 
 Actualizar
 **********
@@ -41,7 +41,6 @@ https://pkgs.org/download/compat-ffmpeg28
     dnf -y install \
         compat-ffmpeg28 \
         gstreamer-plugins-bad \
-        gstreamer-plugins-bad-free-extras \
         gstreamer-plugins-bad-nonfree gstreamer-plugins-ugly \
         gstreamer-ffmpeg \
         gstreamer1-libav \
@@ -95,7 +94,7 @@ Otros
 
 .. code-block:: bash
 
-    dnf -y install chromium chromium-libs-media-freeworld
+    dnf -y install chromium
     dnf -y install mediawriter
     dnf -y install zsh
 
@@ -160,6 +159,7 @@ Otras configuraciones
 * :ref:`reference-linux-postgresql-instalacion_postgis`
 * :ref:`reference-programacion-python-apuntes_pip`
 * :ref:`reference-linux-dotnet-instalacion_fedora_centos`
+* :ref:`reference-linux-fedora-centos-docker`
 * :ref:`reference-linux-fedora-centos-postfix`
 * :ref:`reference-linux-instalacion_nodejs`
 * :ref:`reference-linux-python-pip_upgrade_all_packages`
