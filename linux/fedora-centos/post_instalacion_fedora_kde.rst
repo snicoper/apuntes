@@ -17,6 +17,7 @@ Desinstalar
         akregator \
         amarok \
         calligra* \
+        falkon \
         kget \
         kmahjongg \
         kmines \
