@@ -4,7 +4,7 @@
 Post instalación Fedora
 #######################
 
-**Fedora 31**
+**Fedora 32**
 
 Actualizar
 **********
@@ -68,7 +68,6 @@ Programas básicos
         gcc \
         gcc-c++ \
         git \
-        gitflow \
         htop \
         hunspell-es \
         kernel-devel \
@@ -89,6 +88,11 @@ Programas básicos
 
 Para pwgen ``pwgen -sy 16``
 
+Git flow
+********
+
+* https://github.com/petervanderdoes/gitflow-avh
+
 Otros
 *****
 
@@ -97,6 +101,7 @@ Otros
     dnf -y install chromium
     dnf -y install mediawriter
     dnf -y install zsh
+    dnf -y install discord
 
     dnf -y install gimp
     dnf -y install meld

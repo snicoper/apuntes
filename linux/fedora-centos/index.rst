@@ -14,6 +14,7 @@ Contents:
    cambiar_plymouth
    certificado_lets_encrypt
    configurar_red
+   configurar_sonarqube
    configurar_ssh
    copr
    crear_ssl
