@@ -4,6 +4,12 @@
 Configurar Sonarqube
 ####################
 
+Requirements
+************
+
+* Java (Oracle JRE 11 or OpenJDK 11)
+* PostgreSQL 10 or 9.3–9.6
+
 **Fuentes**
 
 * https://www.fosslinux.com/24429/how-to-install-and-configure-sonarqube-on-centos-7.htm
