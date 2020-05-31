@@ -12,7 +12,8 @@ Configurar Sonarqube
 
     su -
 
-## OpenJDK lasted
+OpenJDK lasted
+**************
 
 Requiere JDK 11+.
 
@@ -28,7 +29,8 @@ Cambiar java por defecto.
 
     alternatives --config java
 
-## Postgresql
+Postgresql
+**********
 
 Se omite instalación de PostgreSQL.
 
@@ -40,7 +42,8 @@ Se omite instalación de PostgreSQL.
     CREATE DATABASE sonar WITH OWNER sonar;
     \q
 
-## Configuracion del sistema.
+Configuracion del sistema
+*************************
 
 El usuario que ejecuta Sonarqube puede abrir al menos 65536 descriptores de archivo.
 El usuario que ejecuta Sonarqube puede abrir al menos 4096 hilos.
@@ -60,7 +63,8 @@ Aplicar la configuración
 
     sysctl -w vm.max_map_count=262144
 
-## Sonarqube
+Sonarqube
+*********
 
 * [https://www.sonarqube.org/downloads/](https://www.sonarqube.org/downloads/)
 
@@ -123,7 +127,8 @@ Crear usuario de sistema.
 
     chown -R sonar:sonar /var/sonarqube
 
-## Systemd service
+Systemd service
+***************
 
 .. code-block:: bash
 
@@ -172,7 +177,8 @@ Compute Engine logs.
 
     tail -f /opt/sonarqube/logs/ce.log
 
-## Nginx configure reverse proxy
+Nginx configure reverse proxy
+*****************************
 
 .. code-block:: bash
 
