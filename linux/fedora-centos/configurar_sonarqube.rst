@@ -38,7 +38,7 @@ Cambiar java por defecto.
 Postgresql
 **********
 
-Se omite instalación de PostgreSQL.
+* :ref:`reference-linux-postgresql-instalacion_postgresql`
 
 .. code-block:: bash
 
