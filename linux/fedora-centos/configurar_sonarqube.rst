@@ -4,15 +4,15 @@
 Configurar Sonarqube
 ####################
 
+**Fuentes**
+
+* https://www.fosslinux.com/24429/how-to-install-and-configure-sonarqube-on-centos-7.htm
+
 Requirements
 ************
 
 * Java (Oracle JRE 11 or OpenJDK 11)
 * PostgreSQL 10 or 9.3–9.6
-
-**Fuentes**
-
-* https://www.fosslinux.com/24429/how-to-install-and-configure-sonarqube-on-centos-7.htm
 
 .. code-block:: bash
 
@@ -89,6 +89,8 @@ SELinux
 .. code-block:: bash
 
     /sbin/restorecon -v /opt/sonarqube/bin/linux-x86-64/sonar.sh
+
+    chcon -t httpd_sys_content_t /opt/sonarqube/web
 
 Editar configuración de Sonarqube.
 
@@ -231,3 +233,43 @@ Editar hosts.
     127.0.0.1   sonar.local
 
 * http://sonar.local
+
+Sonar-scanner
+*************
+
+* https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/
+
+.. code-block:: bash
+
+    dotnet tool install --global dotnet-sonarscanner
+
+Script sh
+*********
+
+.. code-block:: bash
+
+    #!/bin/bash
+
+    # Requiere dotnet-sonarscanner.
+    # dotnet tool install --global dotnet-sonarscanner
+
+    APP_ROOT="$(dirname "$(dirname "$(readlink -fm "$0")")")"
+
+    # WebApi
+    cd $APP_ROOT/webapi
+
+    dotnet sonarscanner begin \
+    /k:"6bd9325c-d346-48b5-ab33-4993b61d1567" \
+    /d:sonar.host.url="http://sonar.local" \
+    /d:sonar.login="8ba567a58f7dff6a80e28e5167bb48a59e75b9dc"
+    dotnet build NetClock.sln
+    dotnet sonarscanner end /d:sonar.login="8ba567a58f7dff6a80e28e5167bb48a59e75b9dc"
+
+    # WebApp
+    cd $APP_ROOT/webapp
+
+    sonar-scanner \
+    -Dsonar.projectKey=NetClockApp \
+    -Dsonar.sources=. \
+    -Dsonar.host.url=http://sonar.local \
+    -Dsonar.login=8ba567a58f7dff6a80e28e5167bb48a59e75b9dc
