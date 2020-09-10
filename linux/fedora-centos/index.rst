@@ -23,6 +23,7 @@ Contents:
    escanear_redes_conectadas_en_lan
    firewall
    fuente_ubuntu
+   gitlab_centos
    gnome_folder_colors
    instalar_golang
    mssql
