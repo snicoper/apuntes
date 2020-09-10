@@ -69,17 +69,19 @@ Programas básicos
 
     dnf -y install \
         bash-completion \
+        bashtop \
         cpp \
         gcc \
         git \
         htop \
-        bashtop \
         kernel-devel \
         kernel-headers \
         make \
         mutt \
+        util-linux-user \
         wget \
-        yum-utils
+        yum-utils \
+        zsh
 
 Útiles
 ******
