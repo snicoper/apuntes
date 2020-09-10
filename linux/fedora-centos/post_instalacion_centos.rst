@@ -1,11 +1,11 @@
 .. _reference-linux-fedora-centos-post_instalacion_centos:
 
 #########################
-Post instalación Centos 7
+Post instalación Centos 8
 #########################
 
 .. note::
-    Centos 7 Minimal. Todo como super usuario.
+    Centos 8 Minimal. Todo como super usuario.
 
 Crear usuario y añadir a wheel
 *******************************
@@ -50,48 +50,36 @@ REMI y EPEL RHEL/CentOS 7
 .. code-block:: bash
 
     # epel
-    yum install -y epel-release
+    dnf install -y epel-release
 
     # remi
-    yum install -y http://rpms.remirepo.net/enterprise/remi-release-7.rpm
+    dnf install -y http://rpms.remirepo.net/enterprise/remi-release-8.rpm
 
 Actualizar el sistema
 *********************
 
 .. code-block:: bash
 
-    yum -y update
+    dnf -y update
 
 Programas básicos
 *****************
 
 .. code-block:: bash
 
-    yum -y install \
+    dnf -y install \
         bash-completion \
         cpp \
-        firewalld \
         gcc \
         git \
         htop \
+        bashtop \
         kernel-devel \
         kernel-headers \
         make \
         mutt \
-        net-tools \
-        openssh \
-        policycoreutils-python \
-        vim \
         wget \
         yum-utils
-
-Enable Firewalld
-================
-
-.. code-block:: bash
-
-    systemctl start firewalld.service
-    systemctl enable firewalld.service
 
 Útiles
 ******
