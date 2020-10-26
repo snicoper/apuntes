@@ -4,7 +4,7 @@
 Post instalación Fedora
 #######################
 
-**Fedora 32**
+**Fedora 33**
 
 Actualizar
 **********
@@ -33,8 +33,6 @@ RPM Fusion
 
 Codecs
 ******
-
-https://pkgs.org/download/compat-ffmpeg28
 
 .. code-block:: bash
 
