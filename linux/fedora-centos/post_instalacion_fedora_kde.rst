@@ -4,7 +4,7 @@
 Post instalación Fedora KDE
 ###########################
 
-**Fedora 31 KDE**
+**Fedora 33 KDE**
 
 :ref:`reference-linux-fedora-centos-post_instalacion_fedora`
 

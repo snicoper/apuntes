@@ -28,6 +28,7 @@ npm global directorio de usuario
 * https://stackoverflow.com/a/13021677
 
 .. code-block:: bash
+
     NPM_PACKAGES="$HOME/.npm-packages"
     mkdir -p "$NPM_PACKAGES"
 
