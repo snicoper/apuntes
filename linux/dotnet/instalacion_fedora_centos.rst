@@ -11,6 +11,9 @@ Fuentes
 
 ----
 
+.. note:: Si necesito la 2.1 y 3.x desactivo `exclude=dotnet* aspnetcore* netstandard*` de `fedora.repo` y `fedora.updates.repo` y añado los repos de fedora 31.
+
+
 Básicamente la instalación es la misma.
 
 Fedora > 32
