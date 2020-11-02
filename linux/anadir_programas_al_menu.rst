@@ -4,8 +4,63 @@
 Añadir programas al menu
 ########################
 
-.. note::
-    Si da problemas de permisos, ver https://askubuntu.com/a/169317
+Rider local
+***********
+
+.. code-block:: bash
+
+    su -
+    gzip -d JetBrains.Rider-2018.1.tar.gz
+    tar -xvf JetBrains.Rider-2018.1.tar
+    mv JetBrains\ Rider-2018.1 ~/.apps/rider
+    chmod +x ~/.apps/rider/bin/rider.sh
+    ln -s ~/.apps/rider/bin/rider.sh ~/.bin/rider
+
+.. code-block:: bash
+
+    vim ~/.local/share/applications/rider.desktop
+
+.. code-block:: bash
+
+    [Desktop Entry]
+    Encoding=UTF-8
+    Name=Rider
+    Comment=IDE for DotNet Core
+    Exec=rider %U
+    Icon=/home/snicoper/.apps/rider/bin/rider.png
+    Terminal=false
+    Type=Application
+    Categories=GNOME;Application;Development;
+    StartupNotify=true
+
+SmartGit local
+**************
+
+.. code-block:: bash
+
+    su -
+    gzip -d smartgit-linux-18_2_3.tar.gz
+    tar -xvf smartgit-linux-18_2_3.tar
+    mv smartgit ~/.apps/smartgit
+    chmod +x ~/.apps/smartgit/bin/smartgit.sh
+    ln -s ~/.apps/smartgit/bin/smartgit.sh ~/.bin/smartgit
+
+.. code-block:: bash
+
+    vim ~/.local/share/applications/smartgit.desktop
+
+.. code-block:: bash
+
+    [Desktop Entry]
+    Encoding=UTF-8
+    Name=SmartGit
+    Comment=Graphical Git client
+    Exec=smartgit %U
+    Icon=/home/snicoper/.apps/smartgit/bin/smartgit-32.png
+    Terminal=false
+    Type=Application
+    Categories=GNOME;Application;Development;
+    StartupNotify=true
 
 PyCharm
 *******

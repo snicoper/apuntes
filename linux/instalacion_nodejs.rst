@@ -29,6 +29,7 @@ npm global directorio de usuario
 
 .. code-block:: bash
 
+    # Como usuario
     NPM_PACKAGES="$HOME/.npm-packages"
     mkdir -p "$NPM_PACKAGES"
 
