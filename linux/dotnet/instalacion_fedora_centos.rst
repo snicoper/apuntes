@@ -16,8 +16,8 @@ Fuentes
 
 Básicamente la instalación es la misma.
 
-Fedora > 32
-===========
+Fedora >= 32
+============
 
 .. code-block:: bash
 
