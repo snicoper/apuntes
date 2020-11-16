@@ -35,10 +35,13 @@ Programas básicos
     dnf -y install \
         ffmpegthumbs \
         gvfs \
+        kaccounts-integration \
+        kaccounts-providers \
         kate \
         keepassxc \
         libreoffice \
         setroubleshoot \
+        telepathy-kde-accounts-kcm \
         transmission-qt
 
 * ``ffmpegthumbs`` Previews para los videos en Dolphin, se ha de activar igual que las imágenes.
