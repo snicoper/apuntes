@@ -9,7 +9,6 @@ Rider local
 
 .. code-block:: bash
 
-    su -
     gzip -d JetBrains.Rider-2018.1.tar.gz
     tar -xvf JetBrains.Rider-2018.1.tar
     mv JetBrains\ Rider-2018.1 ~/.apps/rider
@@ -38,7 +37,6 @@ SmartGit local
 
 .. code-block:: bash
 
-    su -
     gzip -d smartgit-linux-18_2_3.tar.gz
     tar -xvf smartgit-linux-18_2_3.tar
     mv smartgit ~/.apps/smartgit
