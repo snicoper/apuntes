@@ -6,37 +6,41 @@ Instalación dotnet core en Fedora/Centos
 
 Fuentes
 
-* https://dotnet.microsoft.com/download/linux-package-manager/rhel7/sdk-3.0.100
-* https://docs.microsoft.com/es-es/dotnet/core/install/
+* https://docs.microsoft.com/es-es/dotnet/core/install/linux-fedora
 
 ----
-
-.. note:: Si necesito la 2.1 y 3.x desactivo `exclude=dotnet* aspnetcore* netstandard*` de `fedora.repo` y `fedora.updates.repo` y añado los repos de fedora 31.
-
-
-Básicamente la instalación es la misma.
 
 Fedora >= 32
 ============
 
+Repos de fedora
+
 .. code-block:: bash
 
     sudo dnf install dotnet-sdk-3.1
 
-Fedora 31
-=========
+Repos de microsoft
 
-Añadir repos de **dotnet**
+.. code-block:: bash
+
+    sudo vim /etc/yum.repos.d/fedora.repo
+
+    # Añadir
+    exclude=dotnet* aspnetcore* netstandard*
+
+.. code-block:: bash
+
+    sudo vim /etc/yum.repos.d/fedora-updates.repo
+
+    # Añadir
+    exclude=dotnet* aspnetcore* netstandard*
 
 .. code-block:: bash
 
     sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-    sudo wget -q -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/31/prod.repo
+    sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/33/prod.repo
 
-    sudo dnf update
-    sudo dnf install dotnet-sdk-3.1
-
-    dotnet --info
+    sudo dnf install dotnet-sdk-2.1 dotnet-sdk-3.1 dotnet-sdk-5.0
 
 Centos 8
 ========
