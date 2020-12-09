@@ -9,7 +9,7 @@ fedora
 
 .. code-block:: bash
 
-    sudo dnf install podman podman-docker
+    sudo dnf install podman podman-docker podman-compose
 
 .. code-block:: bash
 
