@@ -9,10 +9,6 @@ fedora
 
 .. code-block:: bash
 
-    sudo dnf install podman podman-docker podman-compose
-
-.. code-block:: bash
-
     sudo dnf config-manager \
         --add-repo \
         https://download.docker.com/linux/fedora/docker-ce.repo

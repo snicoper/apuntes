@@ -25,8 +25,10 @@ Contents:
    fuente_ubuntu
    gitlab_centos
    gnome_folder_colors
+   instalar_cockpit
    instalar_golang
    mssql
+   podman
    post_instalacion_centos
    post_instalacion_fedora_gnome
    post_instalacion_fedora_kde

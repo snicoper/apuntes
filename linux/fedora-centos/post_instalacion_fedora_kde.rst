@@ -39,6 +39,7 @@ Programas básicos
         kaccounts-providers \
         kate \
         keepassxc \
+        kio-gdrive \
         libreoffice \
         setroubleshoot \
         telepathy-kde-accounts-kcm \
