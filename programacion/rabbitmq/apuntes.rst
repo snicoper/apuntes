@@ -6,8 +6,9 @@ Apuntes RabbitMQ
 
 Inicializar docker
 
-```bash
-podman run -d \
+.. code-block:: bash
+
+    podman run -d \
     --hostname my-rabbit \
     --name some-rabbit \
     -e RABBITMQ_DEFAULT_USER=snicoper \
@@ -19,4 +20,3 @@ podman run -d \
     -p 15671:15671 \
     -p 15672:15672 \
     rabbitmq:3-management
-```

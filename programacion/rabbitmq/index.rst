@@ -1,8 +1,8 @@
 .. _reference-programacion-rabbitmq:
 
-###
-UML
-###
+########
+RabbitMQ
+########
 
 Categorías:
 
