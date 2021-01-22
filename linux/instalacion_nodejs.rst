@@ -59,15 +59,7 @@ Yarn
 
 .. code-block:: bash
 
-    curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
-    dnf install -y yarn
-
-Añadir ``~/.yarn/bin`` al **PATH**
-
-.. code-block:: bash
-
-    # ~/.bashrc
-    export PATH=$PATH:~/.yarn/bin
+    npm install -g yarn
 
 Para aumentar el tamaño de monitoreo de **inotify**
 
