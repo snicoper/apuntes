@@ -58,6 +58,7 @@ Programas básicos
 .. code-block:: bash
 
     dnf -y install \
+        bashtop \
         cloc \
         cpp \
         ctags \
