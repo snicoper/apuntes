@@ -16,6 +16,7 @@ Categorías:
    mysql/index
    nginx/index
    php/index
+   plasma/index
    postgresql/index
    python/index
    redis/index
