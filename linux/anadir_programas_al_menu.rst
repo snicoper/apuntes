@@ -4,6 +4,26 @@
 Añadir programas al menu
 ########################
 
+Jetbrains toolbox local
+***********************
+
+.. code-block:: bash
+
+    vim ~/.local/share/applications/rider.desktop
+
+.. code-block:: bash
+
+    [Desktop Entry]
+    Encoding=UTF-8
+    Name=Rider
+    Comment=IDE for DotNet Core
+    Exec=rider %U
+    Icon=/home/snicoper/.apps/rider/bin/rider.png
+    Terminal=false
+    Type=Application
+    Categories=GNOME;Application;Development;
+    StartupNotify=true
+
 Rider local
 ***********
 

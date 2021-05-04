@@ -97,29 +97,18 @@ Otros
 
 .. code-block:: bash
 
-    dnf -y install chromium
     dnf -y install mediawriter
     dnf -y install zsh
+    dnf -y install chromium
     dnf -y install discord
-
-    dnf -y install gimp
-    dnf -y install meld
-    dnf -y install java-1.8.0-openjdk java-1.8.0-openjdk-devel
-    dnf -y install umbrello
-    dnf -y install adobe-source-code-pro-fonts
-    dnf -y install breeze-icon-theme
-    dnf -y install dia
-    dnf -y install gedit-plugins
-    dnf -y install gitg
-    dnf -y install gnome-builder
-    dnf -y install gnome-calendar
-    dnf -y install gnome-music
-    dnf -y install gnome-photos
-    dnf -y install gnome-todo
-    dnf -y install inkscape
-    dnf -y install krita
     dnf -y install levien-inconsolata-fonts
     dnf -y install telegram-desktop
+
+
+.. code-block:: bash
+
+    dnf config-manager --set-enabled google-chrome
+
 
 Idiomas
 *******
@@ -156,14 +145,12 @@ vscode
 Otras configuraciones
 *********************
 
-* :ref:`reference-linux-fedora-centos-post_instalacion_fedora_gnome`
 * :ref:`reference-linux-fedora-centos-post_instalacion_fedora_kde`
 * :ref:`reference-linux-python-instalacion_python_fedora`
 * :ref:`reference-linux-postgresql-instalacion_postgresql`
-* :ref:`reference-linux-postgresql-instalacion_postgis`
 * :ref:`reference-programacion-python-apuntes_pip`
 * :ref:`reference-linux-dotnet-instalacion_fedora_centos`
-* :ref:`reference-linux-fedora-centos-docker`
+* :ref:`reference-linux-fedora-centos-podman`
 * :ref:`reference-linux-fedora-centos-postfix`
 * :ref:`reference-linux-instalacion_nodejs`
 * :ref:`reference-linux-python-pip_upgrade_all_packages`
