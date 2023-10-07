@@ -4,19 +4,8 @@
 Instalación NodeJS
 ##################
 
-Instalación
-***********
-
-De **nodesource**
-
-* https://nodejs.org/es/download/package-manager/#enterprise-linux-y-fedora
-
-.. code-block:: bash
-
-    curl -sL https://rpm.nodesource.com/setup_12.x | bash -
-    dnf install -y nodejs
-
-De los repositorios de la distro.
+Instalación Fedora 39
+*********************
 
 .. code-block:: bash
 

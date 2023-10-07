@@ -29,9 +29,9 @@ Rider local
 
 .. code-block:: bash
 
-    gzip -d JetBrains.Rider-2018.1.tar.gz
-    tar -xvf JetBrains.Rider-2018.1.tar
-    mv JetBrains\ Rider-2018.1 ~/.apps/rider
+    gzip -d JetBrains.Rider-2023.2.2.tar.gz
+    tar -xvf JetBrains.Rider-2023.2.2.tar
+    mv mv JetBrains\ Rider-2023.2.2 ~/.apps/rider
     chmod +x ~/.apps/rider/bin/rider.sh
     ln -s ~/.apps/rider/bin/rider.sh ~/.bin/rider
 

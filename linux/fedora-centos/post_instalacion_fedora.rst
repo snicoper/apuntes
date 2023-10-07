@@ -4,110 +4,36 @@
 Post instalación Fedora
 #######################
 
-**Fedora 33**
+**Fedora 39**
 
 Actualizar
 **********
 
 .. code-block:: bash
 
-    dnf update -y
+    sudo dnf update -y
 
 .. code-block:: bash
 
-    sudo su -
-    passwd root
-
-    hostnamectl --static set-hostname ns1.snicoper.local
-
-RPM Fusion
-**********
-
-* http://rpmfusion.org/Configuration
-
-.. code-block:: bash
-
-    dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
-    dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-    dnf update -y
-
-Codecs
-******
-
-.. code-block:: bash
-
-    dnf -y install \
-        compat-ffmpeg28 \
-        gstreamer-plugins-bad \
-        gstreamer-plugins-bad-nonfree gstreamer-plugins-ugly \
-        gstreamer-ffmpeg \
-        gstreamer1-libav \
-        gstreamer1-plugins-bad-free-extras \
-        gstreamer1-plugins-bad-freeworld \
-        gstreamer1-plugins-base-tools \
-        gstreamer1-plugins-good-extras \
-        gstreamer1-plugins-ugly \
-        gstreamer1-plugins-bad-free \
-        gstreamer1-plugins-good \
-        gstreamer1-plugins-base \
-        gstreamer1
+    sudo hostnamectl --static set-hostname ns1.snicoper.local
 
 Programas básicos
 *****************
 
 .. code-block:: bash
 
-    dnf -y install \
-        bashtop \
-        cloc \
-        cpp \
-        ctags \
-        ctags-etags \
+    sudo dnf -y install \
+        dejavu-sans-mono-fonts \
         flameshot \
-        gcc \
-        gcc-c++ \
         git \
-        htop \
         hunspell-es \
-        kernel-devel \
-        kernel-headers \
-        make \
-        mutt \
         p7zip \
         p7zip-plugins \
         powerline \
         powerline-fonts \
-        pwgen \
-        sqlite \
-        sqlitebrowser \
         unrar \
-        util-linux-user \
         vim \
-        wget
-
-Para pwgen ``pwgen -sy 16``
-
-Git flow
-********
-
-* https://github.com/petervanderdoes/gitflow-avh
-
-Otros
-*****
-
-.. code-block:: bash
-
-    dnf -y install mediawriter
-    dnf -y install zsh
-    dnf -y install chromium
-    dnf -y install discord
-    dnf -y install levien-inconsolata-fonts
-    dnf -y install telegram-desktop
-
-
-.. code-block:: bash
-
-    dnf config-manager --set-enabled google-chrome
+        zsh
 
 
 Idiomas
@@ -115,7 +41,7 @@ Idiomas
 
 .. code-block:: bash
 
-    vim /etc/locale.conf
+    sudo vim /etc/locale.conf
 
     LANG=en_US.UTF-8
     LC_NUMERIC=es_ES.UTF-8
@@ -138,16 +64,26 @@ vscode
 
 .. code-block:: bash
 
-    rpm --import https://packages.microsoft.com/keys/microsoft.asc
-    sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
-    dnf install -y code
+    sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+
+    printf "[vscode]\nname=packages.microsoft.com\nbaseurl=https://packages.microsoft.com/yumrepos/vscode/\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc\nmetadata_expire=1h" | sudo tee -a /etc/yum.repos.d/vscode.repo
+
+    sudo dnf install code -y
+
+Nvidia drivers
+**************
+
+.. code-block:: bash
+
+    sudo dnf install xorg-x11-drv-nvidia-cuda
+    sudo dnf install akmod-nvidia
+
 
 Otras configuraciones
 *********************
 
 * :ref:`reference-linux-fedora-centos-post_instalacion_fedora_kde`
 * :ref:`reference-linux-python-instalacion_python_fedora`
-* :ref:`reference-linux-postgresql-instalacion_postgresql`
 * :ref:`reference-programacion-python-apuntes_pip`
 * :ref:`reference-linux-dotnet-instalacion_fedora_centos`
 * :ref:`reference-linux-fedora-centos-podman`

@@ -10,37 +10,34 @@ Fuentes
 
 ----
 
-Fedora >= 32
-============
-
-Repos de fedora
+Fedora 39
+=========
 
 .. code-block:: bash
 
-    sudo dnf install dotnet-sdk-3.1
+    sudo dnf install dotnet-sdk-7.0
 
-Repos de microsoft
+Instalar `dotnet 8.0.100-rc`
 
-.. code-block:: bash
+* https://github.com/dotnet/core/blob/main/release-notes/8.0/install-linux.md#installing-from-a-binary-archive
 
-    sudo vim /etc/yum.repos.d/fedora.repo
-
-    # Añadir
-    exclude=dotnet* aspnetcore* netstandard*
+Editar `.zshrc` o `.bashrc``
 
 .. code-block:: bash
 
-    sudo vim /etc/yum.repos.d/fedora-updates.repo
+    export DOTNET_ROOT=~/.dotnet
+    export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
+    export PATH=$PATH:~/.dotnet
 
-    # Añadir
-    exclude=dotnet* aspnetcore* netstandard*
+    curl -Lo dotnet.tar.gz https://download.visualstudio.microsoft.com/download/pr/8cccb582-1956-422a-8655-fad2fa12c247/4e86a676860c2ced06228a5c8d21718d/dotnet-sdk-8.0.100-rc.1.23455.8-linux-x64.tar.gz
+    mkdir ~/dotnet
+    tar -C ~/.dotnet -xf dotnet.tar.gz
+    rm dotnet.tar.gz
+    dotnet --version
 
 .. code-block:: bash
 
-    sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-    sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/33/prod.repo
-
-    sudo dnf install dotnet-sdk-2.1 dotnet-sdk-3.1 dotnet-sdk-5.0
+    ./dotnet-install.sh --runtime dotnet --channel 8.0 --quality preview --install-dir ~/.bin/dotnet-cli
 
 Centos 8
 ========
