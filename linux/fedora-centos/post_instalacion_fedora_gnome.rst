@@ -21,6 +21,7 @@ Programas básicos
 .. code-block:: bash
 
     sudo dnf -y install \
+        gnome-extensions-app \
         gnome-tweak-tool \
         gparted \
         transmission-gtk
