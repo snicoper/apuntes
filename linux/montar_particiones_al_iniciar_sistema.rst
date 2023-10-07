@@ -41,8 +41,8 @@ Ubuntu ntfs
 
 .. code-block:: bash
 
-    sudo umount /media/snicoper/data
-    mkdir -p /media/snicoper/data
+    sudo umount /run/media/snicoper/data
+    mkdir -p /run/media/snicoper/data
 
 .. code-block:: bash
 
@@ -50,7 +50,7 @@ Ubuntu ntfs
 
 .. code-block:: bash
 
-    /dev/sda5 /media/snicoper/data ntfs defaults,rw,users,auto,iocharset=utf8,umask=0
+    /dev/sda5 /run/media/snicoper/data ntfs defaults,rw,users,auto,iocharset=utf8,umask=0
 
 .. code-block:: bash
 
@@ -69,18 +69,14 @@ Fedora ext4
 
 .. code-block:: bash
 
-    /dev/sda3 /mnt/data auto nosuid,nodev,nofail,x-gvfs-show,x-gvfs-name=data 1 2
+    /dev/sda3 /run/media/snicoper/data auto nosuid,nodev,nofail,x-gvfs-show,x-gvfs-name=data 1 2
 
-Si es la primera vez que se crea la partición, crear una directorio
+Si es la primera vez que se crea la partición, crear un directorio
 
 .. code-block:: bash
 
-    mkdir /run/media/snicoper/data/snicoper
-    chown snicoper:snicoper /run/media/snicoper/data/snicoper
-
-    # Para poder mover archivos a la papelera.
-    mkdir /run/media/snicoper/data/.Trash-1000
-    chown snicoper: /run/media/snicoper/data/.Trash-1000
+    mkdir /run/media/snicoper/data
+    chown snicoper:snicoper /run/media/snicoper/data
 
 Fedora btrfs
 ************
