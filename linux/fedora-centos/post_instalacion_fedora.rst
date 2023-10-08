@@ -37,16 +37,23 @@ Programas básicos
 .. code-block:: bash
 
     sudo dnf -y install \
+        cmake \
+        cpp \
         dejavu-sans-mono-fonts \
         flameshot \
+        gcc \
+        gcc-c++ \
         git \
         hunspell-es \
+        kernel-devel \
+        kernel-headers \
         p7zip \
         p7zip-plugins \
         powerline \
         powerline-fonts \
         unrar \
         vim \
+        wget \
         zsh
 
 
