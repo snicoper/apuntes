@@ -56,6 +56,11 @@ Programas básicos
         wget \
         zsh
 
+Descargar `Meslo.zip`` de https://github.com/ryanoasis/nerd-fonts/releases/download/v2.0.0/Meslo.zip
+
+.. code-block:: bash
+
+    cp *.ttf ~/.local/share/fonts/
 
 Idiomas
 *******
