@@ -11,6 +11,7 @@ Categorías:
 
     apuntes_sin_clasificar/index
     csharp/index
+    dotnet/index
     javascript/index
     mariadb/index
     pcre/index
