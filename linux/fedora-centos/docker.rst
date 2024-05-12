@@ -4,8 +4,8 @@
 Docker
 ######
 
-Fedora 39
-==========
+Fedora 40
+=========
 
 .. code-block:: bash
 
@@ -23,7 +23,7 @@ Fedora 39
 .. code-block:: bash
 
     sudo dnf -y install dnf-plugins-core
-    sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/doc
+    sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
 
 .. code-block:: bash
 

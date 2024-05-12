@@ -4,7 +4,7 @@
 Post instalación Fedora
 #######################
 
-**Fedora 39**
+**Fedora 40**
 
 Actualizar
 **********
@@ -40,11 +40,11 @@ Programas básicos
         cmake \
         cpp \
         dejavu-sans-mono-fonts \
-        flameshot \
         gcc \
         gcc-c++ \
         git \
         hunspell-es \
+        jetbrains-mono-fonts \
         kernel-devel \
         kernel-headers \
         p7zip \
@@ -91,8 +91,7 @@ vscode
 .. code-block:: bash
 
     sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-
-    printf "[vscode]\nname=packages.microsoft.com\nbaseurl=https://packages.microsoft.com/yumrepos/vscode/\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc\nmetadata_expire=1h" | sudo tee -a /etc/yum.repos.d/vscode.repo
+    echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
 
     sudo dnf install code -y
 

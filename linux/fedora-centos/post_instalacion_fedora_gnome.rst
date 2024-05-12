@@ -22,10 +22,17 @@ Programas básicos
 
     sudo dnf -y install \
         dconf-editor \
-        gnome-extensions-app \
-        gnome-tweak-tool \
+        gnome-tweaks \
         gparted \
         transmission-gtk
+
+    flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+    # Gnome extensions.
+    flatpak install flathub org.gnome.Extensions
+
+    # Github Desktop.
+    flatpak install flathub io.github.shiftey.Desktop
 
 Firewalld
 *********
