@@ -43,6 +43,11 @@ Fedora 40
     sudo firewall-cmd --permanent --zone=trusted --add-interface=docker0
     sudo firewall-cmd --reload
 
+Docker Desktop
+==============
+
+https://docs.docker.com/desktop/install/fedora/
+
 Centos
 ======
 .. code-block:: bash
