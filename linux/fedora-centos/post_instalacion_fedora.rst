@@ -102,17 +102,3 @@ Nvidia drivers
 
     sudo dnf install xorg-x11-drv-nvidia-cuda
     sudo dnf install akmod-nvidia
-
-
-Otras configuraciones
-*********************
-
-* :ref:`reference-linux-fedora-centos-post_instalacion_fedora_kde`
-* :ref:`reference-linux-python-instalacion_python_fedora`
-* :ref:`reference-programacion-python-apuntes_pip`
-* :ref:`reference-linux-dotnet-instalacion_fedora_centos`
-* :ref:`reference-linux-fedora-centos-podman`
-* :ref:`reference-linux-fedora-centos-postfix`
-* :ref:`reference-linux-instalacion_nodejs`
-* :ref:`reference-linux-python-pip_upgrade_all_packages`
-* :ref:`reference-linux-contar_lineas_proyecto`
