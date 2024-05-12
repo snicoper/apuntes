@@ -39,7 +39,9 @@ Fedora 40
 
 .. code-block:: bash
 
+    sudo firewall-cmd --permanent --zone=docker --change-interface=docker0
     sudo firewall-cmd --permanent --zone=trusted --add-interface=docker0
+    sudo firewall-cmd --reload
 
 Centos
 ======

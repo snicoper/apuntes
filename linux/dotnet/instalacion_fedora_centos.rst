@@ -10,12 +10,15 @@ Fuentes
 
 ----
 
-Fedora 39
+Fedora 40
 =========
 
 .. code-block:: bash
 
-    sudo dnf install dotnet-sdk-7.0
+    sudo dnf install dotnet-sdk-8.0
+
+Versiones next
+==============
 
 Instalar `dotnet 8.0.100-rc`
 
