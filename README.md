@@ -1,3 +1,7 @@
+# apuntes
+
+Movidos a <https://github.com/snicoper/apuntes-next>
+
 ## Instalación
 
     (myenv) pip install Sphinx sphinx-rtd-theme sphinx-autobuild -U

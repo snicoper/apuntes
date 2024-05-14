@@ -36,26 +36,26 @@ Programas básicos
 
 .. code-block:: bash
 
-    sudo dnf -y install \
-        cmake \
-        cpp \
-        dejavu-sans-mono-fonts \
-        gcc \
-        gcc-c++ \
-        google-chrome-stable \
-        git \
-        hunspell-es \
-        jetbrains-mono-fonts \
-        kernel-devel \
-        kernel-headers \
-        p7zip \
-        p7zip-plugins \
-        powerline \
-        powerline-fonts \
-        unrar \
-        vim \
-        wget \
-        zsh
+sudo dnf -y install \
+    cmake \
+    cpp \
+    dejavu-sans-mono-fonts \
+    gcc \
+    gcc-c++ \
+    google-chrome-stable \
+    git \
+    hunspell-es \
+    jetbrains-mono-fonts \
+    kernel-devel \
+    kernel-headers \
+    p7zip \
+    p7zip-plugins \
+    powerline \
+    powerline-fonts \
+    unrar \
+    vim \
+    wget \
+    zsh
 
 Fuentes
 *******
@@ -97,10 +97,10 @@ vscode
 
 .. code-block:: bash
 
-    sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-    echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
 
-    sudo dnf install code -y
+sudo dnf install code -y
 
 flatpak
 *******
