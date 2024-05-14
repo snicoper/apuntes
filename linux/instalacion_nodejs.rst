@@ -4,12 +4,12 @@
 Instalación NodeJS
 ##################
 
-Instalación Fedora 39
+Instalación Fedora 40
 *********************
 
 .. code-block:: bash
 
-    dnf -y install nodejs
+    sudo dnf -y install nodejs
 
 npm global directorio de usuario
 ********************************
