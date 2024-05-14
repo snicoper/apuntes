@@ -26,14 +26,6 @@ Programas básicos
         gparted \
         transmission-gtk
 
-    flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-
-    # Gnome extensions.
-    flatpak install flathub org.gnome.Extensions
-
-    # Github Desktop.
-    flatpak install flathub io.github.shiftey.Desktop
-
 Firewalld
 *********
 
@@ -42,5 +34,5 @@ Poner por defecto ``zone=public`` y añadir la red local a ``trusted``
 .. code-block:: bash
 
     sudo firewall-cmd --set-default-zone=public
-    sudo firewall-cmd --permanent --zone=trusted --add-source=192.168.1.0/24
+    sudo firewall-cmd --permanent --zone=trusted --add-source=192.168.0.1/24
     sudo firewall-cmd --reload

@@ -57,7 +57,12 @@ Programas básicos
         wget \
         zsh
 
-Descargar `Meslo.zip`` de https://github.com/ryanoasis/nerd-fonts/releases/download/v2.0.0/Meslo.zip
+Fuentes
+*******
+
+https://monaspace.githubnext.com/
+
+- Descargar `Meslo.zip`` de https://github.com/ryanoasis/nerd-fonts/releases/download/v2.0.0/Meslo.zip
 
 .. code-block:: bash
 
@@ -96,3 +101,40 @@ vscode
     echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
 
     sudo dnf install code -y
+
+flatpak
+*******
+
+https://flathub.org/
+
+.. code-block:: bash
+
+    flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+    # Gnome extensions.
+    flatpak install flathub org.gnome.Extensions
+
+    # Github Desktop.
+    flatpak install flathub io.github.shiftey.Desktop
+
+    # Jetbrains Rider
+    flatpak install flathub com.jetbrains.Rider
+
+    # Dbeaver
+    flatpak install flathub io.dbeaver.DBeaverCommunity
+
+    # Google Chrome
+    flatpak install flathub com.google.Chrome
+
+    # Postman
+    flatpak install flathub com.getpostman.Postman
+
+
+Postman error al hacer login
+****************************
+
+.. code-block:: bash
+
+    cd ~/.var/app/com.getpostman.Postman/config/Postman/proxy
+
+    openssl req -subj '/C=US/CN=Postman Proxy' -new -newkey rsa:2048 -sha256 -days 365 -nodes -x509 -keyout postman-proxy-ca.key -out postman-proxy-ca.crt

@@ -2,6 +2,9 @@
   "restructuredtext.confPath": "${workspaceFolder}",
   "cSpell.words": [
     "centos",
+    "dbeaver",
+    "Dbeaver",
+    "dconf",
     "dotnet",
     "Firewalld",
     "flathub",
@@ -11,6 +14,7 @@
     "instalacion",
     "Jetbrains",
     "linux",
+    "rhythmbox",
     "shiftey"
   ]
 }
