@@ -117,17 +117,20 @@ https://flathub.org/
     # Github Desktop.
     flatpak install flathub io.github.shiftey.Desktop
 
-    # Jetbrains Rider
+    # Jetbrains Rider.
     flatpak install flathub com.jetbrains.Rider
 
-    # Dbeaver
+    # Dbeaver.
     flatpak install flathub io.dbeaver.DBeaverCommunity
 
-    # Google Chrome
+    # Google Chrome.
     flatpak install flathub com.google.Chrome
 
     # Postman
     flatpak install flathub com.getpostman.Postman
+
+    # Insomnia.
+    flatpak install flathub rest.insomnia.Insomnia
 
 
 Postman error al hacer login
