@@ -28,12 +28,12 @@ Editar `.zshrc` o `.bashrc``
 
 .. code-block:: bash
 
-    export DOTNET_ROOT=~/.dotnet
+    export DOTNET_ROOT=$HOME/.dotnet
     export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
-    export PATH=$PATH:~/.dotnet
+    export PATH=$PATH:$HOME/.dotnet
 
     curl -Lo dotnet.tar.gz https://download.visualstudio.microsoft.com/download/pr/8cccb582-1956-422a-8655-fad2fa12c247/4e86a676860c2ced06228a5c8d21718d/dotnet-sdk-8.0.100-rc.1.23455.8-linux-x64.tar.gz
-    mkdir ~/dotnet
+    mkdir ~/.dotnet
     tar -C ~/.dotnet -xf dotnet.tar.gz
     rm dotnet.tar.gz
     dotnet --version
